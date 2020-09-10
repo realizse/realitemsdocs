@@ -12,11 +12,14 @@ entries:
       url: /news.html
       output: web
     - title: Theme instructions
-      url: /mydoc_introduction.html
+      url: /ridoc_introduction.html
       output: web
-    - title: Product 1
-      url: /p1_landing_page.html
+    - title: TAM
+      url: /tam_landing_page.html
       output: web
-    - title: Product 2
-      url: /p2_landing_page.html
+    - title: CP3
+      url: /cp3_landing_page.html
+      output: web
+    - title: Tracker 
+      url: /tracker_landing_page.html
       output: web

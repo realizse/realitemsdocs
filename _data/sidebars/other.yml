@@ -9,10 +9,10 @@ entries:
     folderitems:
 
     - title: Automated links bookmark
-      url: /mydoc_hyperlinks.html#automatedlinks
+      url: /ridoc_hyperlinks.html#automatedlinks
 
     - title: Bookmark links
-      url: /mydoc_hyperlinks.html#bookmarklinks
+      url: /ridoc_hyperlinks.html#bookmarklinks
 
     - title: Some link bookmark
-      url: /mydoc_pages.html#someIdTag
+      url: /ridoc_pages.html#someIdTag

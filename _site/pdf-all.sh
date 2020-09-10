@@ -1,1 +1,1 @@
-. pdf-mydoc.sh; . pdf-product1.sh; .  pdf-product2.sh;
+. pdf-ridoc.sh; . pdf-tam_.sh; .  pdf-CP3.sh;
