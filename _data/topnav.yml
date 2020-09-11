@@ -12,7 +12,7 @@ topnav:
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-    - title: Real Items Help
+    - title: Help
       folderitems:
         - title: Real Items Message 
           external_url: https://share.hsforms.com/15RzF4kFkT5mzD3LYgNFWqA4c4p4
@@ -22,8 +22,6 @@ topnav_dropdowns:
           external_url: https://realitems.shop/blogs/news
     - title: Products
       folderitems:
-        - title: Real Items Documentation
-          url: /ridoc_introduction.html
         - title: TAM
           url: /tam_landing_page.html
         - title: CP3

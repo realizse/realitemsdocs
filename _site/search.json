@@ -826,7 +826,29 @@
 
 
 {
-"title": "TAM",
+"title": "Add Digital Identities (TAM)",
+"tags": "",
+"keywords": "NFR, NFT",
+"url": "tam_add_digids.html",
+"summary": "Add digital identities to the blockchain..."
+}
+,
+
+
+
+{
+"title": "Adding new products (TAM)",
+"tags": "",
+"keywords": "sample",
+"url": "tam_add_products.html",
+"summary": "Add new products by building templates using our forms..."
+}
+,
+
+
+
+{
+"title": "TAM (Token Asset Manager)",
 "tags": "",
 "keywords": "ridoc",
 "url": "tam_landing_page.html",
@@ -837,33 +859,11 @@
 
 
 {
-"title": "Sample 1 Topic (TAM)",
+"title": "Manage End Users (TAM)",
 "tags": "",
 "keywords": "sample",
-"url": "tam_sample1.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 2 Topic (TAM)",
-"tags": "",
-"keywords": "sample",
-"url": "tam_sample2.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 3 Topic (TAM)",
-"tags": "",
-"keywords": "sample",
-"url": "tam_sample3.html",
-"summary": "This is just a sample topic..."
+"url": "tam_manage_end_users.html",
+"summary": "Manage the end users of the prdoct..."
 }
 ,
 

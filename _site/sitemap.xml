@@ -488,25 +488,25 @@
   
   
   <url>
+    <loc>http://localhost:4000/tam_add_digids.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/tam_add_products.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/tam_landing_page.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/tam_sample1.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/tam_sample2.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/tam_sample3.html</loc>
+    <loc>http://localhost:4000/tam_manage_end_users.html</loc>
   </url>
   
   

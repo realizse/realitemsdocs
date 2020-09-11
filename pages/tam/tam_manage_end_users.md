@@ -1,9 +1,9 @@
 ---
-title: Sample 3 Topic (TAM)
+title: Manage End Users (TAM)
 keywords: sample
-summary: "This is just a sample topic..."
+summary: "Manage the end users of the prdoct..."
 sidebar: tam_sidebar
-permalink: tam_sample3.html
+permalink: tam_manage_end_users.html
 folder: tam_
 ---
 

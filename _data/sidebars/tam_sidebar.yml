@@ -27,12 +27,12 @@ entries:
       url: /tam_landing_page.html
       output: web
 
-    - title: Sample 1
-      url: /tam_sample1.html
+    - title: Add New Products 
+      url: /tam_add_products.html
       output: web, pdf
 
-    - title: Sample 2
-      url: /tam_sample2.html
+    - title: Add Digital Identities
+      url: /tam_add_digids.html
       output: web, pdf
 
     - title: Sample 3
