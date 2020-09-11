@@ -35,8 +35,8 @@ entries:
       url: /tam_add_digids.html
       output: web, pdf
 
-    - title: Sample 3
-      url: /tam_sample3.html
+    - title: Manage End Users 
+      url: /tam_manage_end_users.html
       output: web, pdf
 
   - title: Another heading
