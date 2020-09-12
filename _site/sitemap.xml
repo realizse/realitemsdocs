@@ -26,91 +26,49 @@
   
   
   <url>
+    <loc>http://localhost:4000/cp3_add_digids.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/cp3_add_products.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/cp3_contract_administration.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/cp3_landing_page.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/cp3_sample1.html</loc>
+    <loc>http://localhost:4000/cp3_manage_administrators.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/cp3_sample10.html</loc>
+    <loc>http://localhost:4000/cp3_manage_end_users.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/cp3_sample11.html</loc>
+    <loc>http://localhost:4000/cp3_item_explorer.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/cp3_sample12.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/cp3_sample13.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/cp3_sample14.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/cp3_sample2.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/cp3_sample3.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/cp3_sample4.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/cp3_sample5.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/cp3_sample6.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/cp3_sample7.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/cp3_sample8.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/cp3_sample9.html</loc>
+    <loc>http://localhost:4000/cp3_tracking_events.html</loc>
   </url>
   
   
@@ -500,7 +458,19 @@
   
   
   <url>
+    <loc>http://localhost:4000/tam_contract_administration.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/tam_landing_page.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/tam_manage_administrators.html</loc>
   </url>
   
   
@@ -512,34 +482,40 @@
   
   
   <url>
-    <loc>http://localhost:4000/tam_sample4.html</loc>
+    <loc>http://localhost:4000/tam_item_explorer.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/tam_sample5.html</loc>
+    <loc>http://localhost:4000/tam_tracking_events.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/tracker_add_digids.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/tam_sample6.html</loc>
+    <loc>http://localhost:4000/tracker_add_products.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/tam_sample7.html</loc>
+    <loc>http://localhost:4000/tracker_contract_administration.html</loc>
   </url>
-  
-  
-  
-  
-  
-  
-  
-  
   
   
   
@@ -550,43 +526,25 @@
   
   
   <url>
-    <loc>http://localhost:4000/tracker_sample1.html</loc>
+    <loc>http://localhost:4000/tracker_manage_administrators.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/tracker_sample2.html</loc>
+    <loc>http://localhost:4000/tracker_manage_end_users.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/tracker_sample3.html</loc>
+    <loc>http://localhost:4000/tracker_item_explorer.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/tracker_sample4.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/tracker_sample5.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/tracker_sample6.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/tracker_sample7.html</loc>
+    <loc>http://localhost:4000/tracker_tracking_events.html</loc>
   </url>
   
   

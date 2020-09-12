@@ -4,7 +4,40 @@
 
 
 {
-"title": "CP3",
+"title": "Add Digital Identities (CP3)",
+"tags": "",
+"keywords": "NFR, NFT",
+"url": "cp3_add_digids.html",
+"summary": "Add digital identities to the blockchain..."
+}
+,
+
+
+
+{
+"title": "Adding new products (CP3)",
+"tags": "",
+"keywords": "sample",
+"url": "cp3_add_products.html",
+"summary": "Add new products by building templates using our forms..."
+}
+,
+
+
+
+{
+"title": "Smart Contract Administration (CP3)",
+"tags": "",
+"keywords": "Administer Smart Contracts",
+"url": "cp3_contract_administration.html",
+"summary": "Administration of Smart Contracts"
+}
+,
+
+
+
+{
+"title": "CP3 (Consumer Protection 3.0)",
 "tags": "",
 "keywords": "ridoc",
 "url": "cp3_landing_page.html",
@@ -15,154 +48,44 @@
 
 
 {
-"title": "Sample 1 Topic",
+"title": "Manage Administrators (CP3)",
 "tags": "",
-"keywords": "sample",
-"url": "cp3_sample1.html",
-"summary": "This is just a sample topic..."
+"keywords": "administrators",
+"url": "cp3_manage_administrators.html",
+"summary": "Manage Administrative Users..."
 }
 ,
 
 
 
 {
-"title": "Sample 10 Topic",
+"title": "Manage End Users (CP3)",
 "tags": "",
 "keywords": "sample",
-"url": "cp3_sample10.html",
-"summary": "This is just a sample topic..."
+"url": "cp3_manage_end_users.html",
+"summary": "Manage the end users of the your Real Items system..."
 }
 ,
 
 
 
 {
-"title": "Sample 11 Topic",
+"title": "Item Explorere (CP3)",
 "tags": "",
 "keywords": "sample",
-"url": "cp3_sample11.html",
-"summary": "This is just a sample topic..."
+"url": "cp3_item_explorer.html",
+"summary": "Summary of Item Explorer..."
 }
 ,
 
 
 
 {
-"title": "Sample 12 Topic",
+"title": "Tracking Events (CP3)",
 "tags": "",
-"keywords": "sample",
-"url": "cp3_sample12.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 13 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "cp3_sample13.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 14 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "cp3_sample14.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 2 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "cp3_sample2.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 3 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "cp3_sample3.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 4 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "cp3_sample4.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 5 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "cp3_sample5.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 6 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "cp3_sample6.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 7 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "cp3_sample7.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 8 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "cp3_sample8.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 9 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "cp3_sample9.html",
-"summary": "This is just a sample topic..."
+"keywords": "tracking",
+"url": "cp3_tracking_events.html",
+"summary": "Tracking events..."
 }
 ,
 
@@ -848,11 +771,33 @@
 
 
 {
+"title": "Smart Contract Administration (TAM)",
+"tags": "",
+"keywords": "Administer Smart Contracts",
+"url": "tam_contract_administration.html",
+"summary": "Administration of Smart Contracts"
+}
+,
+
+
+
+{
 "title": "TAM (Token Asset Manager)",
 "tags": "",
 "keywords": "ridoc",
 "url": "tam_landing_page.html",
 "summary": ""
+}
+,
+
+
+
+{
+"title": "Manage Administrators (TAM)",
+"tags": "",
+"keywords": "administrators",
+"url": "tam_manage_administrators.html",
+"summary": "Manage Administrative Users..."
 }
 ,
 
@@ -870,44 +815,22 @@
 
 
 {
-"title": "Sample 4 Topic (TAM)",
+"title": "Item Explorere (TAM)",
 "tags": "",
 "keywords": "sample",
-"url": "tam_sample4.html",
-"summary": "This is just a sample topic..."
+"url": "tam_item_explorer.html",
+"summary": "Summary of Item Explorer..."
 }
 ,
 
 
 
 {
-"title": "Sample 5 Topic (TAM)",
+"title": "Tracking Events (TAM)",
 "tags": "",
-"keywords": "sample",
-"url": "tam_sample5.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 6 Topic (TAM)",
-"tags": "",
-"keywords": "sample",
-"url": "tam_sample6.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 7 Topic (TAM)",
-"tags": "",
-"keywords": "sample",
-"url": "tam_sample7.html",
-"summary": "This is just a sample topic..."
+"keywords": "tracking",
+"url": "tam_tracking_events.html",
+"summary": "Tracking events..."
 }
 ,
 
@@ -922,7 +845,40 @@
 
 
 {
-"title": "Tracker",
+"title": "Add Digital Identities (TRACKER)",
+"tags": "",
+"keywords": "NFR, NFT",
+"url": "tracker_add_digids.html",
+"summary": "Add digital identities to the blockchain..."
+}
+,
+
+
+
+{
+"title": "Adding new products (TRACKER)",
+"tags": "",
+"keywords": "sample",
+"url": "tracker_add_products.html",
+"summary": "Add new products by building templates using our forms..."
+}
+,
+
+
+
+{
+"title": "Smart Contract Administration (TRACKER)",
+"tags": "",
+"keywords": "Administer Smart Contracts",
+"url": "tracker_contract_administration.html",
+"summary": "Administration of Smart Contracts"
+}
+,
+
+
+
+{
+"title": "TRACKER (Token Asset Manager)",
 "tags": "",
 "keywords": "ridoc",
 "url": "tracker_landing_page.html",
@@ -933,77 +889,44 @@
 
 
 {
-"title": "Sample 1 Topic (Tracker)",
+"title": "Manage Administrators (TRACKER)",
 "tags": "",
-"keywords": "sample",
-"url": "tracker_sample1.html",
-"summary": "This is just a sample topic..."
+"keywords": "administrators",
+"url": "tracker_manage_administrators.html",
+"summary": "Manage Administrative Users..."
 }
 ,
 
 
 
 {
-"title": "Sample 2 Topic (Tracker)",
+"title": "Manage End Users (TRACKER)",
 "tags": "",
 "keywords": "sample",
-"url": "tracker_sample2.html",
-"summary": "This is just a sample topic..."
+"url": "tracker_manage_end_users.html",
+"summary": "Manage the end users of the your Real Items system..."
 }
 ,
 
 
 
 {
-"title": "Sample 3 Topic (Tracker)",
+"title": "Item Explorere (TRACKER)",
 "tags": "",
 "keywords": "sample",
-"url": "tracker_sample3.html",
-"summary": "This is just a sample topic..."
+"url": "tracker_item_explorer.html",
+"summary": "Summary of Item Explorer..."
 }
 ,
 
 
 
 {
-"title": "Sample 4 Topic (Tracker)",
+"title": "Tracking Events (TRACKER)",
 "tags": "",
-"keywords": "sample",
-"url": "tracker_sample4.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 5 Topic (Tracker)",
-"tags": "",
-"keywords": "sample",
-"url": "tracker_sample5.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 6 Topic (Tracker)",
-"tags": "",
-"keywords": "sample",
-"url": "tracker_sample6.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 7 Topic (Tracker)",
-"tags": "",
-"keywords": "sample",
-"url": "tracker_sample7.html",
-"summary": "This is just a sample topic..."
+"keywords": "tracking",
+"url": "tracker_tracking_events.html",
+"summary": "Tracking events..."
 }
 ,
 

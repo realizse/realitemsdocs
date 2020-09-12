@@ -1,92 +1,57 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
+
 entries:
-- title: CP3
-  product: CP3
-  version: 1.0
-  folders:
-
-  - title:
-    output: pdf
-    type: frontmatter
-    folderitems:
+  - title: Sidebar
+    product: CP3 
+    version: 1.0
+    folders:
+  
     - title:
-      url: /titlepage.html
       output: pdf
       type: frontmatter
-    - title:
-      url: /tocpage.html
-      output: pdf
-      type: frontmatter
-
-  - title: Introduction
-    output: web, pdf
-    folderitems:
-
-    - title: Overview
-      url: /cp3_landing_page.html
-      output: web
-
-  - title: Simple Workflow
-    output: web, pdf
-    folderitems:
-
-    - title: Sample 1
-      url: /cp3_sample1.html
+      folderitems:
+      - title:
+        url: /titlepage.html
+        output: pdf
+        type: frontmatter
+      - title:
+        url: /tocpage.html
+        output: pdf
+        type: frontmatter
+  
+    - title: Getting Started
       output: web, pdf
-
-    - title: Sample 2
-      url: /cp3_sample2.html
-      output: web, pdf
-
-    - title: Sample 3
-      url: /cp3_sample3.html
-      output: web, pdf
-
-    - title: Sample 4
-      url: /cp3_sample4.html
-      output: web, pdf
-
-    - title: Sample 5
-      url: /cp3_sample5.html
-      output: web, pdf
-
-  - title: Complex Workflow
-    output: web, pdf
-    folderitems:
-
-    - title: Sample 6
-      url: /cp3_sample6.html
-      output: web, pdf
-
-    - title: Sample 7
-      url: /cp3_sample7.html
-      output: web, pdf
-
-    - title: Sample 8
-      url: /cp3_sample8.html
-      output: web, pdf
-
-    - title: Sample 9
-      url: /cp3_sample9.html
-      output: web, pdf
-
-    - title: Sample 10
-      url: /cp3_sample10.html
-      output: web, pdf
-
-    - title: Sample 11
-      url: /cp3_sample11.html
-      output: web, pdf
-
-    - title: Sample 12
-      url: /cp3_sample12.html
-      output: web, pdf
-
-    - title: Sample 13
-      url: /cp3_sample13.html
-      output: web, pdf
-
-    - title: Sample 14
-      url: /cp3_sample14.html
-      output: web, pdf
+      folderitems:
+      - title: CP3 home
+        url: /cp3_landing_page.html
+        output: web
+  
+      - title: Add New Products 
+        url: /cp3_add_products.html
+        output: web, pdf
+  
+      - title: Add Digital Identities
+        url: /cp3_add_digids.html
+        output: web, pdf
+  
+      - title: Manage End Users 
+        url: /cp3_manage_end_users.html
+        output: web, pdf
+  
+      - title: Manage Administrators 
+        url: /cp3_manage_administrators.html
+        output: web, pdf
+  
+      - title: Tracking Events 
+        url: /cp3_tracking_events.html
+        output: web, pdf
+  
+      - title: Item Explorer 
+        url: /cp3_item_explorer.html
+        output: web, pdf
+  
+      - title: Smart Contract Administration 
+        url: /cp3_contract_administration.html
+        output: web, pdf
+  

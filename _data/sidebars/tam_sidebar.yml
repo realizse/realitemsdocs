@@ -39,22 +39,18 @@ entries:
       url: /tam_manage_end_users.html
       output: web, pdf
 
-  - title: Another heading
-    output: web, pdf
-
-    folderitems:
-    - title: Sample 4
-      url: /tam_sample4.html
+    - title: Manage Administrators 
+      url: /tam_manage_administrators.html
       output: web, pdf
 
-    - title: Sample 5
-      url: /tam_sample5.html
+    - title: Tracking Events 
+      url: /tam_tracking_events.html
       output: web, pdf
 
-    - title: Sample 6
-      url: /tam_sample6.html
+    - title: Item Explorer 
+      url: /tam_item_explorer.html
       output: web, pdf
 
-    - title: Sample 7
-      url: /tam_sample7.html
+    - title: Smart Contract Administration 
+      url: /tam_contract_administration.html
       output: web, pdf

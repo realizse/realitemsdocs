@@ -9,7 +9,7 @@ folder: tam_
 
 ## Digital Identities 
 
-A digital identity is an instance of a Product that has been digitized on the blockchain.  A digital identity can be a single NFR on the blockchain (in the case of durable products), or a fraction of an NFR paired with a unique PIN.  Associated with each digital identity is a QR Code, a numeric ID, an obfuscated ID and a PIN.  Digital identities have a custodian (a program or human that holds the private key and/or the PIN) and sometimes an owner (a specific company or human being).  
+A **digital identity** (also referred to as an **item**) is an instance of a **product** that has been digitized on the blockchain.  A digital identity can be a single NFR on the blockchain (in the case of durable products), or a fraction of an NFR paired with a unique PIN.  Associated with each digital identity is a QR Code, a numeric ID, an obfuscated ID and a PIN.  Digital identities have a custodian (a program or human that holds the private key and/or the PIN) and are sometimes associated with an owner (a specific company or human being).  The custodian and the owner can be the same person or thing, or they can be different.
 
 
 ## Creating digital identities 
@@ -20,7 +20,12 @@ A digital identity is an instance of a Product that has been digitized on the bl
 4. In the Notes box write a unique description of the purpose and characteristics of the "Batch" you are about to create.  These can include who the digital IDs are being created for, why they are being created, what they will be used for etc.
 5. Click the "Create New Digital Identities" button and wait for the process to complete.  Please note that this action will be writing to the blockchain therefore will take a minimum of 10 seconds to complete.  If you create more than 40 digital identities, the minimum time for the action to complete will be (number specified)/40 * 10.
 
+## High Level Sequence Diagram
+![Create Digital IDs](create_digids.svg){:class="img-responsive"}
+
 ## After creating a digital identity
+
+![Digital ID Example](digital_id_example.png){:class="img-responsive"}
 
 After you have created a digital identity you can now view it 2 ways in the TAM.
 1. Go to Inventory page

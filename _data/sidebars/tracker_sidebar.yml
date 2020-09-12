@@ -2,59 +2,56 @@
 
 
 entries:
-- title: Sidebar
-  product: Tracker
-  version: 1.0
-  folders:
-
-  - title:
-    output: pdf
-    type: frontmatter
-    folderitems:
+  - title: Sidebar
+    product: TRACKER 
+    version: 1.0
+    folders:
+  
     - title:
-      url: /titlepage.html
       output: pdf
       type: frontmatter
-    - title:
-      url: /tocpage.html
-      output: pdf
-      type: frontmatter
-
-  - title: Getting Started
-    output: web, pdf
-    folderitems:
-    - title: Tracker home
-      url: /tracker_landing_page.html
-      output: web
-
-    - title: Sample 1
-      url: /tracker_sample1.html
+      folderitems:
+      - title:
+        url: /titlepage.html
+        output: pdf
+        type: frontmatter
+      - title:
+        url: /tocpage.html
+        output: pdf
+        type: frontmatter
+  
+    - title: Getting Started
       output: web, pdf
-
-    - title: Sample 2
-      url: /tracker_sample2.html
-      output: web, pdf
-
-    - title: Sample 3
-      url: /tracker_sample3.html
-      output: web, pdf
-
-  - title: Another heading
-    output: web, pdf
-
-    folderitems:
-    - title: Sample 4
-      url: /tracker_sample4.html
-      output: web, pdf
-
-    - title: Sample 5
-      url: /tracker_sample5.html
-      output: web, pdf
-
-    - title: Sample 6
-      url: /tracker_sample6.html
-      output: web, pdf
-
-    - title: Sample 7
-      url: /tracker_sample7.html
-      output: web, pdf
+      folderitems:
+      - title: TRACKER home
+        url: /tracker_landing_page.html
+        output: web
+  
+      - title: Add New Products 
+        url: /tracker_add_products.html
+        output: web, pdf
+  
+      - title: Add Digital Identities
+        url: /tracker_add_digids.html
+        output: web, pdf
+  
+      - title: Manage End Users 
+        url: /tracker_manage_end_users.html
+        output: web, pdf
+  
+      - title: Manage Administrators 
+        url: /tracker_manage_administrators.html
+        output: web, pdf
+  
+      - title: Tracking Events 
+        url: /tracker_tracking_events.html
+        output: web, pdf
+  
+      - title: Item Explorer 
+        url: /tracker_item_explorer.html
+        output: web, pdf
+  
+      - title: Smart Contract Administration 
+        url: /tracker_contract_administration.html
+        output: web, pdf
+  
