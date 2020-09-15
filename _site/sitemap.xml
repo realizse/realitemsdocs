@@ -26,49 +26,13 @@
   
   
   <url>
-    <loc>http://localhost:4000/cp3_add_digids.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/cp3_add_products.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/cp3_contract_administration.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/cp3_landing_page.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/cp3_manage_administrators.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/cp3_manage_end_users.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/cp3_item_explorer.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/cp3_tracking_events.html</loc>
+    <loc>http://localhost:4000/cp3_verify_authenticity.html</loc>
   </url>
   
   
@@ -445,6 +409,12 @@
   
   
   
+  
+  
+  
+  
+  
+  
   <url>
     <loc>http://localhost:4000/tam_add_digids.html</loc>
   </url>
@@ -477,12 +447,6 @@
   
   <url>
     <loc>http://localhost:4000/tam_manage_end_users.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/tam_item_explorer.html</loc>
   </url>
   
   
@@ -545,6 +509,12 @@
   
   <url>
     <loc>http://localhost:4000/tracker_tracking_events.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/whitepaper.html</loc>
   </url>
   
   

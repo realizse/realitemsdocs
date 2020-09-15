@@ -4,6 +4,7 @@ keywords: Administer Smart Contracts
 summary: "Administration of Smart Contracts"
 sidebar: tam_sidebar
 permalink: tam_contract_administration.html
+tags: [tam]
 folder: tam_
 ---
 

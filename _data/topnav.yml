@@ -3,10 +3,13 @@
 topnav:
 - title: Topnav
   items:
-    - title: GitHub
-      external_url: https://github.com/realitems
-    - title: News
-      url: /news
+##    - title: GitHub
+##      external_url: https://github.com/realitems
+    - title: Whitepaper
+      url: /whitepaper.html
+
+##    - title: News
+##      url: /news
 
 #Topnav dropdowns
 topnav_dropdowns:

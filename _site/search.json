@@ -4,39 +4,6 @@
 
 
 {
-"title": "Add Digital Identities (CP3)",
-"tags": "",
-"keywords": "NFR, NFT",
-"url": "cp3_add_digids.html",
-"summary": "Add digital identities to the blockchain..."
-}
-,
-
-
-
-{
-"title": "Adding new products (CP3)",
-"tags": "",
-"keywords": "sample",
-"url": "cp3_add_products.html",
-"summary": "Add new products by building templates using our forms..."
-}
-,
-
-
-
-{
-"title": "Smart Contract Administration (CP3)",
-"tags": "",
-"keywords": "Administer Smart Contracts",
-"url": "cp3_contract_administration.html",
-"summary": "Administration of Smart Contracts"
-}
-,
-
-
-
-{
 "title": "CP3 (Consumer Protection 3.0)",
 "tags": "",
 "keywords": "ridoc",
@@ -48,44 +15,11 @@
 
 
 {
-"title": "Manage Administrators (CP3)",
-"tags": "",
-"keywords": "administrators",
-"url": "cp3_manage_administrators.html",
-"summary": "Manage Administrative Users..."
-}
-,
-
-
-
-{
-"title": "Manage End Users (CP3)",
-"tags": "",
-"keywords": "sample",
-"url": "cp3_manage_end_users.html",
-"summary": "Manage the end users of the your Real Items system..."
-}
-,
-
-
-
-{
-"title": "Item Explorere (CP3)",
-"tags": "",
-"keywords": "sample",
-"url": "cp3_item_explorer.html",
-"summary": "Summary of Item Explorer..."
-}
-,
-
-
-
-{
-"title": "Tracking Events (CP3)",
-"tags": "",
-"keywords": "tracking",
-"url": "cp3_tracking_events.html",
-"summary": "Tracking events..."
+"title": "Verify Authenticity of an Item (CP3)",
+"tags": "cp3",
+"keywords": "NFR, NFT",
+"url": "cp3_verify_authenticity.html",
+"summary": "How to verify the authenticity of an item..."
 }
 ,
 
@@ -748,9 +682,15 @@
 
 
 
+
+
+
+
+
+
 {
 "title": "Add Digital Identities (TAM)",
-"tags": "",
+"tags": "tam",
 "keywords": "NFR, NFT",
 "url": "tam_add_digids.html",
 "summary": "Add digital identities to the blockchain..."
@@ -761,7 +701,7 @@
 
 {
 "title": "Adding new products (TAM)",
-"tags": "",
+"tags": "tam",
 "keywords": "sample",
 "url": "tam_add_products.html",
 "summary": "Add new products by building templates using our forms..."
@@ -772,7 +712,7 @@
 
 {
 "title": "Smart Contract Administration (TAM)",
-"tags": "",
+"tags": "tam",
 "keywords": "Administer Smart Contracts",
 "url": "tam_contract_administration.html",
 "summary": "Administration of Smart Contracts"
@@ -794,7 +734,7 @@
 
 {
 "title": "Manage Administrators (TAM)",
-"tags": "",
+"tags": "tam",
 "keywords": "administrators",
 "url": "tam_manage_administrators.html",
 "summary": "Manage Administrative Users..."
@@ -805,7 +745,7 @@
 
 {
 "title": "Manage End Users (TAM)",
-"tags": "",
+"tags": "tam",
 "keywords": "sample",
 "url": "tam_manage_end_users.html",
 "summary": "Manage the end users of the your Real Items system..."
@@ -815,19 +755,8 @@
 
 
 {
-"title": "Item Explorere (TAM)",
-"tags": "",
-"keywords": "sample",
-"url": "tam_item_explorer.html",
-"summary": "Summary of Item Explorer..."
-}
-,
-
-
-
-{
 "title": "Tracking Events (TAM)",
-"tags": "",
+"tags": "tam",
 "keywords": "tracking",
 "url": "tam_tracking_events.html",
 "summary": "Tracking events..."
@@ -927,6 +856,17 @@
 "keywords": "tracking",
 "url": "tracker_tracking_events.html",
 "summary": "Tracking events..."
+}
+,
+
+
+
+{
+"title": "Real Items Whitepaper",
+"tags": "whitepapertamcp3tracker",
+"keywords": "NFR, NFT",
+"url": "whitepaper.html",
+"summary": "Optimizing the Product Life Cycle"
 }
 ,
 

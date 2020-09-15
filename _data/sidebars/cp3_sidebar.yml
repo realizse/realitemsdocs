@@ -27,31 +27,7 @@ entries:
         url: /cp3_landing_page.html
         output: web
   
-      - title: Add New Products 
-        url: /cp3_add_products.html
-        output: web, pdf
-  
-      - title: Add Digital Identities
-        url: /cp3_add_digids.html
-        output: web, pdf
-  
-      - title: Manage End Users 
-        url: /cp3_manage_end_users.html
-        output: web, pdf
-  
-      - title: Manage Administrators 
-        url: /cp3_manage_administrators.html
-        output: web, pdf
-  
-      - title: Tracking Events 
-        url: /cp3_tracking_events.html
-        output: web, pdf
-  
-      - title: Item Explorer 
-        url: /cp3_item_explorer.html
-        output: web, pdf
-  
-      - title: Smart Contract Administration 
-        url: /cp3_contract_administration.html
+      - title:  Verify Authenticity 
+        url: /cp3_verify_authenticity.html
         output: web, pdf
   

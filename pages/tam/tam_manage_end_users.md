@@ -4,6 +4,7 @@ keywords: sample
 summary: "Manage the end users of the your Real Items system..."
 sidebar: tam_sidebar
 permalink: tam_manage_end_users.html
+tags: [tam]
 folder: tam_
 ---
 

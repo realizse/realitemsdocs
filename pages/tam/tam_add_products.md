@@ -4,6 +4,7 @@ keywords: sample
 summary: "Add new products by building templates using our forms..."
 sidebar: tam_sidebar
 permalink: tam_add_products.html
+tags: [tam]
 folder: tam_
 ---
 

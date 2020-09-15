@@ -4,6 +4,7 @@ keywords: NFR, NFT
 summary: "Add digital identities to the blockchain..."
 sidebar: tam_sidebar
 permalink: tam_add_digids.html
+tags: [tam]
 folder: tam_
 ---
 

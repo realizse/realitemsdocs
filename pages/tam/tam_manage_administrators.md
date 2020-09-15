@@ -4,6 +4,7 @@ keywords: administrators
 summary: "Manage Administrative Users..."
 sidebar: tam_sidebar
 permalink: tam_manage_administrators.html
+tags: [tam]
 folder: tam_
 ---
 

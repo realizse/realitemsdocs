@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Manage Administrative Users...">
-<meta name="keywords" content=" administrators">
-<title>Manage Administrators (CP3) | Jekyll theme for documentation</title>
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>CP3 | Jekyll theme for documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -119,11 +119,7 @@
                 
                 
                 
-                <li><a href="https://github.com/realitems" target="_blank" rel="noopener">GitHub</a></li>
-                
-                
-                
-                <li><a href="news">News</a></li>
+                <li><a href="whitepaper.html">Whitepaper</a></li>
                 
                 
                 
@@ -175,7 +171,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:tomjoht@gmail.com?subject=Real Items Documentation feedback&body=I have some feedback about the Manage Administrators (CP3) page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:tomjoht@gmail.com?subject=Real Items Documentation feedback&body=I have some feedback about the CP3 page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -193,7 +189,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Manage Administrators (CP3)">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="CP3">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -219,68 +215,100 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">CP3 1.0</li>
+  <li class="sidebarTitle">Real Items Docs 6.0</li>
   
   
   
       
   
   <li>
-      <a title="Getting Started" href="#">Getting Started</a>
+      <a title="Overview" href="#">Overview</a>
       <ul>
           
           
           
-          <li><a title="CP3 home" href="cp3_landing_page.html">CP3 home</a></li>
+          <li><a title="Get started" href="index.html">Get started</a></li>
           
           
           
           
           
           
-          <li><a title="Add New Products" href="cp3_add_products.html">Add New Products</a></li>
+          <li><a title="Introduction" href="ridoc_introduction.html">Introduction</a></li>
           
           
           
           
           
           
-          <li><a title="Add Digital Identities" href="cp3_add_digids.html">Add Digital Identities</a></li>
+          <li><a title="Supported features" href="ridoc_supported_features.html">Supported features</a></li>
           
           
           
           
           
           
-          <li><a title="Manage End Users" href="cp3_manage_end_users.html">Manage End Users</a></li>
+          <li><a title="About the theme author" href="ridoc_about.html">About the theme author</a></li>
           
           
           
           
           
           
-          <li class="active"><a title="Manage Administrators" href="cp3_manage_administrators.html">Manage Administrators</a></li>
+          <li><a title="Support" href="ridoc_support.html">Support</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Release Notes" href="#">Release Notes</a>
+      <ul>
+          
+          
+          
+          <li><a title="6.0 Release notes" href="ridoc_release_notes_60.html">6.0 Release notes</a></li>
           
           
           
           
           
           
-          <li><a title="Tracking Events" href="cp3_tracking_events.html">Tracking Events</a></li>
+          <li><a title="5.0 Release notes" href="ridoc_release_notes_50.html">5.0 Release notes</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Installation" href="#">Installation</a>
+      <ul>
+          
+          
+          
+          <li><a title="About Ruby, Gems, Bundler, etc." href="ridoc_about_ruby_gems_etc.html">About Ruby, Gems, Bundler, etc.</a></li>
           
           
           
           
           
           
-          <li><a title="Item Explorer" href="cp3_item_explorer.html">Item Explorer</a></li>
+          <li><a title="Install Jekyll on Mac" href="ridoc_install_jekyll_on_mac.html">Install Jekyll on Mac</a></li>
           
           
           
           
           
           
-          <li><a title="Smart Contract Administration" href="cp3_contract_administration.html">Smart Contract Administration</a></li>
+          <li><a title="Install Jekyll on Windows" href="ridoc_install_jekyll_on_windows.html">Install Jekyll on Windows</a></li>
           
           
           
@@ -307,15 +335,13 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Manage Administrators (CP3)</h1>
+   <h1 class="post-title-main">CP3</h1>
 </div>
 
 
 
 <div class="post-content">
 
-   
-    <div class="summary">Manage Administrative Users...</div>
    
 
     
@@ -346,38 +372,383 @@ $('#toc').on('click', 'a', function() {
 
     
 
-   <h2 id="what-is-an-administrator">What is an Administrator?</h2>
+   <p>The following pages and posts are tagged with <button type="button" style="cursor: default" class="btn btn-default navbar-btn">cp3</button></p>
+<table><thead><tr><th>Title</th><th>Type</th><th>Excerpt</th></tr></thead>
+    <tbody>
+    
+  
+    
+   
+    
+   
+    
+        
 
-<ul>
-  <li>Can be a person</li>
-  <li>Can be a program</li>
-  <li>Has UI and/or API access</li>
-  <li>Has access to CP3 functionality</li>
-  <li>Has an email address</li>
-  <li>Has a password</li>
-</ul>
+        <tr><td><a href="cp3_verify_authenticity.html">Verify Authenticity of an Item (CP3)</a></td>
+            <td><span class="label label-default">Page</span></td>
+          <td> How to verify the authenticity of an item... </td>
+        </tr>
+        
+     
+   
+    
+   
+    
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+        
+     
+        
 
-<h2 id="regular-administrators">Regular Administrators</h2>
+        <tr><td><a href="whitepaper.html">Real Items Whitepaper</a></td>
+            <td><span class="label label-default">Page</span></td>
+          <td> Optimizing the Product Life Cycle </td>
+        </tr>
+        
+     
+        
+     
+   
+    
+   
 
-<ul>
-  <li>Can manage product templates</li>
-  <li>Can view inventory</li>
-  <li>Can update inventory</li>
-  <li>Can view Analytics</li>
-  <li>Can administer smart contracts</li>
-  <li>Can update own profile including password</li>
-</ul>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
-<h2 id="super-administrators">Super Administrators</h2>
-
-<ul>
-  <li>All powers of Regular Administrators</li>
-  <li>Can add/update/delete Regular Administrators</li>
-</ul>
-
-<h2 id="managing-administrators">Managing Administrators</h2>
-
-<p>To manage Administrators click on <em>Administrators</em> in the left navigation bar.</p>
+   </tbody>
+</table>
 
 
 
@@ -393,7 +764,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 Real Items. All rights reserved. <br />
- Site last generated: Sep 11, 2020 <br />
+ Site last generated: Sep 14, 2020 <br />
 <p><img src="images/ri-logo-black.png" alt="Real Items Logo"/></p>
                 </div>
             </div>

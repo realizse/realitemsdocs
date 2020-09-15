@@ -1,0 +1,33 @@
+graph TD
+    subgraph Administrator 
+      TAM[TAM]
+    end
+    subgraph End Consumer
+      CP3[CP3]
+    end
+    subgraph Logistics
+      TRACKER[TRACKER]
+    end
+
+    TRACKER-->RIS
+    RIO-->RIS
+    CP3-->RIO
+
+
+    subgraph Customer Node
+      TAM[TAM]-->RIS[Real Items Server]
+      RIS-->IPFS[IPFS]
+      RIS-->BL[Blockchain]
+      RIS-->DB[(Database)]
+      subgraph Immutable Layer
+        IPFS[IPFS]
+        BL[Blockchain]
+      end
+    end
+
+    subgraph Real Items Oracle 
+      RIO[RIO]
+    end
+
+
+

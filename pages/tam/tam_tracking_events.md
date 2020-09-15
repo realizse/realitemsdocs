@@ -4,6 +4,7 @@ keywords: tracking
 summary: "Tracking events..."
 sidebar: tam_sidebar
 permalink: tam_tracking_events.html
+tags: [tam]
 folder: tam_
 ---
 
