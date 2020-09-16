@@ -7,5 +7,5 @@ bundle exec jekyll serve --detach --config _config.yml,pdfconfigs/config_cp3_pdf
 echo "done";
 
 echo "Building the PDF ...";
-prince --javascript --input-list=_site/pdfconfigs/prince-list.txt -o pdf/CP3.pdf;
+prince --javascript --input-list=_site/pdfconfigs/prince-list.txt -o pdf/cp3.pdf;
 echo "done";
