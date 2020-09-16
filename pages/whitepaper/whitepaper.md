@@ -1,7 +1,7 @@
 ---
 title: Real Items Whitepaper 
-keywords: NFR, NFT
-summary: "Optimizing the Product Life Cycle"
+keywords: NFR, NFT, Blockchain
+summary: "Optimizing and Extending the Product Life Cycle"
 sidebar: whitepaper_sidebar
 permalink: whitepaper.html
 folder: whitepaper_
