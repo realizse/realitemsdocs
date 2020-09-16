@@ -1,6 +1,6 @@
 ---
 title: Real Items Whitepaper 
-keywords: NFR, NFT, Blockchain
+keywords: NFR, NFR, Blockchain
 summary: "Optimizing and Extending the Product Life Cycle"
 sidebar: whitepaper_sidebar
 permalink: whitepaper.html
@@ -26,10 +26,6 @@ The benefits of digital identity and digital events on the existing product life
 
 Each component of our toolset focuses on moving an item through each step of its life cycle.  For each step in the lifecycle, we provide a tool to achieve that goal. While we provide tools to manually acheive each goal, we also provide integration points which enable the automation of each step.  For example, the creation of a digital identy can be manual or automated, depending on the needs of the organization.  Automation would enable in-house or third-party processes to trigger the creation of a new digital identity. After a digital identity is created, our toolset facilitates the creation of digital events and the association of those events with the digital identity.  This process can be manual or automated.  Our integration points lay the foundation for the use of IOT devices to bolster the history of an item.  
 
-## Our approach
-
-We use a combination of decentralized and traditional cloud-based technologies to achieve our goals.  Our technology is intended to complement, rather than replace, a company's existing processes.  Our technology is intended to be flexible and allow for straightforward integration. Our technology does not require specialized or expensive hardware. 
-
 ## Architecture - Simplified
 
 Our architecture can be divided into roughly three layers:
@@ -47,7 +43,23 @@ The Peristence Layer can be further subdivided into 2 sub-layers:
 
 An organization adopting this technology can expect their topology to look like this.  The client layer interact with the system mostly via the Real Items Server.  If the organization decides to become part of the larger Real Items ecosystem, ***Real Items Oracle*** (RIO) will be made aware of this desire and bring it into the ecosystem.
 
-## Keeping Transaction Costs Down 
+## Barriers to adoption
+
+We have identified 3 major barriers that organizations face when trying to implement consensus-based product life cycle solutions.
+
+1. ***All-or-Nothing Solutions*** - most solutions do not play well with existing ERP systems.  They often require a wholesale replacement of existing solutions and/or the purchase of expensive hardware.
+2. ***Crypto-Maximilism*** - most solutions force users to have a deep understanding of cryptoeconomics and force customers to use a proprietary token, a cryptocurrency wallet or both.  This is not only unfair but also unnecessary.
+3.  ***Volatile Transaction Costs*** - writing transactions to the Blockchain is not free and the cost of these transactions can be volatile and expensive.  
+
+## Our approach
+
+We have designed and built a system that sidesteps these barriers to adoption.  We have created a system that:
+
+1. Complements rather than replaces a company's existing systems and allows for incremental integration.  An organization can decide which parts of the system are most important to them and integrate them according to their needs and means.  We have designed our system to be flexible enough to run with commodity hardware. 
+2. Requires very little understanding of cryptoeconomics and does not force the user to use a proprietary token or a wallet.  We hide the cryptoeconomics as much as possible allowing users to focus on the task at hand.
+3. Ensures low and stable transaction costs.  This subject deserves its own section, which is below.
+
+## Keeping Transaction Costs Low and Stable 
 
 One of the biggest challenges for organizations using Distributed Ledger Technology is the cost of gas.  The volatile price of blockchain transactions is a problem that plagues many smart contract platforms - most recently the highly popular Ethereum network.  As the Ethereum platform becomes more popular, the transaction volume increases.  As volume increases so does the valuation of its token, ETH.  Since ETH is used to pay for transactions (in the form of gas), the cost of a given transaction can change rapidly and without warning.  Volatile gas costs can make it difficult for an organization to extrapolate revenue streams. In addition, high prices can make the platform prohibitively expensive for many existing applications.  
 
@@ -55,13 +67,13 @@ Our solution to this problem is two-fold.
 
 First, we chose a core Blockchain technology that has already solved the transaction cost volatility problem. VeChain solves this by implementing a dual-token system - VET for currency and VTHO for gas. VET is used as the medium of exchange and store of value while VTHO is used to pay for transactions.  These two tokens are loosely-coupled and are controlled by its ***velocity***, the rate at which it is generated from VET.  Unlike Ethereum, the price of the cryptocurrency can rise and fall while transaction costs remain relatively stable.
 
-Second, we have integrated the mechanism of ***batching*** into our core technology.  Built into our system is ability to construct multiple digital identities from the same ***Non Fungible Token*** (NFT).  For non-durable goods, such as a can of soda or a bottle of ointment, we create a single NFT and then batch it into multiple digital identities.  The number of digital identities derived from the NFR depends on the life span and use of a particular product.
+Second, we have integrated the mechanism of ***fractionalizing*** into our core technology.  Built into our system is ability to construct multiple digital identities from the same ***Non Fungible Record*** (NFR).  For non-durable goods, such as a can of soda or a bottle of ointment, we create a single NFR and then fractionalize it into multiple digital identities.  The number of digital identities derived from the NFR depends on the life span and use of a particular product.
 
 ### Whole ###
 
 ![Whole](whitepaper_durable.svg){:class="img-responsive"}
 
-### Batched ###
+### Fractionalized ###
 
 ![Batched](whitepaper_batched.svg){:class="img-responsive"}
 
