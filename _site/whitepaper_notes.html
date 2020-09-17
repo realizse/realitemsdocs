@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Tracking events...">
-<meta name="keywords" content="tam,  tracking">
-<title>Tracking Events (TAM) | Jekyll theme for documentation</title>
+<meta name="description" content="Optimizing and Extending the Product Life Cycle">
+<meta name="keywords" content="whitepapertamcp3tracker,  NFR, NFR, Blockchain">
+<title>Real Items Whitepaper | Jekyll theme for documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -171,7 +171,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:tomjoht@gmail.com?subject=Real Items Documentation feedback&body=I have some feedback about the Tracking Events (TAM) page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:tomjoht@gmail.com?subject=Real Items Documentation feedback&body=I have some feedback about the Real Items Whitepaper page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -189,7 +189,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Tracking Events (TAM)">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Real Items Whitepaper">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -215,75 +215,10 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">TAM 1.0</li>
+  <li class="sidebarTitle">Whitepaper 1.0</li>
   
   
   
-      
-  
-  <li>
-      <a title="Getting Started" href="#">Getting Started</a>
-      <ul>
-          
-          
-          
-          <li><a title="TAM home" href="tam_landing_page.html">TAM home</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Add New Products" href="tam_add_products.html">Add New Products</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Add Digital Identities" href="tam_add_digids.html">Add Digital Identities</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Manage End Users" href="tam_manage_end_users.html">Manage End Users</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Manage Administrators" href="tam_manage_administrators.html">Manage Administrators</a></li>
-          
-          
-          
-          
-          
-          
-          <li class="active"><a title="Tracking Events" href="tam_tracking_events.html">Tracking Events</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Item Explorer" href="tam_item_explorer.html">Item Explorer</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Smart Contract Administration" href="tam_contract_administration.html">Smart Contract Administration</a></li>
-          
-          
-          
-          
-      </ul>
-   </li>
-     
       
       
       <!-- if you aren't using the accordion, uncomment this block:
@@ -303,7 +238,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Tracking Events (TAM)</h1>
+   <h1 class="post-title-main">Real Items Whitepaper</h1>
 </div>
 
 
@@ -311,7 +246,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Tracking events...</div>
+    <div class="summary">Optimizing and Extending the Product Life Cycle</div>
    
 
     
@@ -342,43 +277,109 @@ $('#toc').on('click', 'a', function() {
 
     
 
-   <h2 id="tracking-events">Tracking Events</h2>
+   <h2 id="abstract">Abstract</h2>
 
-<p>A tracking event is a real-world event that is recorded on the blockchain. A tracking event represents something that has “happened” to the item.  Examples are “item shipped”, “item received”, “item sold”, “video associated”.  Not all digital IDs have tracking events but all tracking events have exactly one digital ID.</p>
+<p>Bridge between blockchain and normal world.
+A mutually agreed upon single source of truth in any <strong><em>product life cycle</em></strong> would allow stakeholders to bypass costly trust-building processes and thus increase efficiency and reduce costs. A technology that uses cryptographic digital signatures to create irrefutable and universally accepted digital identities which are paired to real-world items, would increase transaparency and empower stakeholders to make quicker and more intelligent decisions. By establishing a consenus about the state of an item, friction is reduced and time-consuming, error-prone processes can be removed, optimized, or automated.  The benefits of digital proofs extends far beyond merely improving existing processes. When a stakeholder has instant access to the real-time attributes of an item, such as provenance, shipping history, location, custody, and ownership, new value-add services and industries can be created.</p>
 
-<h2 id="tracker-app-and-real-items-api">Tracker App and Real Items API</h2>
+<h2 id="digital-identitiesdigital-events">Digital Identities/Digital Events</h2>
 
-<p>Tracking events are created and written to the blockchain via the Tracker App or the Real Items API.</p>
+<p>Central to our technology is the concept of the <strong><em>digital identity</em></strong>. An item begins its journey when a digital identity is created and assigned to that item.  As an item makes its way through the manufacturing, logistics, sales, and end-use journey, each real-world event is recorded as an attestation which is associated with its digital identity.  Since all stakeholders have instant access to these attestations, real-time analytics can be performed allowing for confident, intelligent, and timely decisions to be made.  The concept of a digital identity combined with an irrefutable digital history creates a trust and transparency that can be leveraged to create new levels of consumer confidence and new channels of revenue generation.</p>
 
-<h2 id="standalone-digital-ids">Standalone Digital IDs</h2>
+<p><img src="/realitemsdocs/pages/whitepaper/whitepaper_digital_ids.svg" alt="Digital Identity" class="img-responsive" /></p>
 
-<p><img src="/realitemsdocs/pages/tam/tracking_events1.svg" alt="Standalone Digital ID" class="img-responsive" /></p>
+<h2 id="creating-opportunities">Creating Opportunities</h2>
 
-<h2 id="complex-digital-ids">Complex Digital IDs</h2>
+<p>The benefits of digital identity and digital events on the existing product life cycle are clear, but what if an organization could extend the <em>product life cycle</em> into new territory?  We believe the life of a product does not end when the item enters the hands of consumer. We see end-user engagement as an untapped opportunity in an item’s product life cycle.  After an item is delivered to an end-user the user immediately begins interacting with it.  A platform that captures each interaction and allows analysis of the resulting dataset would create new opportunities.  A platform that encourages and enhances user engagement would create even more opportunities.</p>
 
-<p><img src="/realitemsdocs/pages/tam/tracking_events2.svg" alt="Complex Digital ID" class="img-responsive" /></p>
+<h2 id="our-toolset">Our Toolset</h2>
 
-<h2 id="view-tracking-events">View tracking events</h2>
+<p>Each component of our toolset focuses on moving an item through each step of its life cycle.  For each step in the lifecycle, we provide a tool to achieve that goal. While we provide tools to manually acheive each goal, we also provide integration points which enable the automation of each step.  For example, the creation of a digital identy can be manual or automated, depending on the needs of the organization.  Automation would enable in-house or third-party processes to trigger the creation of a new digital identity. After a digital identity is created, our toolset facilitates the creation of digital events and the association of those events with the digital identity.  This process can be manual or automated.  Our integration points lay the foundation for the use of IOT devices to bolster the history of an item.</p>
+
+<h2 id="architecture---simplified">Architecture - Simplified</h2>
+
+<p>Our architecture can be divided into roughly three layers:</p>
+
+<ul>
+  <li>Client Layer</li>
+  <li>Business Logic Layer</li>
+  <li>Persistence Layer</li>
+</ul>
+
+<p>The Peristence Layer can be further subdivided into 2 sub-layers:</p>
+
+<ul>
+  <li>Mutable</li>
+  <li>Immutable</li>
+</ul>
+
+<p><img src="/realitemsdocs/pages/whitepaper/architecture_layers.svg" alt="Architecture Layers" class="img-responsive" /></p>
+
+<p>An organization adopting this technology can expect their topology to look like this.  The client layer interact with the system mostly via the Real Items Server.  If the organization decides to become part of the larger Real Items ecosystem, <strong><em>Real Items Oracle</em></strong> (RIO) will be made aware of this desire and bring it into the ecosystem.</p>
+
+<h2 id="barriers-to-adoption">Barriers to adoption</h2>
+
+<p>We have identified 3 major barriers that organizations face when trying to implement consensus-based product life cycle solutions.</p>
 
 <ol>
-  <li>Go to Inventory page</li>
-  <li>Click on magnifying glass icon next to the Product.</li>
-  <li>Click on the <strong>Batch</strong> that you just created.</li>
-  <li>Click on the <strong>Details</strong> tab.</li>
-  <li>Click on the hyperlink of the number of the digital identity you wish to view.</li>
-  <li>Click on <strong>Tracking Events</strong></li>
+  <li><strong><em>All-or-Nothing Solutions</em></strong> - most solutions do not play well with existing ERP systems.  They often require a wholesale replacement of existing solutions and/or the purchase of expensive hardware.</li>
+  <li><strong><em>Crypto-Maximilism</em></strong> - most solutions force users to have a deep understanding of cryptoeconomics and force customers to use a proprietary token, a cryptocurrency wallet or both.  This is not only unfair but also unnecessary.</li>
+  <li><strong><em>Volatile Transaction Costs</em></strong> - writing transactions to the Blockchain is not free and the cost of these transactions can be volatile and expensive.</li>
 </ol>
 
-<p><strong><em>Or</em></strong></p>
+<h2 id="our-approach">Our approach</h2>
+
+<p>We have designed and built a system that sidesteps these barriers to adoption.  We have created a system that:</p>
 
 <ol>
-  <li>Click on <strong>Item Explorer</strong> in left navigation pane</li>
-  <li>Enter the <strong>digitial identity</strong>’s ID in the box.</li>
-  <li>Click the <strong>Get NFR</strong> button</li>
-  <li>Click on <strong>Tracking Events</strong>.</li>
+  <li>Complements rather than replaces a company’s existing systems and allows for incremental integration.  An organization can decide which parts of the system are most important to them and integrate them according to their needs and means.  We have designed our system to be flexible enough to run with commodity hardware.</li>
+  <li>Requires very little understanding of cryptoeconomics and does not force the user to use a proprietary token or a wallet.  We hide the cryptoeconomics as much as possible allowing users to focus on the task at hand.</li>
+  <li>Ensures low and stable transaction costs.  This subject deserves its own section, which is below.</li>
 </ol>
 
-<p><img src="tracking_event_example.png" alt="Tracking Event Example" class="img-responsive" /></p>
+<h2 id="keeping-transaction-costs-low-and-stable">Keeping Transaction Costs Low and Stable</h2>
+
+<p>One of the biggest challenges for organizations using Distributed Ledger Technology is the cost of gas.  The volatile price of blockchain transactions is a problem that plagues many smart contract platforms - most recently the highly popular Ethereum network.  As the Ethereum platform becomes more popular, the transaction volume increases.  As volume increases so does the valuation of its token, ETH.  Since ETH is used to pay for transactions (in the form of gas), the cost of a given transaction can change rapidly and without warning.  Volatile gas costs can make it difficult for an organization to extrapolate revenue streams. In addition, high prices can make the platform prohibitively expensive for many existing applications.</p>
+
+<p>Our solution to this problem is two-fold.</p>
+
+<p>First, we chose a core Blockchain technology that has already solved the transaction cost volatility problem. VeChain solves this by implementing a dual-token system - VET for currency and VTHO for gas. VET is used as the medium of exchange and store of value while VTHO is used to pay for transactions.  These two tokens are loosely-coupled and are controlled by its <strong><em>velocity</em></strong>, the rate at which it is generated from VET.  Unlike Ethereum, the price of the cryptocurrency can rise and fall while transaction costs remain relatively stable.</p>
+
+<p>Second, we have integrated the mechanism of <strong><em>fractionalizing</em></strong> into our core technology.  Built into our system is ability to construct multiple digital identities from the same <strong><em>Non Fungible Record</em></strong> (NFR).  For non-durable goods, such as a can of soda or a bottle of ointment, we create a single NFR and then fractionalize it into multiple digital identities.  The number of digital identities derived from the NFR depends on the life span and use of a particular product.</p>
+
+<h3 id="whole-nfts">Whole NFTs###</h3>
+
+<p><img src="/realitemsdocs/pages/whitepaper/whitepaper_durable.svg" alt="Whole" class="img-responsive" /></p>
+
+<h3 id="fractionalized-nfts">Fractionalized NFTs###</h3>
+
+<p><img src="/realitemsdocs/pages/whitepaper/whitepaper_batched.svg" alt="Batched" class="img-responsive" /></p>
+
+<h2 id="verified-marketplace">Verified Marketplace</h2>
+
+<h2 id="wechat-bridge">Wechat Bridge</h2>
+
+<h2 id="defi-opportunities">Defi Opportunities</h2>
+
+<p>Collateral</p>
+
+<h2 id="key-concepts">Key concepts</h2>
+
+<p>NFR, Digital IDs, Fractionalization, 2FVerification</p>
+
+<h2 id="use-cases">Use cases</h2>
+
+<p>Creating certificates</p>
+
+<h2 id="smart-labels">Smart Labels</h2>
+
+<h2 id="two-factor-verification">Two factor verification.</h2>
+
+<h2 id="record-creation-not-token-creation">Record creation not Token creation</h2>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>We have built a core system which provides a mutually agreed upon single source of truth for a product at any stage in its <em>product life cycle</em>.  On top of that we have built a set of tools that allow the various stakeholders to integrate with that system and derive the benefits of real-time knowledge of each stage of a product’s life cycle.  Any existing organization that chooses to leverage this knowlege will be empowered with the ability to make intelligent short and long-term decisions regarding its economic relationship with that product.  This newfound ability creates new opportunities within an organization but also creates the opportunity for <em>new</em> industries.</p>
 
 
 
@@ -388,7 +389,19 @@ $('#toc').on('click', 'a', function() {
         
         
         
+        <a href="tag_whitepaper.html" class="btn btn-default navbar-btn cursorNorm" role="button">whitepaper</a>
+        
+        
+        
         <a href="tag_tam.html" class="btn btn-default navbar-btn cursorNorm" role="button">tam</a>
+        
+        
+        
+        <a href="tag_cp3.html" class="btn btn-default navbar-btn cursorNorm" role="button">cp3</a>
+        
+        
+        
+        <a href="tag_tracker.html" class="btn btn-default navbar-btn cursorNorm" role="button">tracker</a>
         
         
         

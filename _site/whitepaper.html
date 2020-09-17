@@ -220,22 +220,6 @@
   
   
       
-  
-  <li>
-      <a title="Abstract" href="#">Abstract</a>
-      <ul>
-          
-          
-          
-          <li class="active"><a title="Summary" href="whitepaper.html">Summary</a></li>
-          
-          
-          
-          
-      </ul>
-   </li>
-     
-      
       
       <!-- if you aren't using the accordion, uncomment this block:
          <p class="external">
@@ -297,19 +281,21 @@ $('#toc').on('click', 'a', function() {
 
 <p>A mutually agreed upon single source of truth in any <strong><em>product life cycle</em></strong> would allow stakeholders to bypass costly trust-building processes and thus increase efficiency and reduce costs. A technology that uses cryptographic digital signatures to create irrefutable and universally accepted digital identities which are paired to real-world items, would increase transaparency and empower stakeholders to make quicker and more intelligent decisions. By establishing a consenus about the state of an item, friction is reduced and time-consuming, error-prone processes can be removed, optimized, or automated.  The benefits of digital proofs extends far beyond merely improving existing processes. When a stakeholder has instant access to the real-time attributes of an item, such as provenance, shipping history, location, custody, and ownership, new value-add services and industries can be created.</p>
 
-<h2 id="digital-identitiesdigital-events">Digital Identities/Digital Events</h2>
+<h2 id="introduction">Introduction</h2>
 
-<p>Central to our technology is the concept of the <strong><em>digital identity</em></strong>. An item begins its journey when a digital identity is created and assigned to that item.  As an item makes its way through the manufacturing, logistics, sales, and end-use journey, each real-world event is recorded as an attestation which is associated with its digital identity.  Since all stakeholders have instant access to these attestations, real-time analytics can be performed allowing for confident, intelligent, and timely decisions to be made.  The concept of a digital identity combined with an irrefutable digital history creates a trust and transparency that can be leveraged to create new levels of consumer confidence and new channels of revenue generation.</p>
+<p>The Fourth Industrial Revolution, or Industry 4.0, was coined by World Economic Forum Founder Klaus Schwab as the “blurring boundary between the physical and digital world” [1].   Central to our technology is the pairing of a <strong><em>digital identity</em></strong> to a physical item. An item begins its journey when a digital identity is created and assigned to that item.  As an item makes its way through the manufacturing, logistics, sales, and consumer journey, each physical event is paired with a <strong><em>digital event</em></strong> which is recorded as an attestation on the blockchain.  Since all stakeholders have instant access to these attestations, real-time analytics allow for confident, intelligent, and timely decisions to be made.  The concept of a <em>digital identity</em> combined with an irrefutable history of <em>digital events</em> creates a trust and transparency that can be leveraged to create new levels of consumer confidence and new channels of revenue generation.</p>
 
 <p><img src="/realitemsdocs/pages/whitepaper/whitepaper_digital_ids.svg" alt="Digital Identity" class="img-responsive" /></p>
 
-<h2 id="creating-opportunities">Creating opportunities</h2>
+<h2 id="creating-opportunities">Creating Opportunities</h2>
 
 <p>The benefits of digital identity and digital events on the existing product life cycle are clear, but what if an organization could extend the <em>product life cycle</em> into new territory?  We believe the life of a product does not end when the item enters the hands of consumer. We see end-user engagement as an untapped opportunity in an item’s product life cycle.  After an item is delivered to an end-user the user immediately begins interacting with it.  A platform that captures each interaction and allows analysis of the resulting dataset would create new opportunities.  A platform that encourages and enhances user engagement would create even more opportunities.</p>
 
-<h2 id="our-toolset">Our toolset</h2>
+<h2 id="an-example-use-case">An Example Use-Case</h2>
 
-<p>Each component of our toolset focuses on moving an item through each step of its life cycle.  For each step in the lifecycle, we provide a tool to achieve that goal. While we provide tools to manually acheive each goal, we also provide integration points which enable the automation of each step.  For example, the creation of a digital identy can be manual or automated, depending on the needs of the organization.  Automation would enable in-house or third-party processes to trigger the creation of a new digital identity. After a digital identity is created, our toolset facilitates the creation of digital events and the association of those events with the digital identity.  This process can be manual or automated.  Our integration points lay the foundation for the use of IOT devices to bolster the history of an item.</p>
+<p><strong>A Verified Marketplace</strong></p>
+
+<p>An company could use our tools to create a digital identity for each item sold in its e-commerce marketplace.  A user purchases an item and after receiving it in the mail scans the smart label and verify the authenticity of the item.  Then, by taking ownership of the item, the user gains access to all of the content and services associated with that item. Providing content and services for each item they sell, opens many possibilities for continued user-engagement and user analytics.   A live example of this use-case can be found at <a href="https://realitems.shop/collections/100-authentic-marketplace">Real Items Marketplace</a>.</p>
 
 <h2 id="architecture---simplified">Architecture - Simplified</h2>
 
@@ -330,49 +316,80 @@ $('#toc').on('click', 'a', function() {
 
 <p><img src="/realitemsdocs/pages/whitepaper/architecture_layers.svg" alt="Architecture Layers" class="img-responsive" /></p>
 
-<p>An organization adopting this technology can expect their topology to look like this.  The client layer interact with the system mostly via the Real Items Server.  If the organization decides to become part of the larger Real Items ecosystem, <strong><em>Real Items Oracle</em></strong> (RIO) will be made aware of this desire and bring it into the ecosystem.</p>
+<h2 id="components">Components</h2>
 
-<h2 id="barriers-to-adoption">Barriers to adoption</h2>
+<p>Each component of our toolset focuses on moving an item through each step of its life cycle.  For each step in the lifecycle, we provide a tool to achieve that goal. While we provide tools to manually acheive each goal, we also provide integration points which enable the automation of each step.  For example, the creation of a digital identy can be manual or automated, depending on the needs of the organization.  Automation would enable in-house or third-party processes to trigger the creation of a new digital identity. After a digital identity is created, our toolset facilitates the creation of digital events and the association of those events with the digital identity.  This process can be manual or automated.  Our integration points lay the foundation for the use of IOT devices to bolster the history of an item.</p>
 
-<p>We have identified 3 major barriers that organizations face when trying to implement consensus-based product life cycle solutions.</p>
+<h3 id="tam-tokenized-asset-manager">TAM (Tokenized Asset Manager)</h3>
+
+<p>The TAM is a web application that provides the ability to create digital identities for physical items.  Once a digital identitiy is created, TAM is used to manage and monitor those digital IDs. The TAM is also used to manage the Users, Administrators, and Smart Contracts in a system.</p>
+
+<h3 id="cp4-consumer-protection-40">CP4 (Consumer Protection 4.0)</h3>
+
+<p>CP4 is a mobile application that is designed to allow the end-consumer to verify, take ownership, and manage the digital identities of the items they collect.  CP4 is a mobile-first web app that requires no installation.  After a user verifies and takes ownership of an item, they have access to all of the content and services associated with that item.</p>
+
+<h3 id="tracker">Tracker</h3>
+
+<p>Tracker is a mobile application that provides the ability to add digital events to digital identities.  When the Tracker scans an items smart label, the user is prompted to provide specific information about the state of the item.  This information, along with the timestamp and location is written to the blockchain as a digital event and forever associated with that digital identity.  Digital events can contain text, photos, documents and videos.</p>
+
+<h3 id="ris-real-items-server">RIS (Real Items Server)</h3>
+
+<p>The Real Items Server manages the business logic and is the gatekeeper between the Real Items system and the blockchain.  Everything that happens to digital identities and digital events goes through the Real Items Server.</p>
+
+<h3 id="graphql-api">GraphQL API</h3>
+
+<p>Interactions with the Real Items Server are handled through the GraphQL API.  In addition to responding to the components of the Real Items system, RIS also serves as an integration point for third-party and in-house applications.  This means that producers can automate existing processes, such as IOT devices, into the creation and management of digital identities and events.</p>
+
+<h3 id="rio-real-items-oracle">RIO (Real Items Oracle)</h3>
+
+<p>The Real Items Oracle is designed to allow an organization’s RI system to communicate with other RI systems.  Via RIO, Digital IDs and events on disparate systems can become visible.  This increases the range of possibilities for end-users and makes it possible to add items to public marketplaces.</p>
+
+<h2 id="barriers-to-adoption">Barriers to Adoption</h2>
+
+<p>We have identified 4 major barriers faced by organizations that attempt to implement consensus-based product life cycle solutions.</p>
 
 <ol>
-  <li><strong><em>All-or-Nothing Solutions</em></strong> - most solutions do not play well with existing ERP systems.  They often require a wholesale replacement of existing solutions and/or the purchase of expensive hardware.</li>
-  <li><strong><em>Crypto-Maximilism</em></strong> - most solutions force users to have a deep understanding of cryptoeconomics and force customers to use a proprietary token, a cryptocurrency wallet or both.  This is not only unfair but also unnecessary.</li>
-  <li><strong><em>Volatile Transaction Costs</em></strong> - writing transactions to the Blockchain is not free and the cost of these transactions can be volatile and expensive.</li>
+  <li><strong><em>All-or-Nothing Solutions</em></strong> - most solutions do not play well with existing ERP systems.  They often require a wholesale replacement of existing solutions and/or the purchase of expensive hardware or software.</li>
+  <li><strong><em>Crypto-Maximilism</em></strong> - most solutions force users to have a deep understanding of cryptoeconomics and force customers to use a proprietary token, a cryptocurrency wallet or both.  This is not only counterproductive but also unnecessary.</li>
+  <li><strong><em>Complicated Onboarding</em></strong> - most solutions require that the end-user download and install software and/or purchase cryptocurrency from an exchange.</li>
+  <li><strong><em>Volatile Transaction Costs</em></strong> - recording transactions on the blockchain is not free and the cost of these transactions can be volatile and expensive.</li>
 </ol>
 
-<h2 id="our-approach">Our approach</h2>
+<h2 id="our-approach">Our Approach</h2>
 
 <p>We have designed and built a system that sidesteps these barriers to adoption.  We have created a system that:</p>
 
-<ol>
-  <li>Complements rather than replaces a company’s existing systems and allows for incremental integration.  An organization can decide which parts of the system are most important to them and integrate them according to their needs and means.  We have designed our system to be flexible enough to run with commodity hardware.</li>
-  <li>Requires very little understanding of cryptoeconomics and does not force the user to use a proprietary token or a wallet.  We hide the cryptoeconomics as much as possible allowing users to focus on the task at hand.</li>
-  <li>Ensures low and stable transaction costs.  This subject deserves its own section, which is below.</li>
-</ol>
+<p><em>Complements</em> rather than replaces a company’s existing systems and allows for incremental integration.  An organization can decide which parts of the system are most important to them and integrate them according to their needs and means.  We have designed our system to be flexible enough to run with commodity hardware and software.</p>
 
-<h2 id="keeping-transaction-costs-low-and-stable">Keeping Transaction Costs Low and Stable</h2>
+<p>Requires <em>very little understanding</em> of cryptoeconomics and does not force the user to use a proprietary token or a wallet.  We hide the cryptoeconomics as much as possible allowing users to focus on the task at hand.</p>
 
-<p>One of the biggest challenges for organizations using Distributed Ledger Technology is the cost of gas.  The volatile price of blockchain transactions is a problem that plagues many smart contract platforms - most recently the highly popular Ethereum network.  As the Ethereum platform becomes more popular, the transaction volume increases.  As volume increases so does the valuation of its token, ETH.  Since ETH is used to pay for transactions (in the form of gas), the cost of a given transaction can change rapidly and without warning.  Volatile gas costs can make it difficult for an organization to extrapolate revenue streams. In addition, high prices can make the platform prohibitively expensive for many existing applications.</p>
+<p><em>Does not require</em> the end-user to install software or purchase cryptocurrency on an exchange.</p>
+
+<p><em>Ensures low and stable transaction costs</em>.  This subject deserves its own section, which is below.</p>
+
+<p>One of the biggest challenges for organizations is the <em>cost of transactions</em>.  The volatile price of blockchain transactions is a problem that plagues many smart contract platforms - most recently the highly popular Ethereum network.  As the Ethereum platform becomes more popular, the transaction volume increases.  As volume increases so does the valuation of its token, ETH.  Since ETH is used to pay for transactions (in the form of gas), the cost of a given transaction can change rapidly and without warning.  Volatile gas costs can make it difficult for an organization to extrapolate revenue streams. In addition, high prices can make the platform prohibitively expensive for many existing applications.</p>
 
 <p>Our solution to this problem is two-fold.</p>
 
 <p>First, we chose a core Blockchain technology that has already solved the transaction cost volatility problem. VeChain solves this by implementing a dual-token system - VET for currency and VTHO for gas. VET is used as the medium of exchange and store of value while VTHO is used to pay for transactions.  These two tokens are loosely-coupled and are controlled by its <strong><em>velocity</em></strong>, the rate at which it is generated from VET.  Unlike Ethereum, the price of the cryptocurrency can rise and fall while transaction costs remain relatively stable.</p>
 
-<p>Second, we have integrated the mechanism of <strong><em>fractionalizing</em></strong> into our core technology.  Built into our system is ability to construct multiple digital identities from the same <strong><em>Non Fungible Record</em></strong> (NFR).  For non-durable goods, such as a can of soda or a bottle of ointment, we create a single NFR and then fractionalize it into multiple digital identities.  The number of digital identities derived from the NFR depends on the life span and use of a particular product.</p>
+<p>Second, we have integrated the mechanism of <strong><em>fractionalizing</em></strong> into our core technology.  Built into our system is the ability to construct multiple digital identities from the same <strong><em>Non Fungible Record</em></strong> (NFR).  For non-durable goods, such as a can of soda or a bottle of ointment, we create a single NFR and then fractionalize it into multiple digital identities.  The number of digital identities derived from the NFR depends on the life span and use of a particular product.</p>
 
-<h3 id="whole">Whole</h3>
+<h3 id="whole-nfrs">Whole NFRs</h3>
 
 <p><img src="/realitemsdocs/pages/whitepaper/whitepaper_durable.svg" alt="Whole" class="img-responsive" /></p>
 
-<h3 id="fractionalized">Fractionalized</h3>
+<h3 id="fractionalized-nfrs">Fractionalized NFRs</h3>
 
 <p><img src="/realitemsdocs/pages/whitepaper/whitepaper_batched.svg" alt="Batched" class="img-responsive" /></p>
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>We have built a core system which provides a mutually agreed upon single source of truth for a product at any stage in its <em>product life cycle</em>.  On top of that we have built a set of tools that allow the various stakeholders to integrate with that system and derive the benefits of real-time knowledge of each stage of a product’s life cycle.  Any existing organization that chooses to leverage this knowlege will be empowered with the ability to make intelligent short and long-term decisions regarding its economic relationship with that product.  This newfound ability creates new opportunities within an organization but also creates the opportunity for <em>new</em> industries.</p>
+<p>We have built a system which provides a mutually agreed upon single source of truth for a product at any stage in its <em>product life cycle</em>.  On top of that we have built a set of tools that allow the various stakeholders to integrate with that system and derive the benefits of real-time knowledge of each stage of a product’s life cycle.  Any existing organization that chooses to leverage this knowlege will be empowered with the ability to make intelligent short and long-term decisions regarding its economic relationship with that product.  This newfound ability creates new opportunities within an organization but also creates the opportunity for <em>new</em> industries.</p>
+
+<h2 id="references">References</h2>
+
+<p>[1] Klaus Schwab, “The Fourth Industrial Revolution: what it means, how to respond.”  2016. [Online]. https://www.weforum.org/agenda/2016/01/the-fourth-industrial-revolution-what-it-means-and-how-to-respond/</p>
 
 
 
@@ -408,7 +425,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 Real Items. All rights reserved. <br />
- Site last generated: Sep 16, 2020 <br />
+ Site last generated: Sep 17, 2020 <br />
 <p><img src="images/ri-logo-black.png" alt="Real Items Logo"/></p>
                 </div>
             </div>

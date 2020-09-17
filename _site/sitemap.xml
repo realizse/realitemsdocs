@@ -520,6 +520,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/whitepaper_notes.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/assets/css/style.css</loc>
   </url>
   

@@ -20,9 +20,3 @@ entries:
         output: pdf
         type: frontmatter
   
-    - title: Abstract 
-      output: web, pdf
-      folderitems:
-      - title: Summary 
-        url: /whitepaper.html
-        output: web, pdf
