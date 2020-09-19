@@ -10,23 +10,24 @@ tags: [whitepaper, tam, cp3, tracker]
 
 ##  Abstract 
 
-A mutually agreed upon single source of truth in any _product life cycle_ would allow stakeholders to bypass costly trust-building processes and thus increase efficiency and reduce costs. A technology that uses cryptographic digital signatures to create irrefutable and universally accepted digital identities which are paired to real-world items would increase transaparency and empower stakeholders to make quicker and more intelligent decisions. By establishing consenus about the state of an item, friction is reduced and time-consuming, error-prone processes can be removed, optimized, or automated.  The benefits of digital proofs extend far beyond merely improving existing processes. When a stakeholder has instant access to the real-time attributes of an item such as provenance, shipping history, location, custody, and ownership, new value-add services and industries can be created.
+A mutually agreed upon single source of truth in any _product life cycle_ would allow stakeholders to bypass costly trust-building processes and thus increase efficiency and reduce costs. A technology that uses cryptographic digital signatures to create irrefutable and universally accepted digital identities which are paired to real-world items would increase transparency and empower stakeholders to make quicker and more intelligent decisions. By establishing a consenus about the state of an item, friction is reduced and time-consuming, error-prone processes can be removed, optimized, or automated. The benefits of digital proofs extend far beyond merely improving existing processes. When a stakeholder has instant access to the real-time attributes of an item such as provenance, shipping history, location, custody, and ownership, new value-add services and industries can be created.
 
 ## Introduction
 
-The Fourth Industrial Revolution, or Industry 4.0, was coined by World Economic Forum Founder Klaus Schwab as the “blurring boundary between the physical and digital world” [1].   Central to our technology is the pairing of a _digital identity_ to a physical item. An item begins its journey when a digital identity is created and assigned to that item.  As an item makes its way through the manufacturing, logistics, sales, and consumer journey, each step is recorded as a _digital event_ the blockchain.  Since all stakeholders have instant access to these attestations, real-time analytics allow for confident, intelligent, and timely decisions to be made.  The concept of a _digital identity_ combined with an irrefutable history of _digital events_ creates trust and transparency that can be leveraged to create new levels of consumer confidence and new opportunities for revenue generation. 
+The Fourth Industrial Revolution, or Industry 4.0, was coined by World Economic Forum Founder Klaus Schwab as the “blurring boundary between the physical and digital world” [1]. Central to our technology is the pairing of a _digital identity_ to a physical item. An item begins its journey when a digital identity is created and assigned to that item. As an item makes its way through the manufacturing, logistics, sales, and consumer journey, each step is recorded as a _digital event_ on the blockchain. Since all stakeholders have instant access to these attestations, real-time analytics allow for confident, intelligent, and timely decisions to be made. The concept of a digital identity combined with an irrefutable history of digital events creates trust and transparency that can be leveraged to create new levels of consumer confidence and new opportunities for revenue generation.
 
 ![Digital Identity](whitepaper_digital_ids.svg){:class="img-responsive"}
 
 ##  Creating Opportunities 
 
-While, there are benefits of applying digital identities and digital events to the existing product life cycle, what if an organization could extend the _product life cycle_ into new territory?  We believe the life of a product does not end when the item enters the hands of consumer. We see end-user engagement as an untapped opportunity in an item's product life cycle.  After an item is delivered to an end-user the user immediately begins interacting with it.  A platform that captures each interaction and allows analysis of the resulting dataset would create new opportunities.  A platform that encourages and enhances user engagement would create even more opportunities.
+While there are benefits of applying digital identities and digital events to the existing product life cycle, what if an organization could extend the product life cycle into new territory? We believe the life of a product does not end when the item enters the hands of a consumer. We see end-user engagement as an untapped opportunity in an item’s product life cycle. After an item is delivered to an end-user, the user immediately begins interacting with it. A platform that captures each interaction and allows analysis of the resulting dataset would create new opportunities. And one that encourages and enhances user engagement would create even more opportunities.
 
 ## An Example Use-Case
 
 **A Verified Marketplace**
 
-An company could use our tools to create a digital identity for each item sold in its e-commerce marketplace.  A user purchases an item and after receiving it in the mail scans the smart label and verify the authenticity of the item.  Then, by taking ownership of the item, the user gains access to all of the content and services associated with that item. Providing content and services for each item they sell, opens many possibilities for continued user-engagement and user analytics.   A live example of this use-case can be found at [Real Items Marketplace](https://realitems.shop/collections/100-authentic-marketplace).
+A company could use our tools to create a digital identity for each item sold in its e-commerce marketplace. Upon receiving an item in the mail, the user scans the smart label and verifies the authenticity of the item. After taking ownership of the item, the user is directed to content and services created by the brand. These services create many opportunities for user-engagement and user-analytics capture. A live example of this use-case can be found at [Real Items Marketplace](https://realitems.shop/collections/100-authentic-marketplace).
+
 
 ## Architecture - Simplified
 
@@ -46,31 +47,31 @@ The Peristence Layer can be further subdivided into 2 sub-layers:
 
 ## Components
 
-Each component of our toolset focuses on moving an item through each step of its life cycle.  For each step in the lifecycle, we provide a tool to achieve that goal. While we provide tools to manually acheive each goal, we also provide integration points which enable the automation of each step.  For example, the creation of a digital identy can be manual or automated, depending on the needs of the organization.  Automation would enable in-house or third-party processes to trigger the creation of a new digital identity. After a digital identity is created, our toolset facilitates the creation of digital events and the association of those events with the digital identity.  This process can be manual or automated.  Our integration points lay the foundation for the use of IOT devices to bolster the history of an item.  
+We provide web and native applications along with API access options to facilitate tracking and tracing items throughout their product life cycle. By leveraging organizations’ existing ERP systems and IOT device infrastructure, our API integrations facilitate product life-cycle event recording automations on blockchain. We also provide a UI suite of tools enabling blockchain interaction when needed.
 
 ### TAM (Tokenized Asset Manager)
 
-The TAM is a web application that provides the ability to create digital identities for physical items.  Once a digital identitiy is created, TAM is used to manage and monitor those digital IDs. The TAM is also used to manage the Users, Administrators, and Smart Contracts in a system. 
+TAM is a web application that provides the ability to create digital identities for physical items. Once a digital identity is created, TAM is used to manage and monitor those digital IDs. It’s also used to manage the Users, Administrators, and Smart Contracts in a system.
 
 ### CP4 (Consumer Protection 4.0)
 
-CP4 is a mobile application that is designed to allow the end-consumer to verify, take ownership, and manage the digital identities of the items they collect.  CP4 is a mobile-first web app that requires no installation.  After a user verifies and takes ownership of an item, they have access to all of the content and services associated with that item.
+CP4 is a mobile application that is designed to allow the end-consumer to verify, take ownership, and manage the digital identities of the items they collect. CP4 is a mobile-first web app that requires no installation. After a user verifies and takes ownership of an item, they have access to all of the content and services associated with that item.
 
 ### Tracker
 
-Tracker is a mobile application that provides the ability to add digital events to digital identities.  When the Tracker scans an items smart label, the user is prompted to provide specific information about the state of the item.  This information, along with the timestamp and location is written to the blockchain as a digital event and forever associated with that digital identity.  Digital events can contain text, photos, documents and videos.
+Tracker is a mobile application that records tracking events to the blockchain. Tracking information, such as timestamp and location is written to the blockchain and forever associated with an item’s digital identity. This info can also include text, photos, documents, videos and other content.
 
 ### RIS (Real Items Server)
 
-The Real Items Server manages the business logic and is the gatekeeper between the Real Items system and the blockchain.  Everything that happens to digital identities and digital events goes through the Real Items Server.
+The Real Items Server executes the business logic of our platform and handles interaction with the blockchain.
 
 ### GraphQL API
 
-Interactions with the Real Items Server are handled through the GraphQL API.  In addition to responding to the components of the Real Items system, RIS also serves as an integration point for third-party and in-house applications.  This means that producers can automate existing processes, such as IOT devices, into the creation and management of digital identities and events.
+We make our GraphQL API available to developers so they can integrate our solution into their existing ERP systems.
 
 ### RIO (Real Items Oracle)
 
-The Real Items Oracle is designed to allow an organization's RI system to communicate with other RI systems.  Via RIO, Digital IDs and events on disparate systems can become visible.  This increases the range of possibilities for end-users and makes it possible to add items to public marketplaces.
+The Real Items Oracle is the gateway to the wider Real Items universe and is designed to facilitate visibility of items in other Real Items systems, making it possible for end-users to view other items in their closet.
 
 ## Barriers to Adoption
 
