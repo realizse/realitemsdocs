@@ -74,34 +74,45 @@ We make our GraphQL API available to developers so they can integrate our soluti
 The Real Items Oracle is the gateway to the wider Real Items universe and is designed to facilitate visibility of items in other Real Items systems, making it possible for end-users to view other items in their closet.
 
 ## Barriers to Adoption
-
 We have identified 4 major barriers faced by organizations that attempt to implement consensus-based product life cycle solutions.
 
-1. ***All-or-Nothing Solutions*** - most solutions do not play well with existing ERP systems.  They often require a wholesale replacement of existing solutions and/or the purchase of expensive hardware or software.
-2. ***Crypto-Maximilism*** - most solutions force users to have a deep understanding of cryptoeconomics and force customers to use a proprietary token, a cryptocurrency wallet or both.  This is not only counterproductive but also unnecessary.
-3. ***Complicated Onboarding*** - most solutions require that the end-user download and install software and/or purchase cryptocurrency from an exchange.
-4.  ***Volatile Transaction Costs*** - recording transactions on the blockchain is not free and the cost of these transactions can be volatile and expensive.  
+*All-or-Nothing Solutions* - most solutions do not play well with existing ERP systems. They often require a wholesale replacement of existing solutions and/or the purchase of expensive hardware or software.
 
-## Our Approach
+*Crypto-Maximilism* - most solutions force users to have a deep understanding of cryptoeconomics and force customers to use a proprietary token, a cryptocurrency wallet or both. This is not only counterproductive but also unnecessary.
 
-We have designed and built a system that sidesteps these barriers to adoption.  We have created a system that:
+*Complicated Onboarding* - most solutions require that the end-user download and install software and/or purchase cryptocurrency from an exchange.
 
-_Complements_ rather than replaces a company's existing systems and allows for incremental integration.  An organization can decide which parts of the system are most important to them and integrate them according to their needs and means.  We have designed our system to be flexible enough to run with commodity hardware and software. 
+*Volatile Transaction Costs* - recording transactions on the blockchain is not free and the cost of these transactions can be volatile and expensive.
 
-Requires _very little understanding_ of cryptoeconomics and does not force the user to use a proprietary token or a wallet.  We hide the cryptoeconomics as much as possible allowing users to focus on the task at hand.
+## Our Solution 
 
-_Does not require_ the end-user to install software or purchase cryptocurrency on an exchange. 
+We have created a system that overcomes these barriers.  Our system:
+
+---
+
+_Complements_ rather than replaces a company’s existing systems and allows for incremental integration. An organization can decide which parts of the system are most important to them and integrate them according to their needs and means. We have designed our system to be flexible enough to run with commodity hardware and software.
+
+---
+
+Requires _very little_ understanding of cryptoeconomics and does not force our customers to use a proprietary token or a wallet. We hide the cryptoeconomics as much as possible allowing users to focus on managing products.
+
+---
+
+_Does not require_ the end-user to install software or purchase cryptocurrency on an exchange.
+
+---
 
 _Ensures low and stable transaction costs_.  This subject deserves its own section, which is below.
 
+One of the biggest challenges for organizations is the _cost of transactions_. The volatile price of blockchain transactions is a problem that plagues many smart contract platforms - most recently the highly popular Ethereum network. As the Ethereum platform becomes more popular, the transaction volume increases. As volume increases so does the valuation of its token, ETH. Since ETH is used to pay for transactions (in the form of gas), the cost of a given transaction can change rapidly and without warning. Volatile gas costs can make it difficult for an organization to predict costs.
 
-One of the biggest challenges for organizations is the _cost of transactions_.  The volatile price of blockchain transactions is a problem that plagues many smart contract platforms - most recently the highly popular Ethereum network.  As the Ethereum platform becomes more popular, the transaction volume increases.  As volume increases so does the valuation of its token, ETH.  Since ETH is used to pay for transactions (in the form of gas), the cost of a given transaction can change rapidly and without warning.  Volatile gas costs can make it difficult for an organization to extrapolate revenue streams. In addition, high prices can make the platform prohibitively expensive for many existing applications.  
+Our solution to this problem is two-fold:
 
-Our solution to this problem is two-fold.  
+_First_, we chose a core blockchain technology that has already solved the transaction cost volatility problem. VeChain solves this by implementing a dual-token system - VET for currency and VTHO for gas. Because the tokens are loosely-coupled, the price of VET can rise and fall while transaction costs remain relatively stable.
 
-First, we chose a core Blockchain technology that has already solved the transaction cost volatility problem. VeChain solves this by implementing a dual-token system - VET for currency and VTHO for gas. VET is used as the medium of exchange and store of value while VTHO is used to pay for transactions.  These two tokens are loosely-coupled and are controlled by its ***velocity***, the rate at which it is generated from VET.  Unlike Ethereum, the price of the cryptocurrency can rise and fall while transaction costs remain relatively stable.
+_Second_, we have created a mechanism for _fractionalizing_ Non Fungible Records. Built into our system is the ability to construct multiple digital identities from a single NFR. For non-durable goods, such as a can of soda or a bottle of ointment, we can create an NFR and fractionalize it into multiple digital identities.
 
-Second, we have integrated the mechanism of ***fractionalizing*** into our core technology.  Built into our system is the ability to construct multiple digital identities from the same ***Non Fungible Record*** (NFR).  For non-durable goods, such as a can of soda or a bottle of ointment, we create a single NFR and then fractionalize it into multiple digital identities.  The number of digital identities derived from the NFR depends on the life span and use of a particular product.
+---
 
 ### Whole NFRs
 
@@ -111,13 +122,26 @@ Second, we have integrated the mechanism of ***fractionalizing*** into our core 
 
 ![Batched](whitepaper_batched.svg){:class="img-responsive"}
 
+## Defi Opportunities
+
+Digital identities reveal opportunities to collateralize physical inventory with Defi exchanges allowing for yield-farming.  Defi enables liquidity from inventory.
+
+## Security
+
+At its lowest level, our technology must guarantee the immutability of each transaction and event written into the system.  We chose a distributed ledger solution that guarantees "absolute finality (or safety guarantee) on blocks and transactions" [2].
+
+All data transmitted between our middleware, clients, and databases is secured by TLS.
+
+All mutable data-at-rest (sql and nosql) is encrypted.  Passwords and other credentials that are not stored in datbases are persisted in a Hashicorp Vault cluster located in a private VPC.
+
 ## Conclusion
 
-We have built a system which provides a mutually agreed upon single source of truth for a product at any stage in its _product life cycle_.  On top of that we have built a set of tools that allow the various stakeholders to integrate with that system and derive the benefits of real-time knowledge of each stage of a product's life cycle.  Any existing organization that chooses to leverage this knowlege will be empowered with the ability to make intelligent short and long-term decisions regarding its economic relationship with that product.  This newfound ability creates new opportunities within an organization but also creates the opportunity for _new_ industries.
+We have built a system which provides a mutually agreed upon single source of truth for a product at any stage in its product life cycle.  On top of that we have built a set of tools that allow the various stakeholders to integrate with that system and derive the benefits of real-time knowledge of each stage of a product's life cycle.  Any existing organization that chooses to leverage this knowlege will be empowered with the ability to make intelligent short and long-term decisions regarding its economic relationship with that product.  This newfound ability creates new opportunities within an organization but also creates the opportunity for new industries.
 
 ## References
 
 [1] Klaus Schwab, "The Fourth Industrial Revolution: what it means, how to respond."  2016. [Online]. https://www.weforum.org/agenda/2016/01/the-fourth-industrial-revolution-what-it-means-and-how-to-respond/
 
+[2] VeChain Foundation, "VeChain Whitepaper 2.0" 2020. [Online]. https://www.vechain.org/whitepaper/#bit_65sv8
 
 {% include links.html %}
