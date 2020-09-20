@@ -6,7 +6,7 @@ output: web
 topnav_title: Real Items Documentation
 # this appears on the top navigation bar next to the home button
 
-site_title: Jekyll theme for documentation
+site_title: Real Items Documentation
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: Real Items
@@ -35,7 +35,7 @@ exclude:
 
 feedback_subject_line: Real Items Documentation
 
-feedback_email: tomjoht@gmail.com
+feedback_email: info@realitems.io
 # used as a contact email for the Feedback link in the top navigation bar
 
 # feedback_disable: true
@@ -107,7 +107,7 @@ sidebars:
 - tracker_sidebar
 - other
 
-description: "Intended as a documentation theme based on Jekyll for technical writers documenting software and other technical products, this theme has all the elements you would need to handle multiple products with both multi-level sidebar navigation, tags, and other documentation features."
+description: "Documentation for the Real Items system"
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only

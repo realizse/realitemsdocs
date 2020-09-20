@@ -18,16 +18,39 @@ The Fourth Industrial Revolution, or Industry 4.0, was coined by World Economic 
 
 ![Digital Identity](whitepaper_digital_ids.svg){:class="img-responsive"}
 
-##  Creating Opportunities 
 
-While there are benefits of applying digital identities and digital events to the existing product life cycle, what if an organization could extend the product life cycle into new territory? We believe the life of a product does not end when the item enters the hands of a consumer. We see end-user engagement as an untapped opportunity in an item’s product life cycle. After an item is delivered to an end-user, the user immediately begins interacting with it. A platform that captures each interaction and allows analysis of the resulting dataset would create new opportunities. And one that encourages and enhances user engagement would create even more opportunities.
+## Applications 
 
-## An Example Use-Case
+Here are a few applications that this technology makes possible:
 
 **A Verified Marketplace**
 
 A company could use our tools to create a digital identity for each item sold in its e-commerce marketplace. Upon receiving an item in the mail, the user scans the smart label and verifies the authenticity of the item. After taking ownership of the item, the user is directed to content and services created by the brand. These services create many opportunities for user-engagement and user-analytics capture. A live example of this use-case can be found at [Real Items Marketplace](https://realitems.shop/collections/100-authentic-marketplace).
 
+**Decentralized Finance (Defi)**
+
+When enterprises adopt Real Items technology it enables the organization to leverage Decentralized Finance (DeFi) protocols to generate liquidity from their inventory, machinery or accounts receivables.  Additionally when end-to-end digitization is matched with stablecoins, it allows organizations to create automated repayment incentives that can be executed from an accumulation of real world events and be protected from volatile market conditions (fiat & digital currency).  
+Collateralized Commodities 
+
+To collateralize a commodity it requires a verified source for pricing data and condition of the product in its lifecycle.  Real Items Oracle provides pricing data for real world assets and the location/phase of the item in its product lifecycle. As the real world asset performs or transfers through the supply-chain new data is collected and updates the Oracle.  Traditional contractual terms can be applied or new experimental terms can be explored.  
+
+Type of Assets Protected
+
+Every industry:
+    *IoT enabled Devices
+    *Heavy Duty Equipment
+    *Industrial Machines
+    *Transportation Vehicles
+    *B2B Accounts Receivable
+    *Cargo
+
+**Example Use Case - Heavy Duty Equipment**
+
+A construction company just purchased a fleet of bulldozers worth 20 million dollars.  The hours of operation are provided by the machine’s embedded operating system.  They were required to pay for the units in full and plan to recoup the costs by leasing the units to smaller organizations.  With Real Items traceability and DeFi, the construction company will be able to borrow roughly X million dollars by using the portfolio of bulldozers as collateral. To negotiate a better rate or larger amount, the embedded system would report to Real Items Oracle.  When a bulldozer is leased the terms can request repayment in stablecoins.  This means the lease payments would be paid by programmable money.  This ensures the repayment of the DeFi loan and it’s agreed upon interest in real-time. Once the DeFi loan is paid, the lien of ownership is released and new lease payments are only paid to the construction company.    
+
+**Example Use Case - Lettuce Farmer**
+
+A farm that produces lettuce has a straightforward approach to revenue.  When the distribution company picks up the harvest, the farmer gets paid. With Real Items the lettuce would be traceable to the farm that produced it.  This means there is a historical record of the plant prior to it being harvested or transported. The lettuce farmer using Real Items tech would be able to provide a record of events that prove the product exists and would be eligible for unlocking liquidity. This liquidity would come from a DeFi lender or potentially a downstream stakeholder like the distribution company or retailer.  Their incentive would be to gain a discount for the real-time payment.
 
 ## Architecture - Simplified
 
@@ -121,10 +144,6 @@ _Second_, we have created a mechanism for _fractionalizing_ Non Fungible Records
 ### Fractionalized NFRs
 
 ![Batched](whitepaper_batched.svg){:class="img-responsive"}
-
-## Defi Opportunities
-
-Digital identities reveal opportunities to collateralize physical inventory with Defi exchanges allowing for yield-farming.  Defi enables liquidity from inventory.
 
 ## Security
 
