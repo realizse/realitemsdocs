@@ -25,7 +25,12 @@ Here are a few applications that this technology makes possible:
 
 **A Verified Marketplace**
 
-A company could use our tools to create a digital identity for each item sold in its e-commerce marketplace. Upon receiving an item in the mail, the user scans the smart label and verifies the authenticity of the item. After taking ownership of the item, the user is directed to content and services created by the brand. These services create many opportunities for user-engagement and user-analytics capture. A live example of this use-case can be found at [Real Items Marketplace](https://realitems.shop/collections/100-authentic-marketplace).
+Traditional ecommerce platforms like eBay, Amazon, Taobao, Alibaba and Flipkart are not able to protect their consumers from counterfeit products. Counterfeits blend in as authentic products and those platforms profit from the lack of security. Marketplaces that want to protect customers from fraudulent and untested products need Real Items as their infrastructure to prevent counterfeit products from reaching their listings. 
+
+Additionally the same anti-counterfeit protection provides the on ramp for direct to consumer engagement. The combination strengthens the consumer experience and provides the channel for communication. This gives customer service chatbots more relevance to the issues and can assist in registering warrantees, sales or insurance.  
+
+
+A live example of this use-case can be found at [Real Items Marketplace](https://realitems.shop/collections/100-authentic-marketplace)
 
 **Decentralized Finance (Defi)**
 
@@ -67,7 +72,6 @@ The Peristence Layer can be further subdivided into 2 sub-layers:
 
 ![Architecture Layers](architecture_layers.svg){:class="img-responsive"}
 
-
 ## Components
 
 We provide web and native applications along with API access options to facilitate tracking and tracing items throughout their product life cycle. By leveraging organizations’ existing ERP systems and IOT device infrastructure, our API integrations facilitate product life-cycle event recording automations on blockchain. We also provide a UI suite of tools enabling blockchain interaction when needed.
@@ -94,9 +98,10 @@ We make our GraphQL API available to developers so they can integrate our soluti
 
 ### RIO (Real Items Oracle)
 
-The Real Items Oracle is the gateway to the wider Real Items universe and is designed to facilitate visibility of items in other Real Items systems, making it possible for end-users to view other items in their closet.
+The Real Items Oracle is the gateway to the wider Real Items universe and is designed to facilitate visibility of items across the entire real items network, making it a single source of truth for pricing data, lifecycle stage and more.
 
 ## Barriers to Adoption
+
 We have identified 4 major barriers faced by organizations that attempt to implement consensus-based product life cycle solutions.
 
 *All-or-Nothing Solutions* - most solutions do not play well with existing ERP systems. They often require a wholesale replacement of existing solutions and/or the purchase of expensive hardware or software.
