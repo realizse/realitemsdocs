@@ -25,37 +25,37 @@ Here are a few applications that this technology makes possible:
 
 **A Verified Marketplace**
 
-Traditional ecommerce platforms like eBay, Amazon, Taobao, Alibaba and Flipkart are not able to protect their consumers from counterfeit products. Counterfeits blend in as authentic products and those platforms profit from the lack of security. Marketplaces that want to protect customers from fraudulent and untested products need Real Items as their infrastructure to prevent counterfeit products from reaching their listings. 
+Traditional ecommerce platforms like eBay, Amazon, Taobao, Alibaba and Flipkart are not able to protect their consumers from counterfeit products blending in as authentic. Marketplaces that want to protect customers from fraudulent and untested products need Real Items as their infrastructure to prevent counterfeit products from reaching their listings.
 
-Additionally the same anti-counterfeit protection provides the on ramp for direct to consumer engagement. The combination strengthens the consumer experience and provides the channel for communication. This gives customer service chatbots more relevance to the issues and can assist in registering warrantees, sales or insurance.  
-
+Additionally, the same anti-counterfeit protection provides an on ramp for direct to consumer engagement. The combination strengthens the consumer experience and provides a channel for communication. This gives customer service chatbots more relevance to issues and can assist in registering warranties, sales or insurance.
 
 A live example of this use-case can be found at [Real Items Marketplace](https://realitems.shop/collections/100-authentic-marketplace)
 
 **Decentralized Finance (Defi)**
 
-When enterprises adopt Real Items technology it enables the organization to leverage Decentralized Finance (DeFi) protocols to generate liquidity from their inventory, machinery or accounts receivables.  Additionally when end-to-end digitization is matched with stablecoins, it allows organizations to create automated repayment incentives that can be executed from an accumulation of real world events and be protected from volatile market conditions (fiat & digital currency).  
-Collateralized Commodities 
+When enterprises adopt Real Items technology it enables the organization to leverage Decentralized Finance (DeFi) protocols to generate liquidity from their inventory, machinery or accounts receivables. Additionally when end-to-end digitization is matched with stablecoins, it allows organizations to create automated payment incentives that can be executed from real world events and be protected from volatile market conditions (fiat & digital currency).
 
-To collateralize a commodity it requires a verified source for pricing data and condition of the product in its lifecycle.  Real Items Oracle provides pricing data for real world assets and the location/phase of the item in its product lifecycle. As the real world asset performs or transfers through the supply-chain new data is collected and updates the Oracle.  Traditional contractual terms can be applied or new experimental terms can be explored.  
+**Collateralized Commodities**
 
-Type of Assets Protected
+To collateralize a commodity it requires a verified source for pricing data and condition of the product in its lifecycle. Real Items Oracle provides pricing data for real world assets and the location/phase of the item in its product lifecycle. As the real world asset performs or transfers through the supply-chain, new data is collected and updates the Oracle. Traditional contractual terms can be applied or new experimental terms can be explored.
 
-Every industry:
-    *IoT enabled Devices
-    *Heavy Duty Equipment
-    *Industrial Machines
-    *Transportation Vehicles
-    *B2B Accounts Receivable
-    *Cargo
+Types of Assets Protected
+
+Every industry: 
+*IoT enabled Devices 
+*Heavy Duty Equipment 
+*Industrial Machines 
+*Transportation Vehicles 
+*B2B Accounts Receivable 
+*Cargo
 
 **Example Use Case - Heavy Duty Equipment**
 
-A construction company just purchased a fleet of bulldozers worth 20 million dollars.  The hours of operation are provided by the machine’s embedded operating system.  They were required to pay for the units in full and plan to recoup the costs by leasing the units to smaller organizations.  With Real Items traceability and DeFi, the construction company will be able to borrow roughly X million dollars by using the portfolio of bulldozers as collateral. To negotiate a better rate or larger amount, the embedded system would report to Real Items Oracle.  When a bulldozer is leased the terms can request repayment in stablecoins.  This means the lease payments would be paid by programmable money.  This ensures the repayment of the DeFi loan and it’s agreed upon interest in real-time. Once the DeFi loan is paid, the lien of ownership is released and new lease payments are only paid to the construction company.    
+A construction company just purchased a fleet of bulldozers worth 20 million dollars. The hours of operation are provided by the machine’s embedded operating system. The company was required to pay for the units in-full and plans to recoup the cost by leasing the units to smaller organizations. With Real Items traceability and DeFi, the construction company will be able to borrow roughly X million dollars by using the portfolio of bulldozers as collateral. To negotiate a better rate or larger amount, the embedded system would report to Real Items Oracle. When a bulldozer is leased, the terms can request repayment in stablecoins(programmable money). With this repayment structure, the lease payments would be automatic and the agreed upon portion of the DeFi loan is repaid in real-time. Once the DeFi loan is paid, the lien of ownership is released and new lease payments are only paid to the construction company.
 
 **Example Use Case - Lettuce Farmer**
 
-A farm that produces lettuce has a straightforward approach to revenue.  When the distribution company picks up the harvest, the farmer gets paid. With Real Items the lettuce would be traceable to the farm that produced it.  This means there is a historical record of the plant prior to it being harvested or transported. The lettuce farmer using Real Items tech would be able to provide a record of events that prove the product exists and would be eligible for unlocking liquidity. This liquidity would come from a DeFi lender or potentially a downstream stakeholder like the distribution company or retailer.  Their incentive would be to gain a discount for the real-time payment.
+A farm that produces lettuce has a straightforward approach to revenue. When the distribution company picks up the harvest, the farmer gets paid. With Real Items, the lettuce would be traceable to the farm that produced it. This tracking creates a historical record of the plant prior to harvested or transported. The lettuce farmer using Real Items tech would be able to provide a record of events that prove the product exists and would be eligible to be approved for a loan on that inventory. This liquidity would come from a DeFi lender or potentially a downstream stakeholder like the distribution company or retailer incentivized by a discount for the real-time payment.
 
 ## Architecture - Simplified
 
