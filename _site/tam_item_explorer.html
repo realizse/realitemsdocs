@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Tracking events...">
-<meta name="keywords" content=" tracking">
-<title>Tracking Events (TRACKER) | Real Items Documentation</title>
+<meta name="description" content="Item Explorer">
+<meta name="keywords" content="tam,  administrators">
+<title>Item Explorer (TAM) | Real Items Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -171,7 +171,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:info@realitems.io?subject=Real Items Documentation feedback&body=I have some feedback about the Tracking Events (TRACKER) page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:info@realitems.io?subject=Real Items Documentation feedback&body=I have some feedback about the Item Explorer (TAM) page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -189,7 +189,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Tracking Events (TRACKER)">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Item Explorer (TAM)">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -215,7 +215,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">TRACKER 1.0</li>
+  <li class="sidebarTitle">TAM 1.0</li>
   
   
   
@@ -227,56 +227,56 @@
           
           
           
-          <li><a title="TRACKER home" href="tracker_landing_page.html">TRACKER home</a></li>
+          <li><a title="TAM Home" href="tam_landing_page.html">TAM Home</a></li>
           
           
           
           
           
           
-          <li><a title="Add New Products" href="tracker_add_products.html">Add New Products</a></li>
+          <li><a title="Add New Products" href="tam_add_products.html">Add New Products</a></li>
           
           
           
           
           
           
-          <li><a title="Add Digital Identities" href="tracker_add_digids.html">Add Digital Identities</a></li>
+          <li><a title="Add Digital Identities" href="tam_add_digids.html">Add Digital Identities</a></li>
           
           
           
           
           
           
-          <li><a title="Manage End Users" href="tracker_manage_end_users.html">Manage End Users</a></li>
+          <li><a title="Manage End Users" href="tam_manage_end_users.html">Manage End Users</a></li>
           
           
           
           
           
           
-          <li><a title="Manage Administrators" href="tracker_manage_administrators.html">Manage Administrators</a></li>
+          <li><a title="Manage Administrators" href="tam_manage_administrators.html">Manage Administrators</a></li>
           
           
           
           
           
           
-          <li class="active"><a title="Tracking Events" href="tracker_tracking_events.html">Tracking Events</a></li>
+          <li><a title="Tracking Events" href="tam_tracking_events.html">Tracking Events</a></li>
           
           
           
           
           
           
-          <li><a title="Item Explorer" href="tracker_item_explorer.html">Item Explorer</a></li>
+          <li class="active"><a title="Item Explorer" href="tam_item_explorer.html">Item Explorer</a></li>
           
           
           
           
           
           
-          <li><a title="Smart Contract Administration" href="tracker_contract_administration.html">Smart Contract Administration</a></li>
+          <li><a title="Smart Contract Administration" href="tam_contract_administration.html">Smart Contract Administration</a></li>
           
           
           
@@ -303,7 +303,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Tracking Events (TRACKER)</h1>
+   <h1 class="post-title-main">Item Explorer (TAM)</h1>
 </div>
 
 
@@ -311,7 +311,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Tracking events...</div>
+    <div class="summary">Item Explorer</div>
    
 
     
@@ -342,47 +342,57 @@ $('#toc').on('click', 'a', function() {
 
     
 
-   <h2 id="tracking-events">Tracking Events</h2>
+   <h2 id="what-is-the-item-explorer">What is the Item Explorer?</h2>
 
-<p>A tracking event is a real-world event that is recorded on the blockchain. A tracking event represents something that has “happened” to the item.  Examples are “item shipped”, “item received”, “item sold”, “video associated”.  Not all digital IDs have tracking events but all tracking events have exactly one digital ID.</p>
+<p>Item Explorer is a tool used to search for, view and manage NFRs.  All information about an NFR can be viewed in the Item Explorer such as:</p>
 
-<h2 id="tracker-app-and-real-items-api">Tracker App and Real Items API</h2>
+<ul>
+  <li>Blockchain information like transaction ID, block number, owner, timestamp, etc.</li>
+  <li>Tracking information</li>
+  <li>Digital Identities</li>
+  <li>QR Codes</li>
+  <li>Images, videos and documents</li>
+  <li>Earmarked users</li>
+</ul>
 
-<p>Tracking events are created and written to the blockchain via the Tracker App or the Real Items API.</p>
+<p>An administrator can perform the following actions on an NFR</p>
 
-<h2 id="standalone-digital-ids">Standalone Digital IDs</h2>
+<ul>
+  <li>Print QR Codes</li>
+  <li>Flag an NFR as stolen</li>
+  <li>Flag an NFR as public</li>
+</ul>
 
-<p><img src="tracking_events1.svg" alt="Standalone Digital ID" class="img-responsive" /></p>
+<h2 id="how-to-search-for-an-nfr-using-item-explorer">How To search for an NFR using Item Explorer</h2>
 
-<h2 id="complex-digital-ids">Complex Digital IDs</h2>
+<ul>
+  <li>Click on <em>Item Explorer</em> in the left navigation bar</li>
+  <li>Type the ID or Obfuscated ID into the input box</li>
+  <li>Click <strong>Get NFR</strong> button</li>
+  <li>If the NFR is found you will be presented a screen containing information and links to other views</li>
+</ul>
 
-<p><img src="/realitemsdocs/pages/tracker/tracking_events2.svg" alt="Complex Digital ID" class="img-responsive" /></p>
+<h2 id="navigating-within-the-item-explorer">Navigating within the Item Explorer</h2>
 
-<h2 id="view-tracking-events">View tracking events</h2>
-
-<ol>
-  <li>Go to Inventory page</li>
-  <li>Click on magnifying glass icon next to the Product.</li>
-  <li>Click on the <strong>Batch</strong> that you just created.</li>
-  <li>Click on the <strong>Details</strong> tab.</li>
-  <li>Click on the hyperlink of the number of the digital identity you wish to view.</li>
-  <li>Click on <strong>Tracking Events</strong></li>
-</ol>
-
-<p><strong><em>Or</em></strong></p>
-
-<ol>
-  <li>Click on <strong>Item Explorer</strong> in left navigation pane</li>
-  <li>Enter the <strong>digitial identity</strong>’s ID in the box.</li>
-  <li>Click the <strong>Get NFR</strong> button</li>
-  <li>Click on <strong>Tracking Events</strong>.</li>
-</ol>
-
-<p><img src="tracking_event_example.png" alt="Tracking Event Example" class="img-responsive" /></p>
+<ul>
+  <li>Clicking on <em>Next Item</em> will display the next NFR in the sequence</li>
+  <li>Clicking on <em>Previous Item</em> will display previous NFR in the sequence</li>
+  <li>Clicking <em>Transaction Details</em> will display blockchain information about the Transaction which created this NFR</li>
+  <li>Clicking on <em>Admin View</em> will displayall of the digital identities associated this NFR.  This screen will also allow the Administrator to display and print QR Code(s) for this NFR</li>
+  <li>Clicking on <em>Tracking Explorer</em> will display all Tracking Events associated with this NFR.</li>
+</ul>
 
 
 
     <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        <a href="tag_tam.html" class="btn btn-default navbar-btn cursorNorm" role="button">tam</a>
+        
+        
         
     </div>
 

@@ -1,7 +1,7 @@
 ---
 title: "Getting started with Real Items"
 keywords: sample homepage
-tags: [getting_started]
+tags: [whitepaper]
 sidebar: ridoc_sidebar
 permalink: index.html
 summary: These resources will help you get started quickly with Real Items. 

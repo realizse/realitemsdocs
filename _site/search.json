@@ -4,11 +4,33 @@
 
 
 {
+"title": "Interacting with an item (CP3)",
+"tags": "cp3",
+"keywords": "NFR, NFT",
+"url": "cp3_interact_item.html",
+"summary": "Interacting with an item..."
+}
+,
+
+
+
+{
 "title": "CP3 (Consumer Protection 3.0)",
 "tags": "",
 "keywords": "ridoc",
 "url": "cp3_landing_page.html",
 "summary": ""
+}
+,
+
+
+
+{
+"title": "Take ownership of an item (CP3)",
+"tags": "cp3",
+"keywords": "NFR, NFT",
+"url": "cp3_take_ownership.html",
+"summary": "How to take ownership of an item..."
 }
 ,
 
@@ -25,11 +47,22 @@
 
 
 
+{
+"title": "View Your Closet (CP3)",
+"tags": "cp3",
+"keywords": "NFR, NFT",
+"url": "cp3_view_closet.html",
+"summary": "View Your Closet..."
+}
+,
+
+
+
 
 
 {
 "title": "Getting started with Real Items",
-"tags": "getting_started",
+"tags": "whitepaper",
 "keywords": "sample homepage",
 "url": "index.html",
 "summary": "These resources will help you get started quickly with Real Items."
@@ -701,7 +734,7 @@
 
 {
 "title": "Adding new products (TAM)",
-"tags": "tam",
+"tags": "",
 "keywords": "sample",
 "url": "tam_add_products.html",
 "summary": "Add new products by building templates using our forms..."
@@ -716,6 +749,17 @@
 "keywords": "Administer Smart Contracts",
 "url": "tam_contract_administration.html",
 "summary": "Administration of Smart Contracts"
+}
+,
+
+
+
+{
+"title": "Item Explorer (TAM)",
+"tags": "tam",
+"keywords": "administrators",
+"url": "tam_item_explorer.html",
+"summary": "Item Explorer"
 }
 ,
 
@@ -774,40 +818,18 @@
 
 
 {
-"title": "Add Digital Identities (TRACKER)",
-"tags": "",
+"title": "Write An Event To Thye Blockchain",
+"tags": "scanner",
 "keywords": "NFR, NFT",
-"url": "tracker_add_digids.html",
-"summary": "Add digital identities to the blockchain..."
+"url": "tracker_add_event.html",
+"summary": "Write an event to the blockchain..."
 }
 ,
 
 
 
 {
-"title": "Adding new products (TRACKER)",
-"tags": "",
-"keywords": "sample",
-"url": "tracker_add_products.html",
-"summary": "Add new products by building templates using our forms..."
-}
-,
-
-
-
-{
-"title": "Smart Contract Administration (TRACKER)",
-"tags": "",
-"keywords": "Administer Smart Contracts",
-"url": "tracker_contract_administration.html",
-"summary": "Administration of Smart Contracts"
-}
-,
-
-
-
-{
-"title": "TRACKER (Token Asset Manager)",
+"title": "TRACKER",
 "tags": "",
 "keywords": "ridoc",
 "url": "tracker_landing_page.html",
@@ -822,40 +844,18 @@
 "tags": "",
 "keywords": "administrators",
 "url": "tracker_manage_administrators.html",
-"summary": "Manage Administrative Users..."
+"summary": "Manage Tracker Administrative Users..."
 }
 ,
 
 
 
 {
-"title": "Manage End Users (TRACKER)",
-"tags": "",
-"keywords": "sample",
-"url": "tracker_manage_end_users.html",
-"summary": "Manage the end users of the your Real Items system..."
-}
-,
-
-
-
-{
-"title": "Item Explorere (TRACKER)",
-"tags": "",
-"keywords": "sample",
-"url": "tracker_item_explorer.html",
-"summary": "Summary of Item Explorer..."
-}
-,
-
-
-
-{
-"title": "Tracking Events (TRACKER)",
-"tags": "",
-"keywords": "tracking",
-"url": "tracker_tracking_events.html",
-"summary": "Tracking events..."
+"title": "Scan An Item",
+"tags": "scanner",
+"keywords": "NFR, NFT",
+"url": "tracker_scan_item.html",
+"summary": "Scan an item..."
 }
 ,
 

@@ -23,11 +23,23 @@ entries:
     - title: Getting Started
       output: web, pdf
       folderitems:
-      - title: CP3 home
+      - title: CP3 Home
         url: /cp3_landing_page.html
         output: web
   
       - title:  Verify Authenticity 
         url: /cp3_verify_authenticity.html
+        output: web, pdf
+
+      - title:  Take Ownership Of An Item
+        url: /cp3_take_ownership.html
+        output: web, pdf
+
+      - title:  View Your Closet 
+        url: /cp3_view_closet.html
+        output: web, pdf
+
+      - title:  Interact With An Item
+        url: /cp3_interact_item.html
         output: web, pdf
   

@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Manage the end users of the your Real Items system...">
-<meta name="keywords" content=" sample">
-<title>Manage End Users (TRACKER) | Real Items Documentation</title>
+<meta name="description" content="Write an event to the blockchain...">
+<meta name="keywords" content="scanner,  NFR, NFT">
+<title>Write An Event To Thye Blockchain | Real Items Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -171,7 +171,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:info@realitems.io?subject=Real Items Documentation feedback&body=I have some feedback about the Manage End Users (TRACKER) page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:info@realitems.io?subject=Real Items Documentation feedback&body=I have some feedback about the Write An Event To Thye Blockchain page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -189,7 +189,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Manage End Users (TRACKER)">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Write An Event To Thye Blockchain">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -227,56 +227,28 @@
           
           
           
-          <li><a title="TRACKER home" href="tracker_landing_page.html">TRACKER home</a></li>
+          <li><a title="TRACKER Home" href="tracker_landing_page.html">TRACKER Home</a></li>
           
           
           
           
           
           
-          <li><a title="Add New Products" href="tracker_add_products.html">Add New Products</a></li>
+          <li><a title="Scan An Item" href="tracker_scan_item.html">Scan An Item</a></li>
           
           
           
           
           
           
-          <li><a title="Add Digital Identities" href="tracker_add_digids.html">Add Digital Identities</a></li>
+          <li class="active"><a title="Add A Tracking Event" href="tracker_add_event.html">Add A Tracking Event</a></li>
           
           
           
           
           
           
-          <li class="active"><a title="Manage End Users" href="tracker_manage_end_users.html">Manage End Users</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Manage Administrators" href="tracker_manage_administrators.html">Manage Administrators</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Tracking Events" href="tracker_tracking_events.html">Tracking Events</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Item Explorer" href="tracker_item_explorer.html">Item Explorer</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Smart Contract Administration" href="tracker_contract_administration.html">Smart Contract Administration</a></li>
+          <li><a title="Manage Tracking Administrators" href="tracker_manage_administrators.html">Manage Tracking Administrators</a></li>
           
           
           
@@ -303,7 +275,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Manage End Users (TRACKER)</h1>
+   <h1 class="post-title-main">Write An Event To Thye Blockchain</h1>
 </div>
 
 
@@ -311,7 +283,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Manage the end users of the your Real Items system...</div>
+    <div class="summary">Write an event to the blockchain...</div>
    
 
     
@@ -342,17 +314,33 @@ $('#toc').on('click', 'a', function() {
 
     
 
-   <h2 id="end-users">End Users</h2>
+   <h2 id="selecting-options">Selecting Options</h2>
 
-<p>The end users are the consumers who are the final destination of the items you create.  After an end user receives an item they may scan the QR code and validate it with the PIN.  Then they may opt to “take ownership” of the item, meaning their user ID and email address will be associated with that item and the end user will become “known” to your organization for customer support and possible marketing opportunities.</p>
+<p>After scanning a QR Code you may be presented with a list of events you can choose from.  Sometimes you will only be presented with one event and sometimes there will be no events - depending on how your system is configured.</p>
 
-<h2 id="managing-end-users">Managing End Users</h2>
+<p>Choosing an will display an <em>Options</em> form.  This form will contain a series of options that you must select or add.  Options can be:</p>
 
-<p>At this time TRACKER only allows administrators to read the users information and view the items for which they have taken ownership.  More end user features will be added as the product develops.</p>
+<ul>
+  <li>Select options</li>
+  <li>Images</li>
+  <li>Videos</li>
+</ul>
+
+<h2 id="writing-the-event-to-the-blockchain">Writing The Event To The Blockchain</h2>
+
+<p>After selecting an event type and the options a final page will be displayed.  On this page you can options add text to the <em>NOTES</em> section.</p>
+
+<p>Then, to write the new event to the blockchain, click the <strong>Send Tracking Info</strong> button.  After 10 seconds you will be prompted to <strong>Scan Another QR Code</strong>.</p>
 
 
 
     <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        
         
     </div>
 

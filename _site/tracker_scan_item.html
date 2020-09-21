@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Summary of Item Explorer...">
-<meta name="keywords" content=" sample">
-<title>Item Explorere (TRACKER) | Real Items Documentation</title>
+<meta name="description" content="Scan an item...">
+<meta name="keywords" content="scanner,  NFR, NFT">
+<title>Scan An Item | Real Items Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -171,7 +171,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:info@realitems.io?subject=Real Items Documentation feedback&body=I have some feedback about the Item Explorere (TRACKER) page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:info@realitems.io?subject=Real Items Documentation feedback&body=I have some feedback about the Scan An Item page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -189,7 +189,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Item Explorere (TRACKER)">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Scan An Item">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -227,56 +227,28 @@
           
           
           
-          <li><a title="TRACKER home" href="tracker_landing_page.html">TRACKER home</a></li>
+          <li><a title="TRACKER Home" href="tracker_landing_page.html">TRACKER Home</a></li>
           
           
           
           
           
           
-          <li><a title="Add New Products" href="tracker_add_products.html">Add New Products</a></li>
+          <li class="active"><a title="Scan An Item" href="tracker_scan_item.html">Scan An Item</a></li>
           
           
           
           
           
           
-          <li><a title="Add Digital Identities" href="tracker_add_digids.html">Add Digital Identities</a></li>
+          <li><a title="Add A Tracking Event" href="tracker_add_event.html">Add A Tracking Event</a></li>
           
           
           
           
           
           
-          <li><a title="Manage End Users" href="tracker_manage_end_users.html">Manage End Users</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Manage Administrators" href="tracker_manage_administrators.html">Manage Administrators</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Tracking Events" href="tracker_tracking_events.html">Tracking Events</a></li>
-          
-          
-          
-          
-          
-          
-          <li class="active"><a title="Item Explorer" href="tracker_item_explorer.html">Item Explorer</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Smart Contract Administration" href="tracker_contract_administration.html">Smart Contract Administration</a></li>
+          <li><a title="Manage Tracking Administrators" href="tracker_manage_administrators.html">Manage Tracking Administrators</a></li>
           
           
           
@@ -303,7 +275,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Item Explorere (TRACKER)</h1>
+   <h1 class="post-title-main">Scan An Item</h1>
 </div>
 
 
@@ -311,7 +283,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Summary of Item Explorer...</div>
+    <div class="summary">Scan an item...</div>
    
 
     
@@ -342,15 +314,64 @@ $('#toc').on('click', 'a', function() {
 
     
 
-   <h2 id="item-explorer">Item Explorer</h2>
+   <h2 id="getting-started">Getting Started</h2>
 
-<p>You can navigate to the <strong>Item Explorer</strong> by clicking on <strong><em>Item Explorer</em></strong> in the left navigation pane.  If you already know the <strong>numeric ID</strong> or <strong>obfuscated ID</strong> of the <strong>digital identity</strong> you wish to view, you can go to the <strong>Item Explorer</strong>, type the ID into the search box and click the <strong><em>Get NFR</em></strong> button.  This will display the <strong>default</strong> view of the <strong>item</strong>.  From there, you can navigate to the <strong>Transaction Details</strong>, <strong>Admin View</strong> or <strong>Tracking Events</strong></p>
+<p>In order to write a <em>tracking event</em> to the blockchain using the Tracker app you must:</p>
 
-<p><img src="item_explorer_example.png" alt="Item Explorer Example" class="img-responsive" /></p>
+<ul>
+  <li>Install the Tracker App</li>
+  <li>Open the Tracker application</li>
+  <li>Scan the QR Code of that item</li>
+  <li>Serify your identity.</li>
+</ul>
+
+<h2 id="install-the-tracker-app">Install the Tracker App</h2>
+
+<ul>
+  <li>Go to the Google Play Store</li>
+  <li>Search for “Real Items”</li>
+  <li>Install the Tracker Application</li>
+</ul>
+
+<h2 id="open-the-tracker-app">Open the Tracker App</h2>
+
+<ul>
+  <li>Click on the Tracker App Icon</li>
+</ul>
+
+<h2 id="find-the-qr-code">Find the QR Code</h2>
+
+<p>The QR Code for an item can be found:</p>
+
+<ul>
+  <li>On the outside of the item</li>
+  <li>On the outside of the packaging</li>
+  <li>Inside the packaging on a receipt</li>
+</ul>
+
+<h2 id="scanning-the-qr-code">Scanning the QR Code</h2>
+
+<p>After opening the Tracker App:</p>
+
+<ul>
+  <li>Click on the <em>Scan</em> item in the top navigation bar</li>
+  <li>Click on the <strong>Scan</strong> button</li>
+  <li>Point the camera at the QR Code and put the QR Code inside the boundary of the box.</li>
+</ul>
+
+<h2 id="logging-in">Logging In</h2>
+
+<p>If you have not previously logged in, scanning a QR Code will display the <em>Login</em> screen.  You will then be challenged to enter a Username and a Password.</p>
 
 
 
     <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        
         
     </div>
 

@@ -8,12 +8,6 @@ entries:
   - title: Products
     output: web
     folderitems:
-    - title: News
-      url: /news.html
-      output: web
-    - title: Theme instructions
-      url: /ridoc_introduction.html
-      output: web
     - title: TAM
       url: /tam_landing_page.html
       output: web

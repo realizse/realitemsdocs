@@ -26,8 +26,6 @@ A **digital identity** (also referred to as an **item**) is an instance of a **p
 
 ## After creating a digital identity
 
-![Digital ID Example](digital_id_example.png){:class="img-responsive"}
-
 After you have created a digital identity you can now view it 2 ways in the TAM.
 1. Go to Inventory page
 2. Click on magnifying glass icon next to the Product.

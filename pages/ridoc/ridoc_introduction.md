@@ -11,15 +11,6 @@ This site provides documentation, training, and other notes for the Real Items p
 
 The instructions here are geared towards users, system administrators and technical people wishing to understand or integrate with our platform. 
 
-## Survey of features
-
-Some of the more prominent features of our platform include the following:
-
-* Blockchain
-* IPFS
-* Cloud Architecture
-* Analytics
-
 ## Getting started
 
 To get started, see [Getting Started][index].

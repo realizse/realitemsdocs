@@ -23,35 +23,19 @@ entries:
     - title: Getting Started
       output: web, pdf
       folderitems:
-      - title: TRACKER home
+      - title: TRACKER Home
         url: /tracker_landing_page.html
         output: web
   
-      - title: Add New Products 
-        url: /tracker_add_products.html
+      - title: Scan An Item
+        url: /tracker_scan_item.html
         output: web, pdf
   
-      - title: Add Digital Identities
-        url: /tracker_add_digids.html
+      - title: Add A Tracking Event 
+        url: /tracker_add_event.html
         output: web, pdf
   
-      - title: Manage End Users 
-        url: /tracker_manage_end_users.html
-        output: web, pdf
-  
-      - title: Manage Administrators 
+      - title: Manage Tracking Administrators 
         url: /tracker_manage_administrators.html
-        output: web, pdf
-  
-      - title: Tracking Events 
-        url: /tracker_tracking_events.html
-        output: web, pdf
-  
-      - title: Item Explorer 
-        url: /tracker_item_explorer.html
-        output: web, pdf
-  
-      - title: Smart Contract Administration 
-        url: /tracker_contract_administration.html
         output: web, pdf
   

@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Add new products by building templates using our forms...">
-<meta name="keywords" content=" sample">
-<title>Adding new products (TRACKER) | Real Items Documentation</title>
+<meta name="description" content="Interacting with an item...">
+<meta name="keywords" content="cp3,  NFR, NFT">
+<title>Interacting with an item (CP3) | Real Items Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -171,7 +171,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:info@realitems.io?subject=Real Items Documentation feedback&body=I have some feedback about the Adding new products (TRACKER) page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:info@realitems.io?subject=Real Items Documentation feedback&body=I have some feedback about the Interacting with an item (CP3) page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -189,7 +189,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Adding new products (TRACKER)">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Interacting with an item (CP3)">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -215,7 +215,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">TRACKER 1.0</li>
+  <li class="sidebarTitle">CP3 1.0</li>
   
   
   
@@ -227,56 +227,35 @@
           
           
           
-          <li><a title="TRACKER home" href="tracker_landing_page.html">TRACKER home</a></li>
+          <li><a title="CP3 Home" href="cp3_landing_page.html">CP3 Home</a></li>
           
           
           
           
           
           
-          <li class="active"><a title="Add New Products" href="tracker_add_products.html">Add New Products</a></li>
+          <li><a title="Verify Authenticity" href="cp3_verify_authenticity.html">Verify Authenticity</a></li>
           
           
           
           
           
           
-          <li><a title="Add Digital Identities" href="tracker_add_digids.html">Add Digital Identities</a></li>
+          <li><a title="Take Ownership Of An Item" href="cp3_take_ownership.html">Take Ownership Of An Item</a></li>
           
           
           
           
           
           
-          <li><a title="Manage End Users" href="tracker_manage_end_users.html">Manage End Users</a></li>
+          <li><a title="View Your Closet" href="cp3_view_closet.html">View Your Closet</a></li>
           
           
           
           
           
           
-          <li><a title="Manage Administrators" href="tracker_manage_administrators.html">Manage Administrators</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Tracking Events" href="tracker_tracking_events.html">Tracking Events</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Item Explorer" href="tracker_item_explorer.html">Item Explorer</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Smart Contract Administration" href="tracker_contract_administration.html">Smart Contract Administration</a></li>
+          <li class="active"><a title="Interact With An Item" href="cp3_interact_item.html">Interact With An Item</a></li>
           
           
           
@@ -303,7 +282,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Adding new products (TRACKER)</h1>
+   <h1 class="post-title-main">Interacting with an item (CP3)</h1>
 </div>
 
 
@@ -311,7 +290,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Add new products by building templates using our forms...</div>
+    <div class="summary">Interacting with an item...</div>
    
 
     
@@ -342,25 +321,62 @@ $('#toc').on('click', 'a', function() {
 
     
 
-   <h2 id="product-templates">Product Templates</h2>
+   <h2 id="navigating-to-an-item">Navigating To An Item</h2>
 
-<p>By creating <strong>product templates</strong>, you are telling the Real Items system which types of products can be digitized on the blockchain.  By stepping through and filling out the product template form, you add a <strong>product</strong> that is available for creation to the blockchain.  Product templates include, plain text, URLs, images, videos and documents.  Assets included in the templates (images, videos, etc.) are pushed to IPFS and are thereafter referenced via an IPFS-based URL.</p>
+<p>After taking ownership of an item you will suddenly have access to the attributes and services associated with this item.</p>
 
-<p><img src="product_template_example.png" alt="Product Template Example" class="img-responsive" /></p>
+<p>There are two ways to view an item:</p>
 
-<h2 id="adding-a-new-product-template">Adding a new product template</h2>
+<ul>
+  <li>Scan an item’s QR Code, verify its authenticity, and take ownership.  This only works one time.</li>
+  <li>Log in (or create) to your CP3 and navigate to your <em>Closet</em>.  Then click on the item.</li>
+</ul>
 
-<p>Navigate to <strong>Product-&gt;Create New Product</strong> and fill out the form.with product images, a video, a Certificate of Authority, and URLs.</p>
+<h2 id="interacting-with-an-item">Interacting With An Item</h2>
 
-<p><img src="product_form_example.png" alt="Product Form Example" class="img-responsive" /></p>
+<p>After you have navigated to an item in CP3 you will probably see a Video, a text summary and a list of keywords associated with the item.  To see information about the item click on the <em>drawer</em> icon on the lower part of the screen.  There will be 3 tabs:</p>
 
-<h2 id="after-you-have-created-a-product-template">After you have created a product template</h2>
+<ul>
+  <li>Features</li>
+  <li>Services</li>
+  <li>Controls</li>
+</ul>
 
-<p>After you create a product template you can create <a href="/realitemsdocs/tracker_add_digids.html">digital identities</a>.</p>
+<h2 id="features">Features</h2>
+
+<p>The <em>Features</em> tab contains a main photo image, a message, and a <em>Gallery</em> of images for that item.</p>
+
+<h2 id="services">Services</h2>
+
+<p>The <em>Services</em> tab contains several icons including:</p>
+
+<h3 id="blockchain-icon">Blockchain Icon</h3>
+
+<p>Clicking the <em>Blockchain</em> icon will display blockchain information associated with the creation of this item.</p>
+
+<h3 id="certificate-of-analysis-icon">Certificate of Analysis Icon</h3>
+
+<p>Clicking the <em>Certificate of Authority</em> icon will display the Certificate of Authority document.</p>
+
+<h2 id="controls">Controls</h2>
+
+<p>The <em>Controls</em> tab contains several links including:</p>
+
+<ul>
+  <li>A link allowing you to download the Certificate of Authority document to your device.</li>
+</ul>
 
 
 
     <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        <a href="tag_cp3.html" class="btn btn-default navbar-btn cursorNorm" role="button">cp3</a>
+        
+        
         
     </div>
 

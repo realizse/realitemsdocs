@@ -40,6 +40,4 @@ Tracking events are created and written to the blockchain via the Tracker App or
 3. Click the **Get NFR** button
 4. Click on **Tracking Events**.
 
-![Tracking Event Example](tracking_event_example.png){:class="img-responsive"}
-
 {% include links.html %}

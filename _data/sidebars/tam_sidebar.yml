@@ -23,7 +23,7 @@ entries:
   - title: Getting Started
     output: web, pdf
     folderitems:
-    - title: TAM home
+    - title: TAM Home
       url: /tam_landing_page.html
       output: web
 
