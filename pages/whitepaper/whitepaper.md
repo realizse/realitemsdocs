@@ -18,14 +18,23 @@ The Fourth Industrial Revolution, or Industry 4.0, was coined by World Economic 
 
 ![Digital Identity](whitepaper_digital_ids.svg){:class="img-responsive"}
 
+## Access and Useability
+
+According to worldbank.org, “globally, 1.7 billion adults remain unbanked, yet two-thirds of them own a mobile that could help them access financial services.” [2] 
+
+Real Items technology has kept this fact in perspective, which is why there is no app download required to participate or verify products. Since the unbanked are more likely to buy counterfeit products, it was imperative to provide access through basic mobile.
 
 ## Applications 
 
 Here are a few applications that this technology makes possible:
 
+**Verifiable Product Authenticity**
+
+Real Items product lifecycle tracking gives brands the ability to provide their customers with reliable evidence of a product’s makeup including such attributes as raw material source, chemical properties and laboratory test results of input substances, production line assembly and/or treatment processes, time and temp, and any other important event or input. Conscientious consumers enthusiastic about health and well-being, concerned parents, and producers bearing any kind of responsibility or liability for the inputs or ingredients that go into products they bring to market can thereby be completely assured their finished goods are verified authentic.
+
 **A Verified Marketplace**
 
-Traditional ecommerce platforms like eBay, Amazon, Taobao, Alibaba and Flipkart are not able to protect their consumers from counterfeit products blending in as authentic. Marketplaces that want to protect customers from fraudulent and untested products need Real Items as their infrastructure to prevent counterfeit products from reaching their listings.
+Counterfeit products are becoming indistinguishable from authentic items, leaving consumers at risk. Traditional ecommerce platforms like eBay, Amazon, Taobao, Alibaba and Flipkart are not able to protect their consumers from counterfeits blending in as authentic. Marketplaces that want to protect customers from fraudulent and untested products need Real Items as their infrastructure to prevent counterfeit products from reaching their listings.
 
 Additionally, the same anti-counterfeit protection provides an on ramp for direct to consumer engagement. The combination strengthens the consumer experience and provides a channel for communication. This gives customer service chatbots more relevance to issues and can assist in registering warranties, sales or insurance.
 
@@ -152,7 +161,7 @@ _Second_, we have created a mechanism for _fractionalizing_ Non Fungible Records
 
 ## Security
 
-At its lowest level, our technology must guarantee the immutability of each transaction and event written into the system.  We chose a distributed ledger solution that guarantees "absolute finality (or safety guarantee) on blocks and transactions" [2].
+At its lowest level, our technology must guarantee the immutability of each transaction and event written into the system.  We chose a distributed ledger solution that guarantees "absolute finality (or safety guarantee) on blocks and transactions" [3].
 
 All data transmitted between our middleware, clients, and databases is secured by TLS.
 
@@ -164,8 +173,10 @@ We have built a system which provides a mutually agreed upon single source of tr
 
 ## References
 
-[1] Klaus Schwab, "The Fourth Industrial Revolution: what it means, how to respond."  2016. [Online]. https://www.weforum.org/agenda/2016/01/the-fourth-industrial-revolution-what-it-means-and-how-to-respond/
+[1] Klaus Schwab, "The Fourth Industrial Revolution: what it means, how to respond."  2016. [Online](https://www.weforum.org/agenda/2016/01/the-fourth-industrial-revolution-what-it-means-and-how-to-respond/)
 
-[2] VeChain Foundation, "VeChain Whitepaper 2.0" 2020. [Online]. https://www.vechain.org/whitepaper/#bit_65sv8
+[2] The World Bank, "Financial Inclusion on the Rise, But Gaps Remain, Global Findex Database Shows" 2018. [Online](https://www.worldbank.org/en/news/press-release/2018/04/19/financial-inclusion-on-the-rise-but-gaps-remain-global-findex-database-shows#:~:text=Globally%2C%201.7%20billion%20adults%20remain,help%20them%20access%20financial%20services.&text=It%20adds%20data%20on%20the,150%2C000%20interviews%20around%20the%20world.)
+
+[3] VeChain Foundation, "VeChain Whitepaper 2.0" 2020. [Online](https://www.vechain.org/whitepaper/#bit_65sv8)
 
 {% include links.html %}
