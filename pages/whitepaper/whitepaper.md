@@ -8,6 +8,8 @@ folder: whitepaper_
 tags: [whitepaper, tam, cp3, tracker]
 ---
 
+# Real Items Whitepaper
+
 ##  Abstract 
 
 A mutually agreed upon single source of truth in any _product life cycle_ would allow stakeholders to bypass costly trust-building processes and thus increase efficiency and reduce costs. A technology that uses cryptographic digital signatures to create irrefutable and universally accepted digital identities which are paired to real-world items would increase transparency and empower stakeholders to make quicker and more intelligent decisions. By establishing a consenus about the state of an item, friction is reduced and time-consuming, error-prone processes can be removed, optimized, or automated. The benefits of digital proofs extend far beyond merely improving existing processes. When a stakeholder has instant access to the real-time attributes of an item such as provenance, shipping history, location, custody, and ownership, new value-add services and industries can be created.
@@ -178,5 +180,11 @@ We have built a system which provides a mutually agreed upon single source of tr
 [2] The World Bank, "Financial Inclusion on the Rise, But Gaps Remain, Global Findex Database Shows" 2018. [Online](https://www.worldbank.org/en/news/press-release/2018/04/19/financial-inclusion-on-the-rise-but-gaps-remain-global-findex-database-shows#:~:text=Globally%2C%201.7%20billion%20adults%20remain,help%20them%20access%20financial%20services.&text=It%20adds%20data%20on%20the,150%2C000%20interviews%20around%20the%20world.)
 
 [3] VeChain Foundation, "VeChain Whitepaper 2.0" 2020. [Online](https://www.vechain.org/whitepaper/#bit_65sv8)
+
+{% raw %}
+<script  >
+$("#mysidebar").navgoco('toggle', true);
+</script>
+{% endraw %}
 
 {% include links.html %}

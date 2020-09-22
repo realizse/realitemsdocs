@@ -2,21 +2,16 @@
 
 
 entries:
-  - title: Sidebar
+  - title: Whitepaper 
     product: Whitepaper 
     version: 1.0
     folders:
   
-    - title:
-      output: pdf
-      type: frontmatter
+    - title:  Other Formats 
+      output: web, pdf
+
       folderitems:
-      - title:
-        url: /titlepage.html
-        output: pdf
-        type: frontmatter
-      - title:
-        url: /tocpage.html
-        output: pdf
-        type: frontmatter
+      - title: PDF 
+        external_url: https://realitems.github.io/realitemsdocs/whitepaper.pdf
+        output: web, pdf 
   
