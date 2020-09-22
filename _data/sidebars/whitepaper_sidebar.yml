@@ -12,6 +12,6 @@ entries:
 
       folderitems:
       - title: PDF 
-        external_url: https://realitems.github.io/realitemsdocs/whitepaper.pdf
+        external_url: whitepaper.pdf
         output: web, pdf 
   
