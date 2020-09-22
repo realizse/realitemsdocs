@@ -15,7 +15,7 @@ After taking ownership of an item you will suddenly have access to the attribute
 There are two ways to view an item:
 
 * Scan an item's QR Code, verify its authenticity, and take ownership.  This only works one time.
-* Log in (or create) to your CP3 and navigate to your _Closet_.  Then click on the item.
+* Log in (or create) to your CP3 and navigate to your _portfolio_.  Then click on the item.
 
 ## Interacting With An Item
 

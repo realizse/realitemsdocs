@@ -38,13 +38,13 @@ Real Items product lifecycle tracking gives brands the ability to provide their 
 
 Counterfeit products are becoming indistinguishable from authentic items, leaving consumers at risk. Traditional ecommerce platforms like eBay, Amazon, Taobao, Alibaba and Flipkart are not able to protect their consumers from counterfeits blending in as authentic. Marketplaces that want to protect customers from fraudulent and untested products need Real Items as their infrastructure to prevent counterfeit products from reaching their listings.
 
-Additionally, the same anti-counterfeit protection provides an on ramp for direct to consumer engagement. The combination strengthens the consumer experience and provides a channel for communication. This gives customer service chatbots more relevance to issues and can assist in registering warranties, sales or insurance.
+Additionally, the same anti-counterfeit protection provides an on ramp for direct to consumer engagement. The combination strengthens the consumer experience and provides a channel for communication. Customer service chatbots become more relevant to issues and can assist in registering warranties, sales or insurance.
 
 A live example of this use-case can be found at [Real Items Marketplace](https://realitems.shop/collections/100-authentic-marketplace)
 
 **Decentralized Finance (Defi)**
 
-When enterprises adopt Real Items technology it enables the organization to leverage Decentralized Finance (DeFi) protocols to generate liquidity from their inventory, machinery or accounts receivables. Additionally when end-to-end digitization is matched with stablecoins, it allows organizations to create automated payment incentives that can be executed from real world events and be protected from volatile market conditions (fiat & digital currency).
+When enterprises adopt Real Items technology, it enables them to leverage Decentralized Finance (DeFi) protocols to generate liquidity from their inventory, machinery or accounts receivables. Additionally, when end-to-end digitization is matched with stablecoins, it allows organizations to create automated payment incentives that can be executed from real world events and be protected from volatile market conditions (fiat & digital currency).
 
 **Collateralized Commodities**
 
