@@ -1,6 +1,6 @@
 ---
 title: Scan An Item 
-keywords: NFR, NFT
+keywords: NFT, NFT
 summary: "Scan an item..."
 sidebar: tracker_sidebar
 permalink: tracker_scan_item.html

@@ -1,6 +1,6 @@
 ---
 title: View Your Portfolio (CP3)
-keywords: NFR, NFT
+keywords: NFT
 summary: "View Your Portfolio..."
 sidebar: cp3_sidebar
 permalink: cp3_view_portfolio.html

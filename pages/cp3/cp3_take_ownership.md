@@ -1,6 +1,6 @@
 ---
 title: Take ownership of an item (CP3)
-keywords: NFR, NFT
+keywords: NFT
 summary: "How to take ownership of an item..."
 sidebar: cp3_sidebar
 permalink: cp3_take_ownership.html

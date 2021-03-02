@@ -37,7 +37,7 @@ Tracking events are created and written to the blockchain via the Tracker App or
 
 1. Click on **Item Explorer** in left navigation pane
 2. Enter the **digitial identity**’s ID in the box.
-3. Click the **Get NFR** button
+3. Click the **Get NFT** button
 4. Click on **Tracking Events**.
 
 {% include links.html %}

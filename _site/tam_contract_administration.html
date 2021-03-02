@@ -41,7 +41,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://0.0.0.0:4000/feed.xml">
 
     <script>
         $(document).ready(function() {
@@ -353,28 +353,28 @@ $('#toc').on('click', 'a', function() {
 
 <h3 id="the-items-contract">The Items Contract</h3>
 
-<p>The items contract contains a sequence of the NFRs that make up the Real Items system.  Each NFR (see VIP181 for more info) has a set of attributes such as:</p>
+<p>The items contract contains a sequence of the NFTs that make up the Real Items system.  Each NFT (see VIP181 for more info) has a set of attributes such as:</p>
 
 <ul>
   <li>An owner</li>
   <li>An approver</li>
   <li>A creation time</li>
-  <li>The hash of an IPFS document containing the metadata for this NFR</li>
+  <li>The hash of an IPFS document containing the metadata for this NFT</li>
 </ul>
 
 <h3 id="the-tracking-contract">The Tracking Contract</h3>
 
-<p>The tracking contract contains a series of tracking events.  Each tracking event is associated with an NFR in the Items contract.  Each tracking event has a set of attributes such as:</p>
+<p>The tracking contract contains a series of tracking events.  Each tracking event is associated with an NFT in the Items contract.  Each tracking event has a set of attributes such as:</p>
 
 <ul>
   <li>A timestamp</li>
-  <li>An NFR ID</li>
+  <li>An NFT ID</li>
   <li>The hash of an IPFS document containing the metadata for this event</li>
 </ul>
 
 <h2 id="managaging-sponsors">Managaging Sponsors</h2>
 
-<p>The <em>sponsor</em> of the NFR contract is the VeChain account that pays for each transaction.  By default a contract has no sponsors.  This means that each transaction is paid for by the contract’s <em>Master Account</em>.  A contract can have multiple Sponsors but only one sponsor can pay for transactions at a time.  The Contract Admin tool allows an Administrator to:</p>
+<p>The <em>sponsor</em> of the NFT contract is the VeChain account that pays for each transaction.  By default a contract has no sponsors.  This means that each transaction is paid for by the contract’s <em>Master Account</em>.  A contract can have multiple Sponsors but only one sponsor can pay for transactions at a time.  The Contract Admin tool allows an Administrator to:</p>
 
 <ul>
   <li>Add sponsors</li>

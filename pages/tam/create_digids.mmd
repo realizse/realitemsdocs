@@ -9,8 +9,8 @@ sequenceDiagram
         Real Items Node->>IPFS: Push metadata 
         IPFS->>IPFS: save metadata
         IPFS->>Real Items Node: return IPFS hash 
-        Real Items Node->>Real Items Node:  Create NFR 
+        Real Items Node->>Real Items Node:  Create NFT 
         Note right of IPFS: Transaction <br/>generated!
-        Real Items Node->>Blockchain: store NFR 
+        Real Items Node->>Blockchain: store NFT 
     end
     Real Items Node-->>TAM: return receipt 

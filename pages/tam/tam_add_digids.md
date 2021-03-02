@@ -1,6 +1,6 @@
 ---
 title: Add Digital Identities (TAM)
-keywords: NFR, NFT
+keywords: NFT, NFT
 summary: "Add digital identities to the blockchain..."
 sidebar: tam_sidebar
 permalink: tam_add_digids.html
@@ -10,7 +10,7 @@ folder: tam_
 
 ## Digital Identities 
 
-A **digital identity** (also referred to as an **item**) is an instance of a **product** that has been digitized on the blockchain.  A digital identity can be a single NFR on the blockchain (in the case of durable products), or a fraction of an NFR paired with a unique PIN.  Associated with each digital identity is a QR Code, a numeric ID, an obfuscated ID and a PIN.  Digital identities have a custodian (a program or human that holds the private key and/or the PIN) and are sometimes associated with an owner (a specific company or human being).  The custodian and the owner can be the same person or thing, or they can be different.
+A **digital identity** (also referred to as an **item**) is an instance of a **product** that has been digitized on the blockchain.  A digital identity can be a single NFT on the blockchain (in the case of durable products), or a fraction of an NFT paired with a unique PIN.  Associated with each digital identity is a QR Code, a numeric ID, an obfuscated ID and a PIN.  Digital identities have a custodian (a program or human that holds the private key and/or the PIN) and are sometimes associated with an owner (a specific company or human being).  The custodian and the owner can be the same person or thing, or they can be different.
 
 
 ## Creating digital identities 
@@ -36,7 +36,7 @@ After you have created a digital identity you can now view it 2 ways in the TAM.
 Or, if you already know the digital identity's ID, you can
 1. Click on Item Explorer
 2. Enter the digitial identity's ID in the box.
-3. Click the "Get NFR" button
+3. Click the "Get NFT" button
 
 ## Pairing you digital identity with a physical item.
 

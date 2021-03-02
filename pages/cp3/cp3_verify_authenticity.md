@@ -1,6 +1,6 @@
 ---
 title: Verify Authenticity of an Item (CP3)
-keywords: NFR, NFT
+keywords: NFT
 summary: "How to verify the authenticity of an item..."
 sidebar: cp3_sidebar
 permalink: cp3_verify_authenticity.html

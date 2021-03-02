@@ -1,6 +1,6 @@
 ---
 title: Write An Event To Thye Blockchain 
-keywords: NFR, NFT
+keywords: NFT, NFT
 summary: "Write an event to the blockchain..."
 sidebar: tracker_sidebar
 permalink: tracker_add_event.html

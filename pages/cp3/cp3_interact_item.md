@@ -1,6 +1,6 @@
 ---
 title: Interacting with an item (CP3)
-keywords: NFR, NFT
+keywords: NFT
 summary: "Interacting with an item..."
 sidebar: cp3_sidebar
 permalink: cp3_interact_item.html

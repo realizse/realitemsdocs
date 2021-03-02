@@ -1,6 +1,6 @@
 ---
 title: Real Items Whitepaper 
-keywords: NFR, NFR, Blockchain
+keywords: NFT, NFT, Blockchain
 summary: "Optimizing and Extending the Product Life Cycle"
 sidebar: whitepaper_sidebar
 permalink: whitepaper.html
@@ -149,15 +149,15 @@ Our solution to this problem is two-fold:
 
 _First_, we chose a core blockchain technology that has already solved the transaction cost volatility problem. VeChain solves this by implementing a dual-token system - VET for currency and VTHO for gas. Because the tokens are loosely-coupled, the price of VET can rise and fall while transaction costs remain relatively stable.
 
-_Second_, we have created a mechanism for _fractionalizing_ Non Fungible Records. Built into our system is the ability to construct multiple digital identities from a single NFR. For non-durable goods, such as a can of soda or a bottle of ointment, we can create an NFR and fractionalize it into multiple digital identities.
+_Second_, we have created a mechanism for _fractionalizing_ Non Fungible Records. Built into our system is the ability to construct multiple digital identities from a single NFT. For non-durable goods, such as a can of soda or a bottle of ointment, we can create an NFT and fractionalize it into multiple digital identities.
 
 ---
 
-### Whole NFRs
+### Whole NFTs
 
 ![Whole](whitepaper_durable.svg){:class="img-responsive"}
 
-### Fractionalized NFRs
+### Fractionalized NFTs
 
 ![Batched](whitepaper_batched.svg){:class="img-responsive"}
 

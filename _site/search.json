@@ -6,7 +6,7 @@
 {
 "title": "Interacting with an item (CP3)",
 "tags": "cp3",
-"keywords": "NFR, NFT",
+"keywords": "NFT",
 "url": "cp3_interact_item.html",
 "summary": "Interacting with an item..."
 }
@@ -28,7 +28,7 @@
 {
 "title": "Take ownership of an item (CP3)",
 "tags": "cp3",
-"keywords": "NFR, NFT",
+"keywords": "NFT",
 "url": "cp3_take_ownership.html",
 "summary": "How to take ownership of an item..."
 }
@@ -39,7 +39,7 @@
 {
 "title": "Verify Authenticity of an Item (CP3)",
 "tags": "cp3",
-"keywords": "NFR, NFT",
+"keywords": "NFT",
 "url": "cp3_verify_authenticity.html",
 "summary": "How to verify the authenticity of an item..."
 }
@@ -50,7 +50,7 @@
 {
 "title": "View Your Portfolio (CP3)",
 "tags": "cp3",
-"keywords": "NFR, NFT",
+"keywords": "NFT",
 "url": "cp3_view_portfolio.html",
 "summary": "View Your Portfolio..."
 }
@@ -724,7 +724,7 @@
 {
 "title": "Add Digital Identities (TAM)",
 "tags": "tam",
-"keywords": "NFR, NFT",
+"keywords": "NFT, NFT",
 "url": "tam_add_digids.html",
 "summary": "Add digital identities to the blockchain..."
 }
@@ -820,7 +820,7 @@
 {
 "title": "Write An Event To Thye Blockchain",
 "tags": "scanner",
-"keywords": "NFR, NFT",
+"keywords": "NFT, NFT",
 "url": "tracker_add_event.html",
 "summary": "Write an event to the blockchain..."
 }
@@ -853,7 +853,7 @@
 {
 "title": "Scan An Item",
 "tags": "scanner",
-"keywords": "NFR, NFT",
+"keywords": "NFT, NFT",
 "url": "tracker_scan_item.html",
 "summary": "Scan an item..."
 }
@@ -864,7 +864,7 @@
 {
 "title": "Real Items Whitepaper",
 "tags": "whitepapertamcp3tracker",
-"keywords": "NFR, NFR, Blockchain",
+"keywords": "NFT, NFT, Blockchain",
 "url": "whitepaper.html",
 "summary": "Optimizing and Extending the Product Life Cycle"
 }
@@ -875,7 +875,7 @@
 {
 "title": "Real Items Whitepaper",
 "tags": "whitepapertamcp3tracker",
-"keywords": "NFR, NFR, Blockchain",
+"keywords": "NFT, NFT, Blockchain",
 "url": "whitepaper_notes.html",
 "summary": "Optimizing and Extending the Product Life Cycle"
 }
