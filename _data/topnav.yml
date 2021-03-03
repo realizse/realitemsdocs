@@ -3,31 +3,28 @@
 topnav:
 - title: Topnav
   items:
-##    - title: GitHub
-##      external_url: https://github.com/realitems
+
+    - title: Home
+      url: /index.html
+
     - title: Whitepaper
       url: /whitepaper.html
-
-##    - title: News
-##      url: /news
 
 #Topnav dropdowns
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-    - title: Help
-      folderitems:
-        - title: Real Items Message 
-          external_url: https://share.hsforms.com/15RzF4kFkT5mzD3LYgNFWqA4c4p4
-        - title: Real Items on Stack Overflow
-          external_url: http://stackoverflow.com/questions/tagged/realitems
-        - title: Real Items Blog
-          external_url: https://realitems.shop/blogs/news
     - title: Products
       folderitems:
-        - title: TAM
-          url: /tam_landing_page.html
-        - title: CP3
+        - title: Consumer Protection 3.0
           url: /cp3_landing_page.html
-        - title: Tracker 
+        - title: Tokenized Asset Manager
+          url: /tam_landing_page.html
+        - title: Tracker App
           url: /tracker_landing_page.html
+    - title: Help
+      folderitems:
+        - title: Real Items Discord Server
+          external_url: https://discord.com/channels/803323232039075881/806705104342089791 
+        - title: Real Items Blog
+          external_url: https://realitems.shop/blogs/news

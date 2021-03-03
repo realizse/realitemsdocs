@@ -34,7 +34,7 @@ exclude:
 # these are the files and directories that jekyll will exclude from the build
 
 feedback_subject_line: Real Items Documentation
-
+feedback_disable: true
 feedback_email: info@realitems.io
 # used as a contact email for the Feedback link in the top navigation bar
 

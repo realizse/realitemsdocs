@@ -14,6 +14,6 @@ entries:
     - title: CP3
       url: /cp3_landing_page.html
       output: web
-    - title: Tracker 
+    - title: Tracker App
       url: /tracker_landing_page.html
       output: web
