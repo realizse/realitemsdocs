@@ -1,11 +1,21 @@
-jekyll_platform: "Jekyll is a static site generator that builds sites using most modern web technologies."
+blockchain: "A blockchain, originally block chain, is a growing list of records, called blocks, that are linked using cryptography."
 
-fractious: "Like a little mischevious child, full of annoying and constant trouble."
+cp3: Consumer Protection 3.0 is a web app used by end consumers to manage their portfolio of items withing the Real Items platform"
 
-gratuitous: "Something that is unwarranted and uncouth, like the social equivalent of a flagrant foul."
+digital_twin: "A blockchain record associated with a physical item.  See phygital."
 
-haughty: "Proud and flaunting it. Holding your head high up like a snooty, too-good-for-everything rich person."
+ethereum: "Ethereum is a decentralized, open-source blockchain featuring smart contract functionality"
 
-impertinent: "Someone acting rude and insensitive to others."
+event: "An occurence which can be associated with an item on the blockchain.  examples are 'item loaded on truck', 'item shipped', 'item received'"
 
-intrepid: "Brave and courageous especially in a difficult, dangerous situation."
+item: "A physical or digital entity which has an identity on the blockchain"
+
+IPFS: "The InterPlanetary File System (IPFS) is a protocol and peer-to-peer network for storing and sharing data in a distributed file system. IPFS uses content-addressing to uniquely identify each file in a global namespace connecting all computing devices."
+
+phygital: "A physical item which has an identity on the blockchain"
+
+tam: "Tokenized Asset Manager - used by enterprises to create and manage product templates and create and manage digital items on the blockchain"
+
+tracker: "A mobile app created by Real Items which allows enterprises to associate events with existing items on the blockchain"
+
+vechain: "VeChainThor is a public blockchain that is designed for mass adoption of blockchain technology by business users of all sizes. It is intended to serve as the foundation for a sustainable and scalable business blockchain ecosystem. "

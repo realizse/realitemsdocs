@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Your glossary page can take advantage of definitions stored in a data file. This gives you the ability to reuse the same definition in multiple places. Addit...">
-<meta name="keywords" content="formattingspecial_layouts,  definitions, glossaries, terms, style guide">
-<title>Glossary layout | Real Items Documentation</title>
+<meta name="description" content="Contains a definition for terms used in the Real Items ecosystem">
+<meta name="keywords" content="definitionsglossaryterms,  definitions, glossaries, terms, style guide">
+<title>Glossary | Real Items Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -127,6 +127,10 @@
                 
                 
                 
+                <li class="active"><a href="ridoc_glossary.html">Glossary</a></li>
+                
+                
+                
                 <!-- entries with drop-downs appear here -->
                 <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
                 
@@ -180,7 +184,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Glossary layout">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Glossary">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -266,7 +270,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Glossary layout</h1>
+   <h1 class="post-title-main">Glossary</h1>
 </div>
 
 
@@ -274,7 +278,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Your glossary page can take advantage of definitions stored in a data file. This gives you the ability to reuse the same definition in multiple places. Additionally, you can use Bootstrap classes to arrange your definition list horizontally.</div>
+    <div class="summary">Contains a definition for terms used in the Real Items ecosystem</div>
    
 
     
@@ -282,97 +286,26 @@
 
     
 
-   <p>You can create a glossary for your content. First create your glossary items in a data file such as glossary.yml.</p>
-
-<p>Then create a page and use definition list formatting, like this:</p>
-
-<dl>
-  <dt>fractious</dt>
-  <dd>Like a little mischevious child, full of annoying and constant trouble.</dd>
-  <dt>gratuitous</dt>
-  <dd>Something that is unwarranted and uncouth, like the social equivalent of a flagrant foul.</dd>
-  <dt>haughty</dt>
-  <dd>Proud and flaunting it. Holding your head high up like a snooty, too-good-for-everything rich person.</dd>
-  <dt>gratuitous</dt>
-  <dd>Something that is unwarranted and uncouth, like the social equivalent of a flagrant foul.</dd>
-  <dt>impertinent</dt>
-  <dd>Brave and courageous especially in a difficult, dangerous situation.</dd>
+   <dl>
+  <dt>blockchain</dt>
+  <dd>A blockchain, originally block chain, is a growing list of records, called blocks, that are linked using cryptography.</dd>
+  <dt>cp3</dt>
+  <dd>Consumer Protection 3.0 is a web app used by end consumers to manage their portfolio of items withing the Real Items platform”</dd>
+  <dt>digital twin</dt>
+  <dd>A blockchain record associated with a physical item.  See phygital.</dd>
+  <dt>ethereum</dt>
+  <dd>Ethereum is a decentralized, open-source blockchain featuring smart contract functionality</dd>
+  <dt>event</dt>
+  <dd>An occurence which can be associated with an item on the blockchain.  examples are ‘item loaded on truck’, ‘item shipped’, ‘item received’</dd>
+  <dt>IPFS</dt>
+  <dd>The InterPlanetary File System (IPFS) is a protocol and peer-to-peer network for storing and sharing data in a distributed file system. IPFS uses content-addressing to uniquely identify each file in a global namespace connecting all computing devices.</dd>
+  <dt>phygital</dt>
+  <dd>A physical item which has an identity on the blockchain</dd>
+  <dt>tracker</dt>
+  <dd>A mobile app created by Real Items which allows enterprises to associate events with existing items on the blockchain</dd>
+  <dt>vechain</dt>
+  <dd>VeChainThor is a public blockchain that is designed for mass adoption of blockchain technology by business users of all sizes. It is intended to serve as the foundation for a sustainable and scalable business blockchain ecosystem.</dd>
 </dl>
-
-<p>Here’s the code:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fractious
-: {{site.data.glossary.fractious}}
-
-gratuitous
-: {{site.data.glossary.gratuitous}}
-
-haughty
-: {{site.data.glossary.haughty}}
-
-gratuitous
-: {{site.data.glossary.gratuitous}}
-
-impertinent
-: {{site.data.glossary.intrepid}}
-</code></pre></div></div>
-
-<p>The glossary works well as a link in the top navigation bar.</p>
-
-<h2 id="horizontally-styled-definiton-lists">Horizontally styled definiton lists</h2>
-
-<p>You can also change the definition list (<code class="language-plaintext highlighter-rouge">dl</code>) class to <code class="language-plaintext highlighter-rouge">dl-horizontal</code>. This is a Bootstrap specific class. If you do, the styling looks like this:</p>
-
-<dl class="dl-horizontal">
-
-<dt id="fractious">fractious</dt>
-<dd>Like a little mischevious child, full of annoying and constant trouble.</dd>
-
-<dt id="gratuitous">gratuitous</dt>
-<dd>Something that is unwarranted and uncouth, like the social equivalent of a flagrant foul.</dd>
-
-<dt id="haughty">haughty</dt>
-<dd>Proud and flaunting it. Holding your head high up like a snooty, too-good-for-everything rich person.</dd>
-
-<dt id="benchmark_id">gratuitous</dt>
-<dd>Something that is unwarranted and uncouth, like the social equivalent of a flagrant foul.</dd>
-
-<dt id="impertinent">impertinent</dt>
-<dd>Someone acting rude and insensitive to others.</dd>
-
-<dt id="intrepid">intrepid</dt>
-<dd>Brave and courageous especially in a difficult, dangerous situation.</dd>
-
-</dl>
-
-<p>For this type of list, you must use HTML. The list would then look like this:</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">"dl-horizontal"</span><span class="nt">&gt;</span>
-
-<span class="nt">&lt;dt</span> <span class="na">id=</span><span class="s">"fractious"</span><span class="nt">&gt;</span>fractious<span class="nt">&lt;/dt&gt;</span>
-<span class="nt">&lt;dd&gt;</span>{{site.data.glossary.fractious}}<span class="nt">&lt;/dd&gt;</span>
-
-<span class="nt">&lt;dt</span> <span class="na">id=</span><span class="s">"gratuitous"</span><span class="nt">&gt;</span>gratuitous<span class="nt">&lt;/dt&gt;</span>
-<span class="nt">&lt;dd&gt;</span>{{site.data.glossary.gratuitous}}<span class="nt">&lt;/dd&gt;</span>
-
-<span class="nt">&lt;dt</span> <span class="na">id=</span><span class="s">"haughty"</span><span class="nt">&gt;</span>haughty<span class="nt">&lt;/dt&gt;</span>
-<span class="nt">&lt;dd&gt;</span>{{site.data.glossary.haughty}}<span class="nt">&lt;/dd&gt;</span>
-
-<span class="nt">&lt;dt</span> <span class="na">id=</span><span class="s">"benchmark_id"</span><span class="nt">&gt;</span>gratuitous<span class="nt">&lt;/dt&gt;</span>
-<span class="nt">&lt;dd&gt;</span>{{site.data.glossary.gratuitous}}<span class="nt">&lt;/dd&gt;</span>
-
-<span class="nt">&lt;dt</span> <span class="na">id=</span><span class="s">"impertinent"</span><span class="nt">&gt;</span>impertinent<span class="nt">&lt;/dt&gt;</span>
-<span class="nt">&lt;dd&gt;</span>{{site.data.glossary.impertinent}}<span class="nt">&lt;/dd&gt;</span>
-
-<span class="nt">&lt;dt</span> <span class="na">id=</span><span class="s">"intrepid"</span><span class="nt">&gt;</span>intrepid<span class="nt">&lt;/dt&gt;</span>
-<span class="nt">&lt;dd&gt;</span>{{site.data.glossary.intrepid}}<span class="nt">&lt;/dd&gt;</span>
-
-<span class="nt">&lt;/dl&gt;</span>
-</code></pre></div></div>
-
-<p>If you squish your screen small enough, at a certain breakpoint this style reverts to the regular <code class="language-plaintext highlighter-rouge">dl</code> class.</p>
-
-<p>Although I like the side-by-side view for shorter definitions, I found it problematic with longer definitions.</p>
 
 
 
@@ -382,7 +315,15 @@ impertinent
         
         
         
+        <a href="tag_definitions.html" class="btn btn-default navbar-btn cursorNorm" role="button">definitions</a>
         
+        
+        
+        <a href="tag_glossary.html" class="btn btn-default navbar-btn cursorNorm" role="button">glossary</a>
+        
+        
+        
+        <a href="tag_terms.html" class="btn btn-default navbar-btn cursorNorm" role="button">terms</a>
         
         
         

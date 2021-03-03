@@ -10,6 +10,9 @@ topnav:
     - title: Whitepaper
       url: /whitepaper.html
 
+    - title: Glossary 
+      url: /ridoc_glossary.html
+
 #Topnav dropdowns
 topnav_dropdowns:
 - title: Topnav dropdowns

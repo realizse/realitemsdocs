@@ -261,11 +261,11 @@
 
 
 {
-"title": "Glossary layout",
-"tags": "formattingspecial_layouts",
+"title": "Glossary",
+"tags": "definitionsglossaryterms",
 "keywords": "definitions, glossaries, terms, style guide",
 "url": "ridoc_glossary.html",
-"summary": "Your glossary page can take advantage of definitions stored in a data file. This gives you the ability to reuse the same definition in multiple places. Additionally, you can use Bootstrap classes to arrange your definition list horizontally."
+"summary": "Contains a definition for terms used in the Real Items ecosystem"
 }
 ,
 
