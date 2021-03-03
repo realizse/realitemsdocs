@@ -61,11 +61,11 @@
 
 
 {
-"title": "Getting started with Real Items",
-"tags": "whitepaper",
-"keywords": "sample homepage",
+"title": "Real Items Documentation",
+"tags": "",
+"keywords": "homepage",
 "url": "index.html",
-"summary": "These resources will help you get started quickly with Real Items."
+"summary": ""
 }
 ,
 
@@ -766,7 +766,7 @@
 
 
 {
-"title": "TAM (Token Asset Manager)",
+"title": "Tokenized Asset Manager",
 "tags": "",
 "keywords": "ridoc",
 "url": "tam_landing_page.html",

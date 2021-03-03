@@ -1,28 +1,37 @@
 ---
-title: "Getting started with Real Items"
-keywords: sample homepage
-tags: [whitepaper]
+title: "Real Items Documentation"
+keywords: homepage
+toc: true
 sidebar: ridoc_sidebar
 permalink: index.html
-summary: These resources will help you get started quickly with Real Items. 
 ---
 
-## Visit Our Website 
+Learn how to use Real Items tools and endpoints to unlock the power of Phygitals for your organization.
 
-For an overview of What We Do, visit [Our Website](https://realitems.io)
+This site provides documentation, training, and other notes for the Real Items platform. There’s a lot of information about how to do a variety of things here. There is also information about our products, APIs, architecture and integrations.
 
-## Watch Our Videos
+The instructions here are geared towards users, system administrators and technical people wishing to understand or integrate with our platform.
 
-Visit our Youtube channel to watch our [videos](https://www.youtube.com/channel/UCG3ilvGR4S1Oi92-HIZSJxQ)
+## Want to know how it works?
 
-## Join the conversation
+Click here to see [how it works](https://realitems.shop/pages/how-does-real-items-technology-work)
 
-Join our [Twitter Feed](https://twitter.com/itemsdapp)
+## Want to learn more about Real Items?
 
-## Read our Documentation
+General info can be found on our [website](https://realitems.io)
 
-Visit our [documentation](https://realitems.github.io/realitemsdocs)
+Videos can be found on our [Youtube channel](https://www.youtube.com/channel/UCG3ilvGR4S1Oi92-HIZSJxQ)
 
-## Schedule a meeting or demo 
+Articles can be found on our [blog](https://realitems.shop/blogs/news)
+
+Join our [Twitter feed](https://twitter.com/itemsdapp)
+
+Join our [Discord server](https://discord.com/channels/803323232039075881/814905373038477363)
+
+## Want to learn even more? 
 
 Book a meeting or demo [here](https://meetings.hubspot.com/david1387/introduction-call-for-business-development)
+
+## Want to buy swag?
+
+[Buy Swag](https://realitems.shop/collections/100-authentic-marketplace)

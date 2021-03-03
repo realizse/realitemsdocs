@@ -1,9 +1,6 @@
-# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
-
-
 entries:
 - title: Sidebar
-  product: TAM 
+  product: Tokenized Asset Manager
   version: 1.0
   folders:
 
@@ -20,13 +17,9 @@ entries:
       output: pdf
       type: frontmatter
 
-  - title: Getting Started
+  - title: Functions 
     output: web, pdf
     folderitems:
-    - title: TAM Home
-      url: /tam_landing_page.html
-      output: web
-
     - title: Add New Products 
       url: /tam_add_products.html
       output: web, pdf

@@ -2,7 +2,7 @@
 
 entries:
 - title: sidebar
-  product: Real Items Docs
+  product: RealItems Docs
   version: 1.0
   folders:
 
@@ -22,12 +22,16 @@ entries:
   - title: Overview
     output: web, pdf
     folderitems:
-
-    - title: Get started
+    - title: Introduction 
       url: /index.html
       output: web, pdf
       type: homepage
-
-    - title: Introduction
-      url: /ridoc_introduction.html
-      output: web, pdf
+    - title: Consumer Protection 3.0 
+      url: /cp3_landing_page.html
+      output: web
+    - title: Tokenized Asset Manager
+      url: /tam_landing_page.html
+      output: web
+    - title: Tracker 
+      url: /tracker_landing_page.html
+      output: web
