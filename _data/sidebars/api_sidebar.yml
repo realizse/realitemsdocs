@@ -3,7 +3,7 @@
 
 entries:
   - title: Sidebar
-    product: Tracker
+    product: GraphQL API 
     folders:
   
     - title:
@@ -22,19 +22,10 @@ entries:
     - title: Functions 
       output: web, pdf
       folderitems:
-      - title: Tracker Home
-        url: /tracker_landing_page.html
+      - title: GraphQL Home
+        url: /api_landing_page.html
         output: web
   
-      - title: Scan An Item
-        url: /tracker_scan_item.html
-        output: web, pdf
-  
-      - title: Add A Tracking Event 
-        url: /tracker_add_event.html
-        output: web, pdf
-  
-      - title: Manage Tracking Administrators 
-        url: /tracker_manage_administrators.html
-        output: web, pdf
-  
+#      - title:  Authenticate
+#        url: /api_authentication.html
+#        output: web, pdf

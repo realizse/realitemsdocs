@@ -4,6 +4,28 @@
 
 
 {
+"title": "View Your Portfolio (CP3)",
+"tags": "cp3",
+"keywords": "NFT",
+"url": "cp3_view_portfolio.html",
+"summary": "View Your Portfolio..."
+}
+,
+
+
+
+{
+"title": "GraphQL API",
+"tags": "",
+"keywords": "ridoc",
+"url": "api_landing_page.html",
+"summary": ""
+}
+,
+
+
+
+{
 "title": "Interacting with an item (CP3)",
 "tags": "cp3",
 "keywords": "NFT",
@@ -818,9 +840,9 @@
 
 
 {
-"title": "Write An Event To Thye Blockchain",
-"tags": "scanner",
-"keywords": "NFT, NFT",
+"title": "Write an event to the blockchain",
+"tags": "tracker",
+"keywords": "NFT",
 "url": "tracker_add_event.html",
 "summary": "Write an event to the blockchain..."
 }
@@ -829,7 +851,7 @@
 
 
 {
-"title": "TRACKER",
+"title": "Tracker App",
 "tags": "",
 "keywords": "ridoc",
 "url": "tracker_landing_page.html",

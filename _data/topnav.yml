@@ -25,6 +25,8 @@ topnav_dropdowns:
           url: /tam_landing_page.html
         - title: Tracker App
           url: /tracker_landing_page.html
+        - title: GraphQL API 
+          url: /api_landing_page.html
     - title: Help
       folderitems:
         - title: Real Items Discord Server

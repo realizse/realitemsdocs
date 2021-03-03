@@ -3,7 +3,6 @@
 entries:
 - title: sidebar
   product: RealItems Docs
-  version: 1.0
   folders:
 
   - title:
@@ -34,4 +33,10 @@ entries:
       output: web
     - title: Tracker 
       url: /tracker_landing_page.html
+      output: web
+    - title: GraphQL API 
+      url: /api_landing_page.html
+      output: web
+    - title: Glossary 
+      url: /ridoc_glossary.html
       output: web
