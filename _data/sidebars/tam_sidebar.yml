@@ -20,6 +20,10 @@ entries:
   - title: Functions 
     output: web, pdf
     folderitems:
+    - title: TAM Home
+      url: /tam_landing_page.html
+      output: web
+
     - title: Add New Products 
       url: /tam_add_products.html
       output: web, pdf

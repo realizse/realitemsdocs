@@ -20,7 +20,7 @@ entries:
         output: pdf
         type: frontmatter
   
-    - title: Getting Started
+    - title: Functions 
       output: web, pdf
       folderitems:
       - title: CP3 Home
