@@ -8,9 +8,17 @@ permalink: index.html
 
 Learn how to use Real Items tools and endpoints to unlock the power of Phygitals for your organization.
 
-This site provides documentation, training, and other notes for the Real Items platform. There’s a lot of information about how to do a variety of things here. There is also information about our products, APIs, architecture and integrations.
+This site provides documentation for the Real Items platform. 
 
-The instructions here are geared towards users, system administrators and technical people wishing to understand or integrate with our platform.
+This documentation geared towards users, system administrators and technical people wishing to understand and integrate with our platform.
+
+## Navigating this site 
+
+* To learn about our products click on the product title in left-hand menu or use the Products dropdown in the top nav.  
+* To read our Whitepaper click on Whitepaper in the top navigation bar.
+* For a glossary of terms, click on Glossary in the top navigation bar.
+* To get support on our Discord server click Help in the top navigation bar and click 'Real Items Discord Server'
+* Want to find something?  Try the search feature in the top navigation bar.
 
 ## Want to know how it works?
 

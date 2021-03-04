@@ -26,13 +26,43 @@
   
   
   <url>
-    <loc>http://0.0.0.0:4000/cp3_view_portfolio.html</loc>
+    <loc>http://0.0.0.0:4000/api_authentication.html</loc>
   </url>
   
   
   
   <url>
     <loc>http://0.0.0.0:4000/api_landing_page.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://0.0.0.0:4000/api_view_item_by_id.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://0.0.0.0:4000/api_view_items.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://0.0.0.0:4000/api_view_items_by_product_id.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://0.0.0.0:4000/api_view_product_templates.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://0.0.0.0:4000/api_view_single_product_template.html</loc>
   </url>
   
   

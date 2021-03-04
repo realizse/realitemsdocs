@@ -21,7 +21,7 @@ A **digital identity** (also referred to as an **item**) is an instance of a **p
 4. In the Notes box write a unique description of the purpose and characteristics of the "Batch" you are about to create.  These can include who the digital IDs are being created for, why they are being created, what they will be used for etc.
 5. Click the "Create New Digital Identities" button and wait for the process to complete.  Please note that this action will be writing to the blockchain therefore will take a minimum of 10 seconds to complete.  If you create more than 40 digital identities, the minimum time for the action to complete will be (number specified)/40 * 10.
 
-## High Level Sequence Diagram
+## High-level sequence diagram
 ![Create Digital IDs](create_digids.svg){:class="img-responsive"}
 
 ## After creating a digital identity

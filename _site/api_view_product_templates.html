@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="graphql,  NFT, graphql">
+<title>View all product templates | Real Items Documentation</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://0.0.0.0:4000/feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Real Items Documentation</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">Home</a></li>
+                
+                
+                
+                <li><a href="whitepaper.html">Whitepaper</a></li>
+                
+                
+                
+                <li><a href="ridoc_glossary.html">Glossary</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="cp3_landing_page.html">Consumer Protection 3.0</a></li>
+                        
+                        
+                        
+                        <li><a href="tam_landing_page.html">Tokenized Asset Manager</a></li>
+                        
+                        
+                        
+                        <li><a href="tracker_landing_page.html">Tracker App</a></li>
+                        
+                        
+                        
+                        <li><a href="api_landing_page.html">GraphQL API</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://discord.com/channels/803323232039075881/806705104342089791" target="_blank" rel="noopener">Real Items Discord Server</a></li>
+                        
+                        
+                        
+                        <li><a href="https://realitems.shop/blogs/news" target="_blank" rel="noopener">Real Items Blog</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="View all product templates">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">GraphQL API </li>
+  
+  
+  
+      
+  
+  <li>
+      <a title="Functions" href="#">Functions</a>
+      <ul>
+          
+          
+          
+          <li><a title="GraphQL Home" href="api_landing_page.html">GraphQL Home</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Authentication" href="api_authentication.html">Authentication</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a title="View product templates" href="api_view_product_templates.html">View product templates</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="View a product template" href="api_view_single_product_template.html">View a product template</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="View all items" href="api_view_items.html">View all items</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="View items for a product template" href="api_view_items_by_product_id.html">View items for a product template</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="View an item" href="api_view_item_by_id.html">View an item</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">View all product templates</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+
+    
+
+   <h2 id="product-templates">Product Templates</h2>
+
+<p>A Product Template is a JSON document which is persisted on the backend database.  It is used to create items that are then stored on the blockchain.</p>
+
+<h2 id="view-all-product-templates">View all product templates</h2>
+
+<p>Here is the GraphQL query</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>query {
+  allProducts {
+    id
+    blockchainId
+    maxItems
+    name
+    publicProduct
+    componentName
+    publicProduct
+    timeCreated
+    timeModified
+    data
+  }  
+}
+</code></pre></div></div>
+
+<p>Here is an example authentication curl request which will all products.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl --location --request POST 'https://staging.realitems.io/graphql' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3VudHJ5IjoiVVNBIiwidXNlcl9uYW1lIjoia2VuQHJlYWxpdGVtcy5vcmciLCJtb2JpbGUiOiIrNTEwOTMyNDkxMSIsImxhc3RfbmFtZSI6Indvb2RydWZmIiwid2FsbGV0cyI6WyIweGY0ZTVFRjdkZTE1NDQ1QmM1NEU2M0FCMmJGZEM0YkJEY2U0MmUxZkIiLCIweDlFRUNBQjRERjEzQjYzMzhBZDYwMzg4MzVlNjFEQTJENDZjMWRDQjAiXSwiYXV0aG9yaXRpZXMiOlsiU1RBTkRBUkRfVVNFUiIsIkFETUlOX1VTRVIiLCJTVVBFUl9VU0VSIl0sImNsaWVudF9pZCI6InJlYWxpdGVtc3N0YWdpbmdjbGllbnRpZCIsImF1ZCI6WyJyZWFsaXRlbXNzdGFnaW5nand0cmVzb3VyY2VpZCJdLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiaWQiOiIyIiwiZXhwIjoxNjE0OTc0Mjg3LCJmaXJzdF9uYW1lIjoia2VuIiwianRpIjoiYTc0MGIyY2YtYWRmOC00MjQ0LWJiMTMtZTdlOGVhODQyZjI1In0.xNuUbl87rN6lCGjuJV5MWpFZR6uG-SYEA4hZv3EFes8' \
+--header 'Content-Type: application/json' \
+--data-raw '{"query":"query {\n  allProducts {\n    id\n    blockchainId\n    maxItems\n    name\n    publicProduct\n    componentName\n    publicProduct\n    timeCreated\n    timeModified\n    data\n  }\n  \n}","variables":{}}'
+</code></pre></div></div>
+
+<p>If the request is successful the response will look something like this.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "data": {
+        "allProducts": [
+            {
+                "id": 9,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "Real Items Outbound",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2020-04-30T01:09:35.302760Z",
+                "timeModified": "2020-05-15T19:17:12.543404Z",
+                "data": "{\"productId\":9,\"description\":\"Real items are products with matching digital certificates of authenticity. These records are immutable, non fungible and universally tradable.\\n\\n\\n\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmSq8wEzptaVBqZWWLZ7dLx65cyk1sTxfbHKizcPF7Y1MT\",\"name\":\"Real Items Outbound\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"outbound\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/nnJOpvCgWdE\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://realitems.io\"},{\"trait_type\":\"MadeIn\",\"value\":\"\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"RI Outbound Document\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"Official Document\",\" Real Items + Penrose\",\" Blockchain saas\"]},{\"trait_type\":\"SecretMessage\",\"value\":\"Inquiries - info@realitems.io\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmaRW6vYnKfUy6ic6poDqGu9Bz34WsxHTQGscmWx7FDiKQ\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmSuW4SfBqY9qnrfvGEuEcWEcZLu87zSAnQFmrYwm1tPAt\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmUJoub9b98BnPSabmeWRLcN3TsGWFVmTAfJqAhUBPmg14\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmbcAt42Gk57Yvo81v8AGnoYg1HDFNouQ3JVXb7fRGKUtX\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmVPPvsTgfBTYehVtkMWg2o4VBZxpEyMTMBz7xW9UZkjAU\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmUXkkuDDqeH2489iSZZe9TFGSb1DZfqFCvR2MXV9Vxjcx\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmcdYNtfBdbqt5B9d6sjyqCtQ42nPcPfaoRCXz3DyDhJKS\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmfWctmYwUDHUffotfXyo1fs7C6ESRrN5FUt2h6HBbZqWt\"},{\"trait_type\":\"UnitsProduced\",\"value\":\"1\"}]}"
+            },
+            {
+                "id": 6,
+                "blockchainId": 1,
+                "maxItems": 100,
+                "name": "Tricol KN95 Respirator 3 pack",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2020-04-07T18:12:18.910051Z",
+                "timeModified": "2020-05-15T19:17:25.662587Z",
+                "data": "{\"productId\":6,\"description\":\"Established in 1992, Tricol began as a manufacturer of cotton towels and bedding linens for the global home textile industry. Tricol's presence as a major manufacturer of synthetic textiles began in 1996 with the opening of China's first, and largest, combination microfiber production facility.\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmZHPWQsKTtPQZqgXw41Z671c51W1thTMYZMdebZHDa6qz\",\"name\":\"Tricol KN95 Respirator 3 pack\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"ppe\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/wN7LJt6wWBg\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://www.fbi.gov/news/pressrel/press-releases/fbi-warns-health-care-professionals-of-increased-potential-for-fraudulent-sales-of-covid-19-related-medical-equipment\"},{\"trait_type\":\"MadeIn\",\"value\":\"Shandong China\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"Tricol KN95 Respirator 3 pack\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"Tricol Intelligent Microfiber\",\" silver ion technology\",\" white\",\" earloop\"]},{\"trait_type\":\"SecretMessage\",\"value\":\"This product was verified by Real Items Company securely on VeChain Blockchain. \"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmQxx52sGAW9gmikgwggsose2ab2NMN73XAsL69a2HtycG\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmcJgUjmkhTfKQ37iPURAM3oNaN9iFciEwTo2PukVws35f\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmaoRNrQe2C9KjEuNjjPy28EwS7KjYg9MPfKdLCB6oNgvF\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmQjdBdaL8eQhZfk5SVS4bAX4xkbYs1VB4Q1FiLUcUXTLL\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/Qmefu1ok8UU8mGrLtjvXYS9dVoRXp2XsMNMEkigVBtSsFy\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/Qmf6k7TqU69J58ujtEBF89rcnjiCv5MRMyuyWrk2SZzskN\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmafweGoc6QGzswcNUxLU4Sbev7QVaosbkwoXqQoGuQXuw\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmTLpMeUeyXMFgjfUAUVVNP4aEbfWyGKKETu3xJWLkE1jC\"},{\"trait_type\":\"UnitsProduced\",\"value\":\"100\"}]}"
+            },
+            {
+                "id": 7,
+                "blockchainId": 1,
+                "maxItems": 100,
+                "name": "Box of Tricol KN95 Masks",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2020-04-20T05:19:21.202418Z",
+                "timeModified": "2020-05-15T19:17:44.051429Z",
+                "data": "{\"productId\":7,\"description\":\"TRICOL PRODUCES PROTECTIVE MASKS FOR GLOBAL MARKETS. \\nThis order was procured and verified by Real Items Company.  The KN95 masks were made by Tricol Group in Shandong, China.   \",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmTLpMeUeyXMFgjfUAUVVNP4aEbfWyGKKETu3xJWLkE1jC\",\"name\":\"Box of Tricol KN95 Masks\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"protective\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/ta9n_qJHwa8\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://www.fbi.gov/news/pressrel/press-releases/fbi-warns-health-care-professionals-of-increased-potential-for-fraudulent-sales-of-covid-19-related-medical-equipment\"},{\"trait_type\":\"MadeIn\",\"value\":\"Shandong China\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"Box of Tricol KN95 Masks\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"95% particle filtration\",\" white\",\" ear-loop\"]},{\"trait_type\":\"SecretMessage\",\"value\":\"This order was part of our initial order.  Every order after this one will include a 2fa QR code on every bag. This Non Fungible Record is securely stored on VeChain blockchain.\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmQxx52sGAW9gmikgwggsose2ab2NMN73XAsL69a2HtycG\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmcDgNXr72yvwDWWqyf8eavis4z8fD3LPWDuGiywka3Eh4\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmaoRNrQe2C9KjEuNjjPy28EwS7KjYg9MPfKdLCB6oNgvF\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/Qmefu1ok8UU8mGrLtjvXYS9dVoRXp2XsMNMEkigVBtSsFy\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmaMevjzU4BV2rPr2s2uXvMHV2AdcGmNvK8RsCaQmaUn2b\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmeXY3TpTyKarCEJFtvFDdcDpoLTXPmn1yN6g6a65DUvJF\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmekH5tUTSM5bB2qCcsXxgMpe1QP1JGpWBAxEJnFfxBjCo\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmQjdBdaL8eQhZfk5SVS4bAX4xkbYs1VB4Q1FiLUcUXTLL\"},{\"trait_type\":\"UnitsProduced\",\"value\":\"100\"}]}"
+            },
+            {
+                "id": 8,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "livecanna 100mg CBD Tincture",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2020-04-28T20:51:12.508568Z",
+                "timeModified": "2020-05-15T19:17:53.152970Z",
+                "data": "{\"productId\":8,\"description\":\"Livecanna’s CBD Oil Tinctures are the #1 rated natural choice alternatives. We utilize a unique manufacturing process that uses hemp from nutrient-rich farms in Colorado. \",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmcTGiVf3D7Ru9pWLYZNB4Mxq85sQo47p8m1EdHTkjTN47\",\"name\":\"livecanna 100mg CBD Tincture\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"CBD\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/JhMv_FuPKLU\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://realitems.io\"},{\"trait_type\":\"MadeIn\",\"value\":\"\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"1000mg CBD Tincture - Citrus\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"1000mg of active Cannabidiol mixed with organic hemp oil\",\" 1 oz bottle contains 30 servings\",\" Gluten-free &amp; vegan\",\" Plant-based ingredients\",\" USDA certified\",\" Organically grown in Colorado (USA)\",\" 30 mL/ 1 oz Bottle\"]},{\"trait_type\":\"SecretMessage\",\"value\":\"We guarantee that all of our CBD oil is manufactured from USA hemp that is grown on non-GMO farms, and is both vegan and gluten-free. Our CBD Oil Tinctures are available in three flavors: natural, citrus, and peppermint!\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmYNHhywYCpXXJsoStK2xXkMpYHrxTSt5cwws39CNjKQ5g\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmUuk8aiVEadAsZJdvPYw4YsWenBTfrFre4u5XJBZ8Nvqc\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmfFoJhM6QNJhBFu8u4CL97ZK5EdSs4XK4rZqEdjQ4PmUW\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmNwgTuL1Bo3RUSTG549jB1pvumiynqLKyT1CwaSj7LwrR\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmPo8RHgNAHtvE6fMJVTtvtDD5Q2LCh4wpv8Ld56n9U1mN\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmbhPuakFgtMz7vesgyekz5JBXaQEiidJwF1brATQ4nBGC\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmeZg8Ltw4UbNhP3ZBDXPdCHbDrdD5e75bxkx9HcDrY5wc\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/Qmc2v315xA9KJdPy6EKU9FaZqZey4rCHM1oReMv4Pjokc6\"},{\"trait_type\":\"UnitsProduced\",\"value\":\"1\"}]}"
+            },
+            {
+                "id": 10,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "Face Mask by Changzhou Huatang Home Textiles",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2020-05-01T20:42:35.325956Z",
+                "timeModified": "2020-05-15T19:18:10.186045Z",
+                "data": "{\"productId\":10,\"description\":\"Verified PPE with CE certification and transparency documentation.  All products come with digital certificates of authenticity. Produced by Changzhou Huatang Home Textiles\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmfQVoKBFzT5H5BA8hBP3jxwT3oP6zjTpjbwFknEDWReQY\",\"name\":\"Face Mask by Changzhou Huatang Home Textiles\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"connor\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/LWvZ-Ita0LI\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://realitems.io\"},{\"trait_type\":\"MadeIn\",\"value\":\"Changzhou, Jiangsu, China\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"Face Mask\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"CE certification\",\" Compliance reporting\",\" Quality Assurance \"]},{\"trait_type\":\"SecretMessage\",\"value\":\"Thank you for verifying this product.  The PIN number is no longer valid.  This Product was verified authentic.\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmQTPChNEP4KzWdpp9KpLJr8u26ZLqSgnczZUQQUve9pDD\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmWqtu1TZ8bmU3HaKMr1YUFACSMc6cgr5JVtoTPBcEqUZN\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmQTPChNEP4KzWdpp9KpLJr8u26ZLqSgnczZUQQUve9pDD\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmYZTxfoS5bbXbvwWV8sgVLo3mrxc5kpmuxscaBndobwev\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmPQAD9cb3BWxxgHM73LvNcQxeamC2zXUyE4nuPR8eryV6\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/\"},{\"trait_type\":\"UnitsProduced\",\"value\":\"1\"}]}"
+            },
+            {
+                "id": 1,
+                "blockchainId": 1,
+                "maxItems": 100,
+                "name": "Tricol KN95 Respirator 3 pack",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2020-03-26T03:35:03.345933Z",
+                "timeModified": "2020-05-15T19:17:34.823618Z",
+                "data": "{\"productId\":1,\"description\":\"Established in 1992, Tricol began as a manufacturer of cotton towels and bedding linens for the global home textile industry. Tricol's presence as a major manufacturer of synthetic textiles began in 1996 with the opening of China's first, and largest, combination microfiber production facility.\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmZHPWQsKTtPQZqgXw41Z671c51W1thTMYZMdebZHDa6qz\",\"name\":\"Tricol KN95 Respirator 3 pack\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"ppe\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/wN7LJt6wWBg\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://www.fbi.gov/news/pressrel/press-releases/fbi-warns-health-care-professionals-of-increased-potential-for-fraudulent-sales-of-covid-19-related-medical-equipment\"},{\"trait_type\":\"MadeIn\",\"value\":\"Shandong China\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"Tricol KN95 Respirator 3 pack\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"Tricol Intelligent Microfiber\",\" silver ion technology\",\" white\",\" earloop\"]},{\"trait_type\":\"SecretMessage\",\"value\":\"This product was verified by Real Items Company securely on VeChain Blockchain. \"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmQxx52sGAW9gmikgwggsose2ab2NMN73XAsL69a2HtycG\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmcJgUjmkhTfKQ37iPURAM3oNaN9iFciEwTo2PukVws35f\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmaoRNrQe2C9KjEuNjjPy28EwS7KjYg9MPfKdLCB6oNgvF\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmQjdBdaL8eQhZfk5SVS4bAX4xkbYs1VB4Q1FiLUcUXTLL\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/Qmefu1ok8UU8mGrLtjvXYS9dVoRXp2XsMNMEkigVBtSsFy\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/Qmf6k7TqU69J58ujtEBF89rcnjiCv5MRMyuyWrk2SZzskN\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmafweGoc6QGzswcNUxLU4Sbev7QVaosbkwoXqQoGuQXuw\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmTLpMeUeyXMFgjfUAUVVNP4aEbfWyGKKETu3xJWLkE1jC\"},{\"trait_type\":\"UnitsProduced\",\"value\":\"100\"}]}"
+            },
+            {
+                "id": 5,
+                "blockchainId": 1,
+                "maxItems": 10,
+                "name": "red tshirt",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2020-04-02T21:34:16.171432Z",
+                "timeModified": "2020-05-30T01:28:23.452336Z",
+                "data": "{\"productId\":\"\",\"description\":\"test mask\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmQoywWPS7o6LSrjCvT9qpZMmFbzA7k77syBaQxVm3yr2d\",\"name\":\"red tshirt\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"testmask\"},{\"trait_type\":\"Video\",\"value\":\"https://testmask.com\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://testmask.com\"},{\"trait_type\":\"MadeIn\",\"value\":\"china\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"testmask\"},{\"trait_type\":\"ProductUrl\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"test\",\"mask\"]},{\"trait_type\":\"SecretMessage\",\"value\":\"this is a test mask\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmU2rhsuAVofXukMiY5FYDWf1qCvZzSahyYZBhq9oRNuaN\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmP6jcJyJiutCZ2CV3AePmgzqnEyg1CHn1FhuAJaEsitGP\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmU2rhsuAVofXukMiY5FYDWf1qCvZzSahyYZBhq9oRNuaN\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmU2rhsuAVofXukMiY5FYDWf1qCvZzSahyYZBhq9oRNuaN\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmP6jcJyJiutCZ2CV3AePmgzqnEyg1CHn1FhuAJaEsitGP\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmU2rhsuAVofXukMiY5FYDWf1qCvZzSahyYZBhq9oRNuaN\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmP6jcJyJiutCZ2CV3AePmgzqnEyg1CHn1FhuAJaEsitGP\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/\"},{\"trait_type\":\"UnitsProduced\",\"value\":\"10\"},{\"trait_type\":\"EmailOptional\"}]}"
+            },
+            {
+                "id": 11,
+                "blockchainId": 1,
+                "maxItems": 100,
+                "name": "AminoSerene",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2020-05-30T21:40:18.565551Z",
+                "timeModified": "2020-05-30T21:40:18.565551Z",
+                "data": "{\"productId\":\"\",\"description\":\"The ingredients in AminoSerene’s unique proprietary formula support and maintain immunity, promote higher levels of energy and stamina, more restful sleep, stronger memory and improved mental focus, increased muscle strength, less stress and anxiety, elevated serotonin levels to raise your mood, faster recovery from exercise and exertion … so you feel great again day and night.  The ONLY formulas verified with authentic Norwegian YTE®. \",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmU1X1WuftRWUKCxihnj4UGpCfVKQKDBh7dFS1Tpd9jdxm\",\"name\":\"AminoSerene\",\"component\":\"\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"Supplement\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/4993FE2PDcg\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://healthevolutionproject.com/blogs/articles\"},{\"trait_type\":\"MadeIn\",\"value\":\"USA\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"AminoSerene\"},{\"trait_type\":\"ProductUrl\",\"value\":\"\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"600mg of genuine YTE® (amino acids from egg albumen protein)\",\" 930mg YTE® blend including L-Citruline and Sensoril® Ashwagandha Extract (Withania somnifera\",\" root and leaf)\",\"  Black Pepper Extract (Piper Nigrum\",\" fruit 95% piperine) 10mg\",\" Vitamin B1 Thiamin (as thiamine mononitrate) 1.5mg\",\" Vitamin B2 Riboflavin 1.6mg\",\" Vitamin B3 Niacin (as Niacinamide) 20mg\",\"  \"]},{\"trait_type\":\"SecretMessage\",\"value\":\"When we discovered our YTE® supplier's own secret formula, we trialled it for ourselves. This industry veteran in raw materials and formulation knows a thing or two about formulas ... and he's one of the rare 20% of people on the planet who are fully aware and conscious - probably like you, as you're reading this.\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/Qme2LGeJkHr43A7UUySDffT9NEdT2WJzyFTCyPuBB4vkpW\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmZthpooYDmyuggbQRufnzgRzfF2evrwVyLECdLAuFXh8V\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmU1X1WuftRWUKCxihnj4UGpCfVKQKDBh7dFS1Tpd9jdxm\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmUHttFeDvY7CZKjQDGWqoDseiF5QFWu6CbdPxbkMAkvc2\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmW1DE85kVdFWY6i1ykTW6vayYZfRKQVHb66Nq4DmHr6Nr\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/Qmf3ukFPS5xiRE4BwMkJtaiUUSQFsoHywTxKD3uFSEF5Sm\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmTLcFUVc82tfigrXzdGQAKKP85nMkw2w5sbbMxPbfmMBZ\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmXPgXBuESibjfSVX98w1C8cFnMBNPetbyjA3AmyZNEQ64\"},{\"trait_type\":\"UnitsProduced\",\"value\":\"100\"},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+            },
+            {
+                "id": 12,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "cool rake",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2020-07-10T03:31:20.720692Z",
+                "timeModified": "2020-07-10T03:31:20.720692Z",
+                "data": "{\"productId\":\"\",\"description\":\"this is the coolest rake in the world\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmTfWzpXToSN3vAiawZA2hHobV3Zc5Xc5ifkhxA19ok3zu\",\"name\":\"cool rake\",\"component\":\"\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"garden tools\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/PaucbynvntM\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://recycling.com\"},{\"trait_type\":\"MadeIn\",\"value\":\"america\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"really cool rake\"},{\"trait_type\":\"ProductUrl\",\"value\":\"\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"cool\",\" rake\",\" garden\",\" home\"]},{\"trait_type\":\"SecretMessage\",\"value\":\"This is the coolest rake ever. Kanye West is going to use it in his presidential campaign\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmRYvuzoMQHsYnyZ54JfBFHZ5FLMeM2m9PHt8pM8UYZjXH\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmQiDGScAY4VPZv4poxYMwSzHEuwAZx33Gi65ozRWwt7M2\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmcDsEmqdmWHYBunFCf3fu17VxD3hGbBs7wzGLz7KckKVT\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmeFc5BuAW5iCT6Fjaq6ZDq37mrmmjjrYEqceQ44jT7oVc\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmQBoEX7UmEE5ad3GRJp868SadreFBoSsD6corQHH12oRx\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmRYvuzoMQHsYnyZ54JfBFHZ5FLMeM2m9PHt8pM8UYZjXH\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmSa4EoGcqm6vLDQt1DUKoadmrHQLgU1UUqabaDf5WimjW\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmeFc5BuAW5iCT6Fjaq6ZDq37mrmmjjrYEqceQ44jT7oVc\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+            },
+            {
+                "id": 0,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "TrackingRecord",
+                "publicProduct": true,
+                "componentName": "TrackingRecord",
+                "timeCreated": "2020-07-14T18:59:59.297921Z",
+                "timeModified": "2020-07-14T18:59:59.297921Z",
+                "data": "{\"productId\":\"0\",\"description\":\"This is a Tracking Record.\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmbjWzXQnddokDXJ5MKrAtQyGGgbdkiSuWhucLjKmwHDsT\",\"name\":\"TrackingRecord\",\"component\":\"TrackingRecord\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"Tracking Record\"},{\"trait_type\":\"UnitsProduced\",\"value\":1}]}"
+            },
+            {
+                "id": 13,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "JBM Coffee",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2020-08-21T22:17:37.355543Z",
+                "timeModified": "2020-08-21T22:18:39.829337Z",
+                "data": "{\"productId\":\"\",\"description\":\"TasteBlueMountainCoffee.com is one of the few authorized Blue Mountain Coffee importers in the USA. Every barrel has been tested and passed through the intense quality-control vetting process through the Jamaican Agricultural Commodities Regulatory Authorities. Blue Mountain Coffee is graded into Blue Mountain No. 1, 2, 3, Peaberry and Selective. Other grades of Jamaican coffee include High Mountain Supreme, Jamaican Prime, and Jamaican Select. Our 100% Blue Mountain Coffee is No.1 graded coffee beans certified by JACRA.\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmPyekQk8HpNdPmSMNbweL7484Ya7VMbhs3hQaXZvBG3cc\",\"name\":\"JBM Coffee\",\"component\":\"\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"Coffee\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/166w78LeRMw\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://tastebluemountaincoffee.com/pages/our-coffee\"},{\"trait_type\":\"MadeIn\",\"value\":\"Jamaican Blue Mountain\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"ROAST TO ORDER 100% JAMAICA BLUE MOUNTAIN COFFEE BEAN #1 GRADE\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://tastebluemountaincoffee.com/collections/jamaican-blue-mountain-coffee-bean/products/test-roast-100-jamaica-blue-mountain-coffee-bean-1-grade\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"100% certified Jamaica Blue Mountain®\",\" rich taste\",\" full-body\",\" smooth chocolatey finish\"]},{\"trait_type\":\"SecretMessage\",\"value\":\"Each and every single bean is carefully hand-sorted by a crew of local women in Jamaica, and the coffee beans are always pulped the same day it is reaped. Each and every single bean in this very bag were 100% wet-processed and sun-dried until there is precisely 11.5% moisture content, resulting in the most perfect cup of coffee. Due to cool mountain conditions, Jamaica Blue Mountain Coffee takes about twice as long to grown or about 10 months in comparison to other countries. This makes Blue Mountain Coffee scarce and more expensive.\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"JACRA\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmQqpDJZ8dHYTU1fbGusr3WxHHbLNv61iUPHi7mfSXEB6n\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmbR7gfoaQqpMS77iwT97yum6F5MvKAzxHpV8RsXmQfujE\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmaAKieNcKAYKQeaa31dpjK66K6Tz9E9qwQWngkQsdPXhR\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmQ7FE41cB8wBqb4B3XoJMwF5nNtREN5auHFRzq8Q1upLw\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmXnkMYgWaayRxeoKcot1jrGJnboda88Sbi2a7Z2bAoBcf\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmNV6cJVbbYxoqAdvV4r9jCjEkckHp7HeXDD2XfB7fvpEj\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmQqpDJZ8dHYTU1fbGusr3WxHHbLNv61iUPHi7mfSXEB6n\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmYxmD1HebjKTXXU5xXMhCEn3oNhtN12xPFtLg7pG6B4vN\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+            },
+            {
+                "id": 14,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "Vitamins",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2020-09-01T15:26:07.919891Z",
+                "timeModified": "2020-09-01T15:26:07.919891Z",
+                "data": "{\"productId\":\"\",\"description\":\"bottle of adult vitamins\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmRTZrMeuo7RLngjYhvn4r7k7gScWc1xHM9vfccC5oFpZH\",\"name\":\"Vitamins\",\"component\":\"\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"health supplement\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/watch?v=LTPIwUDFILg\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://www.youtube.com/watch?v=LTPIwUDFILg\"},{\"trait_type\":\"MadeIn\",\"value\":\"\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"Solimo Vitamins\"},{\"trait_type\":\"ProductUrl\",\"value\":\"\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[]},{\"trait_type\":\"SecretMessage\",\"value\":\"secret\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmRTZrMeuo7RLngjYhvn4r7k7gScWc1xHM9vfccC5oFpZH\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmRTZrMeuo7RLngjYhvn4r7k7gScWc1xHM9vfccC5oFpZH\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmRTZrMeuo7RLngjYhvn4r7k7gScWc1xHM9vfccC5oFpZH\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmRTZrMeuo7RLngjYhvn4r7k7gScWc1xHM9vfccC5oFpZH\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmRTZrMeuo7RLngjYhvn4r7k7gScWc1xHM9vfccC5oFpZH\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmRTZrMeuo7RLngjYhvn4r7k7gScWc1xHM9vfccC5oFpZH\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmRTZrMeuo7RLngjYhvn4r7k7gScWc1xHM9vfccC5oFpZH\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmRTZrMeuo7RLngjYhvn4r7k7gScWc1xHM9vfccC5oFpZH\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+            },
+            {
+                "id": 15,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "LED Lamp 9W",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2020-09-02T14:08:28.585194Z",
+                "timeModified": "2020-09-02T14:08:28.585193Z",
+                "data": "{\"productId\":\"\",\"description\":\"LED lamp 9w in carton packing\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmY6df4gQvjvkTgCKV7KZN6UDUBAYD5UfS84SMRqYx1sCd\",\"name\":\"LED Lamp 9W\",\"component\":\"\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"Electrical\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/watch?v=S-_OCjk639g\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://www.youtube.com/watch?v=S-_OCjk639g\"},{\"trait_type\":\"MadeIn\",\"value\":\"Made in India\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"LED lamp 9W White\"},{\"trait_type\":\"ProductUrl\",\"value\":\"\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[]},{\"trait_type\":\"SecretMessage\",\"value\":\"I love RealItems\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmRtyPqDrKts3nk2sxsqrw2fKSpPMj4qYzo5xRUJB9EVY8\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmY6df4gQvjvkTgCKV7KZN6UDUBAYD5UfS84SMRqYx1sCd\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmY6df4gQvjvkTgCKV7KZN6UDUBAYD5UfS84SMRqYx1sCd\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmY6df4gQvjvkTgCKV7KZN6UDUBAYD5UfS84SMRqYx1sCd\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmY6df4gQvjvkTgCKV7KZN6UDUBAYD5UfS84SMRqYx1sCd\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmY6df4gQvjvkTgCKV7KZN6UDUBAYD5UfS84SMRqYx1sCd\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmY6df4gQvjvkTgCKV7KZN6UDUBAYD5UfS84SMRqYx1sCd\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmY6df4gQvjvkTgCKV7KZN6UDUBAYD5UfS84SMRqYx1sCd\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+            },
+            {
+                "id": 17,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "Vthos Burning Mug",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2020-11-05T19:37:52.853294Z",
+                "timeModified": "2020-11-05T19:37:52.853294Z",
+                "data": "{\n    \"productId\":\"\",\n\"description\": \"This mug is for the #VeFAM who wake up and count transactions.  You are true #VeFAM detectives!  Enterprise adoption has started with millions of VTHO being burned everyday.  This NFT-Mug contributed to that burn.  #WeBurnVTHO\",\n\"external_url\": \"\",\n\"image\": \"https://realitems.org/ipfs/Qmdx7mxCG5eAWyn3neyVkCcVXiwd2kLbRTuvmm8Pr68ZuX\",\n\"name\": \"Real Items Company\",\n\"component\": \"nft-mugs\",\n\"attributes\": [{\n        \"trait_type\": \"ProductType\",\n        \"value\": \"MUGS-vtho\"\n    },\n    {\n        \"trait_type\": \"Video\",\n        \"value\": \"https://www.youtube.com/embed/x8sNlXIk4lM\"\n    },\n    {\n        \"trait_type\": \"RecyclingManual\",\n        \"value\": \"https://www.wikihow.com/Category:Recycling\"\n    },\n    {\n        \"trait_type\": \"MadeIn\",\n        \"value\": \"\"\n    },\n    {\n        \"trait_type\": \"Warning\",\n        \"value\": \"\"\n    },\n    {\n        \"trait_type\": \"ProductName\",\n        \"value\": \"NFT Mug - Vtho's Burning\"\n    },\n    {\n        \"trait_type\": \"Music\",\n        \"value\": \"\"\n    },\n    {\n        \"trait_type\": \"FeaturesArray\",\n        \"value\": [ \"Ceramic\", \"Dishwasher and microwave safe\", \"includes real items NFT\", \"First Generation\" ]\n    },\n    {\n        \"trait_type\": \"SecretMessage\",\n        \"value\": \"Thank you for bringing blockchain serialization to life.  With the use of VeChain blockchain, smart contracts and non fungible tokens, we are able to create this authentic mug.  This mug is a bold demonstration of the decentralized future of authenticity. Cheers to consumer protection and blockchain!\"\n    },\n    {\n        \"trait_type\": \"CharityDonationRecipient\",\n        \"value\": \"\"\n    },\n    {\n        \"trait_type\": \"CharityDonationAmount\",\n        \"value\": \"\"\n    },\n    {\n        \"trait_type\": \"CharityMessage\",\n        \"value\": \"\"\n    },\n    {\n        \"trait_type\": \"Notify3rdParty\",\n        \"value\": \"\"\n    },\n    {\n        \"trait_type\": \"IPFSBrandLogo\",\n        \"value\": \"https://realitems.org/ipfs/QmaRW6vYnKfUy6ic6poDqGu9Bz34WsxHTQGscmWx7FDiKQ\"\n    },\n    {\n        \"trait_type\": \"IPFSCertification\",\n        \"value\": \"\"\n    },\n    {\n        \"trait_type\": \"IPFSproductPhoto1\",\n        \"value\": \"https://realitems.org/ipfs/Qmdx7mxCG5eAWyn3neyVkCcVXiwd2kLbRTuvmm8Pr68ZuX\"\n    },\n    {\n        \"trait_type\": \"IPFSproductPhoto2\",\n        \"value\": \"https://realitems.org/ipfs/QmSHJS6GGDnRU1WPuQgncoHcsf1iGdGs8kgQve16YNDmpH\"\n    },\n    {\n        \"trait_type\": \"IPFSproductPhoto3\",\n        \"value\": \"https://realitems.org/ipfs/Qmbi7DuM5HuPizvCmmkcu43FSqk3rxbtaMJw31y6pZbsPy\"\n    },\n    {\n        \"trait_type\": \"IPFSproductPhoto4\",\n        \"value\": \"https://realitems.org/ipfs/QmYTW7U7gjhaFC3TFL2WzDkeuHrxiVsq8py9Pcy1Jdc9bM\"\n    },\n    {\n        \"trait_type\": \"IPFSproductPhoto5\",\n        \"value\": \"https://realitems.org/ipfs/QmaGeEpMpijZWJ2hdZex1uqKh1NLF3StJ9SvGn6FjGE77E\"\n    },\n    {\n        \"trait_type\": \"IPFSproductPhoto6\",\n        \"value\": \"https://realitems.org/ipfs/QmViY2q2nVUS8NwA9xktRSbvcnaSL2apyh6HQZfjCs24xH\"\n    },\n    {\n        \"trait_type\": \"UnitsProduced\",\n        \"value\": \"\"\n    }\n]\n}"
+            },
+            {
+                "id": 16,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "Hodl Mug",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2020-11-05T19:36:01.042433Z",
+                "timeModified": "2020-11-05T20:17:25.265183Z",
+                "data": "{\n    \"productId\":\"\",\n\"description\": \"This mug is for the #VeFAM who wake up in the morning excited fill their portfolio with more VeChain and VTHO.  Enterprise adoption has started with millions of VTHO being burned everyday.  This NFT-Mug contributed to that burn.  #WeBurnVTHO\",\n\"external_url\": \"\",\n\"image\": \"https://realitems.org/ipfs/QmPvTE1zmjPKn9KPzvVsr14KD9d2ieuf37i279Bp3V996a\",\n\"name\": \"Real Items Company\",\n\"component\": \"nft-mugs\",\n\"attributes\": [{\n        \"trait_type\": \"ProductType\",\n        \"value\": \"MUGS-HODL\"\n    },\n    {\n        \"trait_type\": \"Video\",\n        \"value\": \"https://www.youtube.com/embed/x8sNlXIk4lM\"\n    },\n    {\n        \"trait_type\": \"RecyclingManual\",\n        \"value\": \"https://www.wikihow.com/Category:Recycling\"\n    },\n    {\n        \"trait_type\": \"MadeIn\",\n        \"value\": \"\"\n    },\n    {\n        \"trait_type\": \"Warning\",\n        \"value\": \"\"\n    },\n    {\n        \"trait_type\": \"ProductName\",\n        \"value\": \"NFT Mug - HODL \"\n    },\n    {\n        \"trait_type\": \"Music\",\n        \"value\": \"\"\n    },\n    {\n        \"trait_type\": \"FeaturesArray\",\n        \"value\": [ \"Ceramic\", \"Dishwasher and microwave safe\", \"includes real items NFT\", \"First Generation\" ]\n    },\n    {\n        \"trait_type\": \"SecretMessage\",\n        \"value\": \"Thank you for bringing blockchain serialization to life.  With the use of VeChain blockchain, smart contracts and non fungible tokens, we are able to create this authentic mug.  This mug is a bold demonstration of the decentralized future of authenticity. Cheers to consumer protection and blockchain!\"\n    },\n    {\n        \"trait_type\": \"CharityDonationRecipient\",\n        \"value\": \"\"\n    },\n    {\n        \"trait_type\": \"CharityDonationAmount\",\n        \"value\": \"\"\n    },\n    {\n        \"trait_type\": \"CharityMessage\",\n        \"value\": \"\"\n    },\n    {\n        \"trait_type\": \"Notify3rdParty\",\n        \"value\": \"\"\n    },\n    {\n        \"trait_type\": \"IPFSBrandLogo\",\n        \"value\": \"https://realitems.org/ipfs/QmaRW6vYnKfUy6ic6poDqGu9Bz34WsxHTQGscmWx7FDiKQ\"\n    },\n    {\n        \"trait_type\": \"IPFSCertification\",\n        \"value\": \"\"\n    },\n    {\n        \"trait_type\": \"IPFSproductPhoto1\",\n        \"value\": \"https://realitems.org/ipfs/QmPvTE1zmjPKn9KPzvVsr14KD9d2ieuf37i279Bp3V996a\"\n    },\n    {\n        \"trait_type\": \"IPFSproductPhoto2\",\n        \"value\": \"https://realitems.org/ipfs/QmU7tFrb8ERskniVGaMmfBGSaG3EXsSTdraU62fcLNAZZZ\"\n    },\n    {\n        \"trait_type\": \"IPFSproductPhoto3\",\n        \"value\": \"https://realitems.org/ipfs/Qmbi7DuM5HuPizvCmmkcu43FSqk3rxbtaMJw31y6pZbsPy\"\n    },\n    {\n        \"trait_type\": \"IPFSproductPhoto4\",\n        \"value\": \"https://realitems.org/ipfs/QmYTW7U7gjhaFC3TFL2WzDkeuHrxiVsq8py9Pcy1Jdc9bM\"\n    },\n    {\n        \"trait_type\": \"IPFSproductPhoto5\",\n        \"value\": \"https://realitems.org/ipfs/QmaGeEpMpijZWJ2hdZex1uqKh1NLF3StJ9SvGn6FjGE77E\"\n    },\n    {\n        \"trait_type\": \"IPFSproductPhoto6\",\n        \"value\": \"https://realitems.org/ipfs/QmViY2q2nVUS8NwA9xktRSbvcnaSL2apyh6HQZfjCs24xH\"\n    },\n    {\n        \"trait_type\": \"UnitsProduced\",\n        \"value\": \"\"\n    }\n]\n}"
+            },
+            {
+                "id": 18,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "Real Items Sentinel",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2020-11-11T00:05:15.943091Z",
+                "timeModified": "2020-11-11T00:28:06.034051Z",
+                "data": "{\"productId\":\"\",\"description\":\"Real Items Sentinel is to strengthen smart farm systems by providing a trusted source to send data to the blockchain.  \",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmaY4WEdnFvgbDWhaYDRFo8ja1xHwgAzVB6ZxjevfeCPt3\",\"name\":\"Real Items Sentinel\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"sentinel\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/lUdNMsVDIZ0\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://realitems.io\"},{\"trait_type\":\"MadeIn\",\"value\":\"USA\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"Smart Farm Sentinel\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://realitems.io/sentinel\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"LTE Connectivity\",\" Self powered with 4400mA battery\",\" LoRaWAN communication\",\" Real Time Clock embedded with 128GB storage\",\" Crypto-authentication chip\",\" RFID / Dynamic NFC\",\" Altitude Humidity Temp Moisture sensors\",\" \"]},{\"trait_type\":\"SecretMessage\",\"value\":\"Real Items Smart Farm Sentinels will be available early 2021\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmaRW6vYnKfUy6ic6poDqGu9Bz34WsxHTQGscmWx7FDiKQ\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmNbqVCq62EL854eCPH9bNGFMpX6cSmuVGYgGRjVXEKqDN\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmR7QmYtf5DbHfXtf9CUTLgMXrekywZK8VrFx7Zr9esTMU\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmP3gYXBxdZSTpgmJU7mhXfWoUFSiSKmN6wEh6ryeUXsgG\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmSyjN8sFtQQB9XDxW6DdRy9cKzoi4RaXdWMwJYGA6C4XF\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmUWNXay2oni5pAt5kgmuozozmosBcLUNTGxcqLGd6bTYN\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmaSysfuzktAKKTpLM1WfuY7ZDHtETY1nVQWaqDVwMcv27\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmUfbw6BtZmMMggi384eQ2G8jR3xQ85zcPwkYWj85rds2D\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+            },
+            {
+                "id": 19,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "Table 1",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2020-11-19T14:35:09.844247Z",
+                "timeModified": "2021-02-05T00:08:23.215848Z",
+                "data": "{\"productId\":\"\",\"description\":\"designer table sourced in Netherlands or Czech Republic\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmZ7ET4uTKakiL6wuPYAHyF2Vj1uXJLiFAdEQ5XCkt5FG2\",\"name\":\"Table 1\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"reclaimed recycled plastic boutique designer table\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/watch?v=kG_YKeJDaX8\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://www.youtube.com/watch?v=kG_YKeJDaX8\"},{\"trait_type\":\"MadeIn\",\"value\":\"Czech Republic\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"Table from early inventory\"},{\"trait_type\":\"ProductUrl\",\"value\":\"\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[]},{\"trait_type\":\"SecretMessage\",\"value\":\"secret\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/Qme2xxr1LrhN3fJzZgASQ3QqsLzGKhhetSQcJQ1zRuk1FD\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmV63HGWC9Vcyci6y43Gdn1UXEZfS81f7hRvhKaaBNCG68\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmZ7ET4uTKakiL6wuPYAHyF2Vj1uXJLiFAdEQ5XCkt5FG2\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/Qme2xxr1LrhN3fJzZgASQ3QqsLzGKhhetSQcJQ1zRuk1FD\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmY1mVhEV2KLjVfr9PVsxaeNMdg5EY2YyxB8qe8K12g6RT\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmZ7ET4uTKakiL6wuPYAHyF2Vj1uXJLiFAdEQ5XCkt5FG2\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/Qme2xxr1LrhN3fJzZgASQ3QqsLzGKhhetSQcJQ1zRuk1FD\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmY1mVhEV2KLjVfr9PVsxaeNMdg5EY2YyxB8qe8K12g6RT\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+            },
+            {
+                "id": 21,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "PLASTLO Marbled Side Table",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2020-12-15T12:37:07.953385Z",
+                "timeModified": "2021-02-05T00:08:52.409327Z",
+                "data": "{\"productId\":\"\",\"description\":\"Only one piece available in this design.\\n\\nThe table top is made of 100% recycled post-consumer plastic waste. This particular one of old fridges. Tubular legs are created by a Czech company Kovonax producing metal furniture since 1908. These two parts together represent both innovative &amp; traditional approach.\\n\\nYou can play around with the legs, attach them both in one direction or in different directions. Each table comes with screws, you can attach the legs easily using a screwdriver.\\n\\nApprox. dimensions: length: 60 cm, depth: 30 cm, thickness: 18 mm, height: 52 cm\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmUQQ6gM1gZQyzQMpQBvHMhRZ7P7Todj2YTJttxmjwab6i\",\"name\":\"PLASTLO Marbled Side Table\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"Side Table\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/LSf1MkjmOvw\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://plastlo.com\"},{\"trait_type\":\"MadeIn\",\"value\":\"Made in Czech Republic\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"Marbled Side Table\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://plastlo.com/collections/all/products/marbled-side-table\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[]},{\"trait_type\":\"SecretMessage\",\"value\":\"Follow @plastlo\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmNw6w5yNJWt2ngWhYwKcdwrb2m17hnYPbQmCy7pzAjatW\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmV63HGWC9Vcyci6y43Gdn1UXEZfS81f7hRvhKaaBNCG68\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmVeTz6GwbZ6j74hHkzZr3Y7J5fPwZfAGBA8iHfJYUmaUA\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmYjm8BQh5QyXLA7YEsZeWdHXTk3HgksLf3YRHDFqQHiaY\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmVDdDoGaMfLkx5mUjEXvAK9aoeAg83PQ6FfT7nqJoF2Mt\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmbeoUYYWu6cE8LjNuMfRobnYQ8opDnKyTqtZurk4X9WAP\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmVGEJ9eJVhscXAQW9FQPFyH4DRmD8LXawCcKjxrnnnmjT\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmX7o1YszPkGJ8hLgygZM82Tr75uptMHZCaPNqAbaa2Vqp\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+            },
+            {
+                "id": 24,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "PLASTLO Freckled Black Side Table",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2021-02-04T21:22:55.736172Z",
+                "timeModified": "2021-02-05T00:11:05.629799Z",
+                "data": "{\"productId\":\"\",\"description\":\"Who said freckles don't look cute.\\n\\nThis table top is made of 100% recycled post-consumer plastic waste. This particular one of old cosmetics containers. Tubular legs are created by a Czech company producing metal furniture since 1908. These two parts together represent both innovative &amp; traditional approach.\\n\\nYou can play around with the legs, attach them both in one direction or in different directions. Each table comes with screws, you can attach the legs easily using a screwdriver.\\n\\nPlease note that every piece is unique and can vary a bit. The table top can be a bit rough and have little bubbles on its surface.\\n\\nApprox. dimensions: length: 49 cm, depth: 30 cm, height: 52 cm\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmYmwTSVGojjjwpFzH2eyAWrnspxMg9ij4BQUoQP5DVq1M\",\"name\":\"PLASTLO Freckled Black Side Table\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"side table\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/LSf1MkjmOvw\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://plastlo.com\"},{\"trait_type\":\"MadeIn\",\"value\":\"Made in Czech Republic\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"PLASTLO Freckled Black Side Table\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://plastlo.com/collections/all/products/freckled-black-side-table\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[]},{\"trait_type\":\"SecretMessage\",\"value\":\"Follow @plastlo\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmVStGpdC3cQCincEc5uV5GdscYJaRKdPApV8ae2nF3dKq\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmV63HGWC9Vcyci6y43Gdn1UXEZfS81f7hRvhKaaBNCG68\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmeJASvuFFQQQPgfjtzSKcYaufgh1PLBJCz4NKgTYvemsg\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmcqkoscFgR4QgrjucfNSiE19rjbEi4QD3CXnrbesY31jH\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmYJnFkwBtSyka77AGqpkoTXaNKzFdt39aDF2Ye2DXCpUq\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmPjoNvjwv5uZHGc9AS9cGW7RxZ82fX9VubVFGyH4req5j\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmVqYx8Dq5VxBV7VBLrAvHPN1FaXTnZWyEiXDaa81SpTsh\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmUk9AyUsibAC844DZBSDjLykXZ9YgbPyVFjq7VBjnMZFk\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+            },
+            {
+                "id": 22,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "Bitcoin HODL",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2021-01-25T20:44:39.923887Z",
+                "timeModified": "2021-01-25T23:26:43.445473Z",
+                "data": "{\"productId\":\"\",\"description\":\"Bitcoin is a new digital currency that no government can censor and is more scarce than diamonds or gold with a fixed supply of 21 million. There will never be more than 21M Bitcoin, giving new perspective into scarcity. These facts with the core technology of blockchain have become the cornerstone to a global storage of value that any person on earth can access and participate with.    Access is granted and maintained with physical custody of the digital asset.  A literal definition of the have and the have not. Traditional forms of money have limitations.  For example you can not split a 25 cent piece or 2 euro coin for change.   Since bitcoin is digital the value is divisible to 8 decimal points , ie 1.00000000.Do not miss your opportunity to buy a faction of whole Bitcoin.  Even $5 is great to get started with.  This NFT Mug was made when the price of Bitcoin was $17,500.  Owning $5 now will be a lot more in 10 years from now.\\n\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmYw6z9WaQCMhz83kA2S27uZw1mFYGXeS3BWvatgwNFs4m\",\"name\":\"Bitcoin HODL\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"Mug\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/dHoWPqdN6MY\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://www.wikihow.com/Category:Recycling\"},{\"trait_type\":\"MadeIn\",\"value\":\"\"},{\"trait_type\":\"Warning\",\"value\":\"Time of purchase will vary on the main image of the MUG. \"},{\"trait_type\":\"ProductName\",\"value\":\"Bitcoin Historic Price MUG\"},{\"trait_type\":\"ProductUrl\",\"value\":\"\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"Ceramic\",\" Dishwasher and microwave safe\",\" Includes Real Items NFT\",\" First Generation\"]},{\"trait_type\":\"SecretMessage\",\"value\":\"It's time to buy some bitcoin.  Let this guide you in the steps to buy bitcoin.  The best place to get started is Coinbase.com/invited .  You will find more videos and tutorials at Coinbase.com.  Welcome to team #HODL!\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmSGBDsWrQisMTpnhZdUrt6BAiSiXsxNT2HyexPRQsrxWw\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmcbLrSXBaWxtLKRUisQhSqvxRbC31hgsPxN4xGW62zMbh\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmcFK47gY9BA6k9o7aCtU6NN1c86WsJBKq7JztAFHvn5Eg\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmRabmqW1AcA9Cvm9Q9k6gTxqHjngwyLG2j11Wmzbnfnxx\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmWRnxu31p8y2RBS8qS1irM6BCR1FvwRrMMpPfeHdKwVXF\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmNhVR9mQ9bkHaLX6reZQ5ZAAvRmdtw2c7sNSZjPtMZE42\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmczWwMhYnWRXQbnWruLPSgkGqW6FErqnoijR7tb2aTRYo\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmNY1C6BiT3KBzhZnrkRZcjRFBimJDCFhUeHYyFZtsiFU1\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+            },
+            {
+                "id": 23,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "Lemon Essential Oil",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2021-01-27T18:54:04.830453Z",
+                "timeModified": "2021-01-27T18:54:23.840540Z",
+                "data": "{\"productId\":\"\",\"description\":\"Os muitos usos e benefícios do Limão-Siciliano fazem com que ele seja o óleo essencial mais vendido da doTERRA. O doTERRA® Brasil Lemon é um agente de limpeza poderoso que purifica o ar e, quando difundido, é muito energizante e edificante. Também já foi demonstrado que ele ajuda a melhorar o humor.\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmSJDV3fCdYcyh84mRX9CTLzwvJSGfbv2ag1GhmKRaBK1a\",\"name\":\"Lemon Essential Oil\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"oil\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/nm6YPHuchCk\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://sourcetoyou.com/en/stories/story/lemon\"},{\"trait_type\":\"MadeIn\",\"value\":\"Brazil\"},{\"trait_type\":\"Warning\",\"value\":\"Uso Externo. Pode causar irritação cutânea. Mantenha fora do alcance de crianças. Em caso de gravide\"},{\"trait_type\":\"ProductName\",\"value\":\"Citrus limon (Limão-Siciliano)\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://www.doterra.com/BR/pt_BR/p/lemon-oil\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"Limpo\",\" refrescante\",\" cítrico\",\" leve\",\" Limonene\",\" β-pinene\",\" γ-terpinene\"]},{\"trait_type\":\"SecretMessage\",\"value\":\"Para uso tópico, aplicar de 1 a 3 gotas diluídas em óleo de coco fracionado sobre a pele, na área desejada. Para uso aromático, colocar de 3 a 4 gotas em um aromatizador elétrico.\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"A small portion of our lemons are sourced in southern Brazil. The climate is similar to that of southern Italy, and citrus fruits—including lemons—thrive.\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmQ2pQgqV8pyxcy75eFf3dq4wqutEr9Qfd9tUtEwZSP3Mb\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmXkv5Ef4WuRyyskux7PHaEifxoHNJrxRaHSu5Gdp2fkAF\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmSJDV3fCdYcyh84mRX9CTLzwvJSGfbv2ag1GhmKRaBK1a\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/Qmf54pGRp7r1zs5nDCw4sq1toDiNLVikVzGD5ubAreU74f\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmQEurXdEu6SRHr2T7ZTctRbDFpC9hncGgzM4gvTHPruJz\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmRbw9wcbmSvxWBaa4QTizae16gMnSNeB9xdgZD3R5U83K\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmQC6aeJcKrV43mn8oL8FfMTSizNKevs8s7TkX9ui8Zkve\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmYcE4JM77MA8mzYchuD9nqxgKN85D14sRxLQuxw2sYuaj\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+            },
+            {
+                "id": 20,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": " PLASTLO Pearl Side Table",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2020-12-13T19:47:37.856510Z",
+                "timeModified": "2021-02-05T00:11:24.077062Z",
+                "data": "{\"productId\":\"\",\"description\":\"\\nPearl shines bright in the sun and will look gorgeous in your sun lit apartment.\\n\\nThe table top is made of 100% recycled post-consumer plastic waste. This particular one of old spools. Tubular legs are created by a Czech company producing metal furniture since 1908. These two parts together represent both innovative &amp; traditional approach.\\n\\nYou can play around with the legs, attach them both in one direction or in different directions. Each table comes with screws, you can attach the legs easily using a screwdriver.\\n\\nApprox. dimensions: length: 60 cm, depth: 30 cm, thickness: 2 cm, height: 52 cm\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmUiUhEDqm6uFHyFqXbcqWZfn9tkAY92zVkjMvtJaw5H14\",\"name\":\" PLASTLO Pearl Side Table\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"Side Table\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/LSf1MkjmOvw\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://plastlo.com\"},{\"trait_type\":\"MadeIn\",\"value\":\"Made in Czech Republic\"},{\"trait_type\":\"Warning\",\"value\":\" Please note that each piece is unique and can vary a bit. The table top can be a bit rough and have\"},{\"trait_type\":\"ProductName\",\"value\":\"Pearl Side Table\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://plastlo.com/collections/all/products/pearl-side-table\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[]},{\"trait_type\":\"SecretMessage\",\"value\":\"Follow @plastlo\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmVStGpdC3cQCincEc5uV5GdscYJaRKdPApV8ae2nF3dKq\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmV63HGWC9Vcyci6y43Gdn1UXEZfS81f7hRvhKaaBNCG68\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmdsTjwTV3XV6uvfu5qTxh3GkzRsmFrbmQxsBsgNL3su1e\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmSrZKgpQ8WgaypbgAYtS8UwQA2EzbCZ2Ne1j69wKj1BPv\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmbYJEeRFt2BcjU9LwAxt41LsL26mp6SuxMBLSGH2ZF3DX\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmXQd1jwCXNWnbMs87MUUt9JitjNg2T1SpuD6h3Tk3gT4f\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmSJ5k7JX1gvmf91CCwmcay3cAtdys7s8Bb11eLboYoY5Y\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmYinDHpVu6vk2xpwMEpveXCFmstrLz2zp7NnHgveZdNF7\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+            },
+            {
+                "id": 26,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "PLASTLO Pastel Rainbow Side Table",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2021-02-04T21:46:30.249703Z",
+                "timeModified": "2021-02-05T00:04:24.186736Z",
+                "data": "{\"productId\":\"\",\"description\":\"Charlie and the Chocolate Factory approved. Let the pastel shades brighten up your interior.\\n\\nThe table top is made of 100% recycled post-consumer plastic waste. This particular one of old chocolate moulds . Tubular legs are created by a Czech company producing metal furniture since 1908. These two parts together represent both innovative &amp; traditional approach.\\n\\nYou can play around with the legs, attach them both in one direction or in different directions. Each table comes with screws, you can attach the legs easily using a screwdriver.\\n\\nPlease note that every piece is unique and can vary a bit. The table top can be a bit rough and have little bubbles on its surface.\\n\\nApprox. dimensions: length: 40 cm, depth: 40 cm, thickness: 9 mm, height: 51 cm\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmWqZXtqGeLvWBvhWCdB4xvtY3UGgL5613ScAFg1oFH19J\",\"name\":\"PLASTLO Pastel Rainbow Side Table\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"side table\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/LSf1MkjmOvw\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://plastlo.com\"},{\"trait_type\":\"MadeIn\",\"value\":\"Made in Czech Republic\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"PLASTLO Pastel Rainbow Side Table\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://plastlo.com/collections/all/products/pastel-rainbow-side-table\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[]},{\"trait_type\":\"SecretMessage\",\"value\":\"Follow @plastlo\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmVStGpdC3cQCincEc5uV5GdscYJaRKdPApV8ae2nF3dKq\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmV63HGWC9Vcyci6y43Gdn1UXEZfS81f7hRvhKaaBNCG68\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmbxwNtAP5ZnU8jwTEUjC7pY9j2ebDvRMd2VVt9maCw2ZM\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmbnJUjgsUwMHyJVchFC3crYbrNfNwCfJh2ukNY2bJMSMe\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmXjPn8s4V7ot9zs3NiuD2SjRWJag6ipfjNWjpTRvXScZp\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmX19bFLxN9tUmvuWRtmYURcfDvNaMGFCZ4tFomHswK7FS\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmYvqSWUNqtxDMJU9mK6PDu6z7PzqSVeRMmz582nyNWdX8\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmW2vJFkuw87ZZ2D8fGUHSC1orF8AjBMSf9WdQR6Zjh9iM\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+            },
+            {
+                "id": 25,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "PLASTLO Custom Made Sheet for In August Co.",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2021-02-04T21:38:31.954577Z",
+                "timeModified": "2021-02-05T00:09:12.855326Z",
+                "data": "{\"productId\":\"\",\"description\":\"The sheet is made of 100% recycled post-consumer plastic waste. This particular one of old bottle caps and buckets.\\nDimensions: 95 x 55 cm\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmPRPLntRyHrkHdCXHjRsRF71xD2YSPeNJ91hdjdwQdYoV\",\"name\":\"PLASTLO Custom Made Sheet for In August Co.\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"custom made sheet\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/LSf1MkjmOvw\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://plastlo.com\"},{\"trait_type\":\"MadeIn\",\"value\":\"Made in Czech Republic\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"PLASTLO Custom Made Sheet for In August Co.\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://plastlo.com\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[]},{\"trait_type\":\"SecretMessage\",\"value\":\"Follow @plastlo\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmVStGpdC3cQCincEc5uV5GdscYJaRKdPApV8ae2nF3dKq\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmV63HGWC9Vcyci6y43Gdn1UXEZfS81f7hRvhKaaBNCG68\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmPRPLntRyHrkHdCXHjRsRF71xD2YSPeNJ91hdjdwQdYoV\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmdzoPbfs1hFeQzWpsVJ1bju4Zz99JHdoMj9f6zBg4P4Eq\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmTJ4zsTF4tLbVrAdTpiNZa9C7vc6mY1tMbXe6SMVWDAZ1\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmbNxZnL9eWXN2Bmyp4ukyxf97xXDCHAQqPReyGyn657FX\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/Qme9KHM2ycbuGAc5brhxzFJPfVbCNfLJS2Nov45C9d8zNH\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmYREp47aRkntGpffhoMTUTD5E4kgPv5gLUcCF8oUmfw9L\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+            },
+            {
+                "id": 28,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "Today's DOT Price Mug ",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2021-02-09T14:26:28.578440Z",
+                "timeModified": "2021-02-09T14:26:28.578440Z",
+                "data": "{\"productId\":\"\",\"description\":\"Polkadot blockchain has a lot of potential and this mug is a timestamp of how early you recognized this.  The DOT token serves three distinct purposes: governance over the network, staking and bonding.\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmQceiKp9AtEccacrUrREf2GGsMkk6DbVyZZD2CCyd8oSA\",\"name\":\"Today's DOT Price Mug \",\"component\":\"\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"merch\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/x8sNlXIk4lM\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://www.wikihow.com/Recycle-Old-Coffee-Mugs\"},{\"trait_type\":\"MadeIn\",\"value\":\"\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"Today's DOT Price Mug\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://realitems.shop/collections/100-authentic-marketplace\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"Ceramic\",\" Dishwasher and microwave safe\",\" White and glossy\",\" includes Real Items NFT\"]},{\"trait_type\":\"SecretMessage\",\"value\":\"Congratulations, you have completed the process and now have a digital copy send to your email.  Please explore the app and send us a picture on twitter @itemsdapp\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmaRW6vYnKfUy6ic6poDqGu9Bz34WsxHTQGscmWx7FDiKQ\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmTZYdQ6zB9fGvJuNN3T3U6LrXsnW2xDpRzDtp8sWD8f5Y\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmQceiKp9AtEccacrUrREf2GGsMkk6DbVyZZD2CCyd8oSA\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmSsKctpEuBcJhms83ZL1PSqKit69EuLKRJjLAY6bUAeGa\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmZC3pkPUUMdugbx53puNrzrF5er2WervJriAfpebPtCNo\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmSiXSGuVQeyCv3pqMWW2Q2xTVrMPHU1PUGqnQVaoQ6Aqh\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmUw2913K7n5L4JEjvFn2FQX1KjJ5nFe4Pqoy94pdfqsnZ\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmUFgkt3tJ9TToMfZteJyhSwsnVK3AVYSqaLHTPzSd8jX4\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+            },
+            {
+                "id": 27,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "Verified on VeChain Blockchain",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2021-02-06T20:25:12.111465Z",
+                "timeModified": "2021-02-09T14:28:46.113919Z",
+                "data": "{\"productId\":\"\",\"description\":\"You are a crypto legend with your early adoption of verified merchandise. \\n VeChain Blockchain along with the native token VET are positioned well for enterprise adoption.  Real items used the open SDK to build an application suite on VeChain.  You can find more limited edition Real Items for sale in the Real Items Marketplace.  Each comes with an NFT that represents ownership of the physical asset.  If you are on Twitter or Discord, join our movement to a transparent future. \",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/Qmcom8x7CKerXfEvGV2xBBecpGtrVs4RXjPxXBsAMSmqXe\",\"name\":\"Verified on VeChain Blockchain\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"merchandise\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/x8sNlXIk4lM\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://www.wikihow.com/Recycle-Old-Coffee-Mugs\"},{\"trait_type\":\"MadeIn\",\"value\":\"\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"VET Historic Price Mug\"},{\"trait_type\":\"ProductUrl\",\"value\":\"\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"Ceramic\",\" Dishwasher and microwave safe\",\" includes Real Items NFT\",\" Second Generation \"]},{\"trait_type\":\"SecretMessage\",\"value\":\"You bought VET at a historic price!  You've definitely ventured down the rabbit hole much sooner than your peers.  For this, we say cheers to the decentralized future and mass adoption of blockchain!  Enjoy your piece of blockchain history in your hands. \"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmaRW6vYnKfUy6ic6poDqGu9Bz34WsxHTQGscmWx7FDiKQ\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmTGWxyXP6EgUc4NoafKKEUnBkKuaLvRTyZLK9ZymKfqyi\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmXSHpbGM72U3MxyAHng7AjePimS4TwPZm5iLSDqxFNxfs\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmZC3pkPUUMdugbx53puNrzrF5er2WervJriAfpebPtCNo\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmSiXSGuVQeyCv3pqMWW2Q2xTVrMPHU1PUGqnQVaoQ6Aqh\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmdpftN5kHxnESK3DMzASW64iT9FpcXfvr6AmqUE7Tp8sg\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmUFgkt3tJ9TToMfZteJyhSwsnVK3AVYSqaLHTPzSd8jX4\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmUw2913K7n5L4JEjvFn2FQX1KjJ5nFe4Pqoy94pdfqsnZ\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+            },
+            {
+                "id": 29,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "XRP mug",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2021-02-09T22:33:14.658907Z",
+                "timeModified": "2021-02-09T22:33:59.620080Z",
+                "data": "{\"productId\":\"\",\"description\":\"Love or hate it, XRP has made an impact in cryptocurrency.  Where this token's future is heading is anyone's guess but cheers to you for timestamping a piece of its history with this collectable mug. \",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmSzdYeYb9NbKatdcnWRvDsSjk8UBkoBafRBZWpGn4515N\",\"name\":\"XRP mug\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"merchandise\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/x8sNlXIk4lM\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://www.wikihow.com/Recycle-Old-Coffee-Mugs\"},{\"trait_type\":\"MadeIn\",\"value\":\"\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"Today's XRP Price Mug\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://realitems.shop/collections/100-authentic-marketplace\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"Ceramic\",\" Dishwasher and microwave safe\",\" White and glossy\",\" Includes VeChain NFT collectable\"]},{\"trait_type\":\"SecretMessage\",\"value\":\"Congratulations, you have completed the process and now have a digital copy send to your email.  Please explore the app and send us a picture on twitter @itemsdapp\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmaRW6vYnKfUy6ic6poDqGu9Bz34WsxHTQGscmWx7FDiKQ\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmNtRUUZbTpEpbr2DZJNHUA9NGF7riw6ZhGQHtg4igSmeZ\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmSzdYeYb9NbKatdcnWRvDsSjk8UBkoBafRBZWpGn4515N\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmZC3pkPUUMdugbx53puNrzrF5er2WervJriAfpebPtCNo\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmSiXSGuVQeyCv3pqMWW2Q2xTVrMPHU1PUGqnQVaoQ6Aqh\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmZY1t4dgE4WHpyp7BfefEo6BwUdr1BRU2PMY2ZFxyqwX3\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmUw2913K7n5L4JEjvFn2FQX1KjJ5nFe4Pqoy94pdfqsnZ\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmTVYL1QpgUxqX6EG6zuJyoHE2q4UoAE2q4CQhR5yJV5cx\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+            },
+            {
+                "id": 30,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "VeFam Netherlands Mug",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2021-02-13T01:10:48.517374Z",
+                "timeModified": "2021-02-13T01:32:42.863341Z",
+                "data": "{\"productId\":\"\",\"description\":\"Coming in with full support, the Netherlands represents a solid base of VeFam.  Thank you for your early support and cheers to a bright future where more and more products like this come with blockchain verification.\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmeMsz4f8jMQYeU6BYwtT3fMcQRFU2UyJ6pb63sgKdMTjs\",\"name\":\"VeFam Netherlands Mug\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"merchandise\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/x8sNlXIk4lM\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://www.wikihow.com/Recycle-Old-Coffee-Mugs\"},{\"trait_type\":\"MadeIn\",\"value\":\"\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"VeFam Netherlands Special Edition\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://realitems.shop/collections/100-authentic-marketplace\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"Ceramic\",\" Dishwasher and microwave safe\",\" includes Real Items NFT\"]},{\"trait_type\":\"SecretMessage\",\"value\":\"Congratulations, you have completed the process and now have a digital copy send to your email.  Please explore the app and send us a picture on twitter @itemsdapp\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmaRW6vYnKfUy6ic6poDqGu9Bz34WsxHTQGscmWx7FDiKQ\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmNeSY9DCQCrM8jHu3eVMMNyDniAEVN69UFwgkkrTdbj6T\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmeMsz4f8jMQYeU6BYwtT3fMcQRFU2UyJ6pb63sgKdMTjs\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmZC3pkPUUMdugbx53puNrzrF5er2WervJriAfpebPtCNo\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmSiXSGuVQeyCv3pqMWW2Q2xTVrMPHU1PUGqnQVaoQ6Aqh\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmdpftN5kHxnESK3DMzASW64iT9FpcXfvr6AmqUE7Tp8sg\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmUw2913K7n5L4JEjvFn2FQX1KjJ5nFe4Pqoy94pdfqsnZ\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmUFgkt3tJ9TToMfZteJyhSwsnVK3AVYSqaLHTPzSd8jX4\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+            },
+            {
+                "id": 31,
+                "blockchainId": 1,
+                "maxItems": 1,
+                "name": "The Future is PHYGITAL",
+                "publicProduct": true,
+                "componentName": "DefaultProduct",
+                "timeCreated": "2021-02-23T06:52:45.755717Z",
+                "timeModified": "2021-03-02T19:44:03.140225Z",
+                "data": "{\"productId\":\"\",\"description\":\"This NFT is a first of its kind phygital where you are as a non fungible token holder have access to a video game asset to upload.  This bridges the gap between you and your avatar for ROBLOX.  This NFT comes with a Digital T-Shirt to match on ROBLOX video game.   This is a First Edition Original. \",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/Qmb7QMtJhv5Rsa6WJCrEQ15gTPvb2WvF3mazYn7anEsDX6\",\"name\":\"The Future is PHYGITAL\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"merchandise\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/x8sNlXIk4lM\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://www.wellandgood.com/what-to-do-with-old-t-shirts/\"},{\"trait_type\":\"MadeIn\",\"value\":\"\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"1st Edition Phygital t-shirt - Level 1\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://realitems.shop/collections/100-authentic-marketplace\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"100% certified organic ringspun cotton\",\" 1x1 rib neck\",\" includes NFT\",\" Low environmental impact\"]},{\"trait_type\":\"SecretMessage\",\"value\":\"Congratulations, you have completed the process and now have a digital copy send to your email.  Please explore the app and send us a picture on twitter @itemsdapp\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmaRW6vYnKfUy6ic6poDqGu9Bz34WsxHTQGscmWx7FDiKQ\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmTGWxyXP6EgUc4NoafKKEUnBkKuaLvRTyZLK9ZymKfqyi\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/Qmb7QMtJhv5Rsa6WJCrEQ15gTPvb2WvF3mazYn7anEsDX6\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/Qme3t5gL3opChULy75PfKSXjF5msBUVGtjSr2zuqBdKKaP\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmWY8nUD3hzBUC3WaHoYjKk3hWV5jLjRPChTmarXCXkshb\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmUw2913K7n5L4JEjvFn2FQX1KjJ5nFe4Pqoy94pdfqsnZ\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmdKsm87vFGJ53NdFSNecSBXFFmDtCEMjV4DXnSxCnghsA\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmYxtHqi84PvmH3Z41pDQNakRdoy73xrqRLSRQmME2SdbE\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+            }
+        ]
+    }
+}
+</code></pre></div></div>
+
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        <a href="tag_graphql.html" class="btn btn-default navbar-btn cursorNorm" role="button">graphql</a>
+        
+        
+        
+    </div>
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2021 Real Items. All rights reserved. <br />
+ Site last generated: Mar 4, 2021 <br />
+<p><img src="images/ri-logo-black.png" alt="Real Items Logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-66296557-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+</html>

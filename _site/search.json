@@ -4,11 +4,11 @@
 
 
 {
-"title": "View Your Portfolio (CP3)",
-"tags": "cp3",
-"keywords": "NFT",
-"url": "cp3_view_portfolio.html",
-"summary": "View Your Portfolio..."
+"title": "Authentication with the GraphQL API",
+"tags": "graphql",
+"keywords": "NFT, graphql",
+"url": "api_authentication.html",
+"summary": ""
 }
 ,
 
@@ -19,6 +19,61 @@
 "tags": "",
 "keywords": "ridoc",
 "url": "api_landing_page.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "View an item",
+"tags": "graphqlNFT",
+"keywords": "NFT, graphql",
+"url": "api_view_item_by_id.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Authentication with the GraphQL API",
+"tags": "graphqlNFT",
+"keywords": "NFT, graphql",
+"url": "api_view_items.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "View items by product template ID",
+"tags": "graphqlNFT",
+"keywords": "NFT, graphql",
+"url": "api_view_items_by_product_id.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "View all product templates",
+"tags": "graphql",
+"keywords": "NFT, graphql",
+"url": "api_view_product_templates.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "View a specific product template",
+"tags": "graphql",
+"keywords": "NFT, graphql",
+"url": "api_view_single_product_template.html",
 "summary": ""
 }
 ,

@@ -12,3 +12,8 @@ allowed-tags:
   - IPFS
   - blockchain
   - definitions
+  - graphql 
+  - api
+  - gas
+  - administration
+  - sponsor
