@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
-<meta name="keywords" content=" ">
-<title>Troubleshooting pages | Real Items Documentation</title>
+<meta name="keywords" content="graphqlNFT,  NFT, graphql">
+<title>View an item | Real Items Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -188,7 +188,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Troubleshooting pages">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="View an item">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -214,54 +214,68 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">RealItems Docs </li>
+  <li class="sidebarTitle">GraphQL API </li>
   
   
   
       
   
   <li>
-      <a title="Overview" href="#">Overview</a>
+      <a title="Functions" href="#">Functions</a>
       <ul>
           
           
           
-          <li><a title="Introduction" href="index.html">Introduction</a></li>
+          <li><a title="GraphQL Home" href="api_landing_page.html">GraphQL Home</a></li>
           
           
           
           
           
           
-          <li><a title="Consumer Protection 3.0" href="cp3_landing_page.html">Consumer Protection 3.0</a></li>
+          <li><a title="Authentication" href="api_authentication.html">Authentication</a></li>
           
           
           
           
           
           
-          <li><a title="Tokenized Asset Manager" href="tam_landing_page.html">Tokenized Asset Manager</a></li>
+          <li><a title="List product templates" href="api_list_product_templates.html">List product templates</a></li>
           
           
           
           
           
           
-          <li><a title="Tracker" href="tracker_landing_page.html">Tracker</a></li>
+          <li><a title="View a product template" href="api_view_product_template.html">View a product template</a></li>
           
           
           
           
           
           
-          <li><a title="GraphQL API" href="api_landing_page.html">GraphQL API</a></li>
+          <li><a title="List all items" href="api_list_items.html">List all items</a></li>
           
           
           
           
           
           
-          <li><a title="Glossary" href="ridoc_glossary.html">Glossary</a></li>
+          <li><a title="List items by product ID" href="api_list_items_by_product_id.html">List items by product ID</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a title="View an item" href="api_view_item.html">View an item</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Create items" href="api_create_items.html">Create items</a></li>
           
           
           
@@ -288,7 +302,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Troubleshooting pages</h1>
+   <h1 class="post-title-main">View an item</h1>
 </div>
 
 
@@ -325,457 +339,84 @@ $('#toc').on('click', 'a', function() {
 
     
 
-   <p>The following pages and posts are tagged with <button type="button" style="cursor: default" class="btn btn-default navbar-btn">troubleshooting</button></p>
-<table><thead><tr><th>Title</th><th>Type</th><th>Excerpt</th></tr></thead>
-    <tbody>
-    
-  
-    
-   
-    
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-        
+   <h2 id="items-also-know-as-nfts-phygitals-digital-ids">Items (also know as NFTs, Phygitals, Digital IDs)</h2>
 
-        <tr><td><a href="ridoc_about_ruby_gems_etc.html">About Ruby, Gems, Bundler, and other prerequisites</a></td>
-            <td><span class="label label-default">Page</span></td>
-          <td> Ruby is a programming language you must have on your computer in order to build Jekyll locally. Ruby has various gems (or plugins) that provide various funct... </td>
-        </tr>
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-        
+<p>An item is represtented by an NFT on the blockchain and IPFS.</p>
 
-        <tr><td><a href="ridoc_install_jekyll_on_mac.html">Install Jekyll on Mac</a></td>
-            <td><span class="label label-default">Page</span></td>
-          <td> Installation of Jekyll on Mac is usually less problematic than on Windows. However, you may run into permissions issues with Ruby that you must overcome. You... </td>
-        </tr>
-        
-     
-   
-    
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-        
-     
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-        
+<h2 id="query-for-an-item-with-its-id">Query for an item with its ID</h2>
 
-        <tr><td><a href="ridoc_support.html">Support</a></td>
-            <td><span class="label label-default">Page</span></td>
-          <td> Contact me for any support issues. </td>
-        </tr>
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
+<p>Each item has a unique ID which can be used to query for the item. Here is an example of the GraphQl request.</p>
 
-        <tr><td><a href="ridoc_troubleshooting.html">Troubleshooting</a></td>
-            <td><span class="label label-default">Page</span></td>
-          <td> This page lists common errors and the steps needed to troubleshoot them. </td>
-        </tr>
-        
-     
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-        
-     
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-        
-     
-   
-    
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-        
-     
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-        
-     
-        
-     
-   
-    
-   
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>query ($id: Int!) {
+  itemById(id: $id) {
+    id
+    obfuscatedId
+    quantity
+    tokenUri
+    timeCreated
+    timeModified
+    approver
+    productId
+    externalUrl
+    stolen
+    notes
+    owned
+    owner
+    forSale
+    deleted
+    metadata
+    earmarks
+  }
+}
+</code></pre></div></div>
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+<p>Here is an example curl request.</p>
 
-   </tbody>
-</table>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl --location --request POST 'https://staging.realitems.io/graphql' \
+--header 'Content-Type: application/json' \
+--data-raw '{"query":"query ($id: Int!) {\n  itemById(id: $id) {\n    id\n    obfuscatedId\n    quantity\n    tokenUri\n    timeCreated\n    timeModified\n    approver\n    productId\n    externalUrl\n    stolen\n    notes\n    owned\n    owner\n    forSale\n    deleted\n    metadata\n    earmarks\n  }\n}","variables":{"id":1}}'
+</code></pre></div></div>
+
+<p>If the request is successful the response will look something like this.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "data": {
+        "itemById": {
+            "id": 1,
+            "obfuscatedId": "Q6Xr6X9Z",
+            "quantity": 1,
+            "tokenUri": "QmeCECHkcxrX5fhLQEMg3NhzxnEZyfjZJgKBy8Q1qA7io2",
+            "timeCreated": "2020-03-26T05:12:55.471767Z",
+            "timeModified": "2020-03-26T05:12:55.471767Z",
+            "approver": "0x74643fa9137b36658378921f2a9917c410d0b118",
+            "productId": 1,
+            "externalUrl": "https://staging.realitems.io/items/Q6Xr6X9Z",
+            "stolen": false,
+            "notes": "",
+            "owned": false,
+            "owner": "0x2437d1acb5fe1ed4caea5b45aac26814b1ffd78b",
+            "forSale": false,
+            "deleted": false,
+            "metadata": "{\"image\":\"https://realitems.org/ipfs/QmSJ2V1yA7FrSCzSfMKw8FMNhwv8W2QzAZLxV5ScYKZDUv\",\"external_url\":\"https://staging.realitems.io/items/Q6Xr6X9Z\",\"component\":\"shopify\",\"productId\":1,\"name\":\"BISOU BOTANICALS\",\"description\":\"Afternoon Delight is a seductively spicy herbal chai with heart-healthy hibiscus, adaptogens  + 20 mg CBD per serving, formulated to promote a healthy libido and sensual relaxation.\",\"attributes\":[{\"value\":\"tea\",\"trait_type\":\"ProductType\"},{\"value\":\"https://www.youtube.com/embed/ab7yGLSJhWs\",\"trait_type\":\"Video\"},{\"value\":\"https://www.theteaspot.com/pages/b-corp-certified-tea\",\"trait_type\":\"RecyclingManual\"},{\"value\":\"\",\"trait_type\":\"MadeIn\"},{\"trait_type\":\"Warning \"},{\"value\":\"Afternoon Delight\",\"trait_type\":\"ProductName\"},{\"value\":\"\",\"trait_type\":\"Music\"},{\"value\":[\"Hibiscus\",\"Rooibos\",\"Peppercorn\",\"Cinnamon\",\"Lemongrass\",\"Ginger\",\"Cardamom Seeds\",\"CBD\"],\"trait_type\":\"FeaturesArray\"},{\"value\":\"Our fanciful, flavorful teas harness the synergy of pure CBD with organic adaptogens to bring you products that you will both trust and love!  This stellar collection represents our collective knowledge and passion from 32 years in the tea industry.\",\"trait_type\":\"SecretMessage\"},{\"value\":\"National Race to End Women's Cancer\",\"trait_type\":\"CharityDonationRecipient\"},{\"value\":\"\",\"trait_type\":\"CharityDonationAmount\"},{\"value\":\"We believe that tea every day is vital for wellness and self-care, and strive to enlighten and enliven those who consume it. In fact, we’re proponents of drinking 5 cups a day, to continually support our immune systems on a cellular level, as our founder advocates in her book Cancer Hates Tea.\",\"trait_type\":\"CharityMessage\"},{\"value\":\"\",\"trait_type\":\"NotifyThirdParty\"},{\"value\":\"https://realitems.org/ipfs/QmP14Egsho7BUXVCtPszP43GFJ7hx65TCvnrN78WtjPpCV\",\"trait_type\":\"IPFSBrandLogo\"},{\"value\":\"https://realitems.org/ipfs/QmfPGKLcTGgQC9LDBubVtfUM29i2tLJYhaAPmSiHpwHVvg\",\"trait_type\":\"IPFSCertification\"},{\"value\":\"https://realitems.org/ipfs/QmSJ2V1yA7FrSCzSfMKw8FMNhwv8W2QzAZLxV5ScYKZDUv\",\"trait_type\":\"IPFSproductPhoto1\"},{\"value\":\"https://realitems.org/ipfs/QmNU5H3u5LyqkCQzWLHUYqHeTNWqheHURFm6gHXoCGv4QV\",\"trait_type\":\"IPFSproductPhoto2\"},{\"value\":\"https://realitems.org/ipfs/QmfMwgpS5KcRBLZQbuHoTiKE9v4v2GePfPdsWBzQkKBsJP\",\"trait_type\":\"IPFSproductPhoto3\"},{\"value\":\"https://realitems.org/ipfs/QmbMTjpAzqedcqAobC6vDAVGyDLNLULDKbBgr722p4duFQ\",\"trait_type\":\"IPFSproductPhoto4\"},{\"value\":\"https://realitems.org/ipfs/QmUDRF6TuCtqbxTKDeJQoGQQuGArsSnxCX6oLkwekf4Kip\",\"trait_type\":\"IPFSproductPhoto5\"},{\"value\":\"https://realitems.org/ipfs/QmUDMjrYYCQcJJLs1Wkq2Fm71rhLssEtrA5qAFvuGEniLy\",\"trait_type\":\"IPFSproductPhoto6\"},{\"value\":5,\"trait_type\":\"UnitsProduced\"}]}",
+            "earmarks": []
+        }
+    }
+}
+</code></pre></div></div>
 
 
 
     <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        <a href="tag_graphql.html" class="btn btn-default navbar-btn cursorNorm" role="button">graphql</a>
+        
+        
+        
+        
         
     </div>
 

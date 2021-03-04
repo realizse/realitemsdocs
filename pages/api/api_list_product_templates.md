@@ -1,346 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="keywords" content="graphql,  NFT, graphql">
-<title>View all product templates | Real Items Documentation</title>
-<link rel="stylesheet" href="css/syntax.css">
+---
+title: List product templates
+keywords: NFT, graphql
+sidebar: api_sidebar
+permalink: api_list_product_templates.html
+tags: [graphql]
+folder: api_
+toc: true
+---
 
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
-<link rel="stylesheet" href="css/modern-business.css">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="css/customstyles.css">
-<link rel="stylesheet" href="css/boxshadowproperties.css">
-<!-- most color styles are extracted out to here -->
-<link rel="stylesheet" href="css/theme-blue.css">
+## Product Templates
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+A Product Template is a JSON document which is persisted on the backend database.  It is used to create items that are then stored on the blockchain. 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-<script src="js/jquery.navgoco.min.js"></script>
+## View all product templates 
 
+Here is the GraphQL query
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<!-- Anchor.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
-<script src="js/toc.js"></script>
-<script src="js/customscripts.js"></script>
-
-<link rel="shortcut icon" href="images/favicon.ico">
-
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-
-<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://0.0.0.0:4000/feed.xml">
-
-    <script>
-        $(document).ready(function() {
-            // Initialize navgoco with default options
-            $("#mysidebar").navgoco({
-                caretHtml: '',
-                accordion: true,
-                openClass: 'active', // open
-                save: false, // leave false or nav highlighting doesn't work right
-                cookie: {
-                    name: 'navgoco',
-                    expires: false,
-                    path: '/'
-                },
-                slide: {
-                    duration: 400,
-                    easing: 'swing'
-                }
-            });
-
-            $("#collapseAll").click(function(e) {
-                e.preventDefault();
-                $("#mysidebar").navgoco('toggle', false);
-            });
-
-            $("#expandAll").click(function(e) {
-                e.preventDefault();
-                $("#mysidebar").navgoco('toggle', true);
-            });
-
-        });
-
-    </script>
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
-    <script>
-        $(document).ready(function() {
-            $("#tg-sb-link").click(function() {
-                $("#tg-sb-sidebar").toggle();
-                $("#tg-sb-content").toggleClass('col-md-9');
-                $("#tg-sb-content").toggleClass('col-md-12');
-                $("#tg-sb-icon").toggleClass('fa-toggle-on');
-                $("#tg-sb-icon").toggleClass('fa-toggle-off');
-            });
-        });
-    </script>
-    
-
-</head>
-<body>
-<!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-static-top">
-    <div class="container topnavlinks">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Real Items Documentation</span></a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <!-- toggle sidebar button -->
-                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
-                <!-- entries without drop-downs appear here -->
-
-
-
-
-                
-                
-                
-                <li><a href="index.html">Home</a></li>
-                
-                
-                
-                <li><a href="whitepaper.html">Whitepaper</a></li>
-                
-                
-                
-                <li><a href="ridoc_glossary.html">Glossary</a></li>
-                
-                
-                
-                <!-- entries with drop-downs appear here -->
-                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
-                
-                
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="cp3_landing_page.html">Consumer Protection 3.0</a></li>
-                        
-                        
-                        
-                        <li><a href="tam_landing_page.html">Tokenized Asset Manager</a></li>
-                        
-                        
-                        
-                        <li><a href="tracker_landing_page.html">Tracker App</a></li>
-                        
-                        
-                        
-                        <li><a href="api_landing_page.html">GraphQL API</a></li>
-                        
-                        
-                    </ul>
-                </li>
-                
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="https://discord.com/channels/803323232039075881/806705104342089791" target="_blank" rel="noopener">Real Items Discord Server</a></li>
-                        
-                        
-                        
-                        <li><a href="https://realitems.shop/blogs/news" target="_blank" rel="noopener">Real Items Blog</a></li>
-                        
-                        
-                    </ul>
-                </li>
-                
-                
-                
-                <!--comment out this block if you want to hide search-->
-                <li>
-                    <!--start search-->
-                    <div id="search-demo-container">
-                        <input type="text" id="search-input" placeholder="search...">
-                        <ul id="results-container"></ul>
-                    </div>
-                    <script src="js/jekyll-search.js" type="text/javascript"></script>
-                    <script type="text/javascript">
-                            SimpleJekyllSearch.init({
-                                searchInput: document.getElementById('search-input'),
-                                resultsContainer: document.getElementById('results-container'),
-                                dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="View all product templates">{title}</a></li>',
-                    noResultsText: 'No results found.',
-                            limit: 10,
-                            fuzzy: true,
-                    })
-                    </script>
-                    <!--end search-->
-                </li>
-            </ul>
-        </div>
-        </div>
-        <!-- /.container -->
-</nav>
-
-<!-- Page Content -->
-<div class="container">
-  <div id="main">
-    <!-- Content Row -->
-    <div class="row">
-        
-        
-            <!-- Sidebar Column -->
-            <div class="col-md-3" id="tg-sb-sidebar">
-                
-
-<ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">GraphQL API </li>
-  
-  
-  
-      
-  
-  <li>
-      <a title="Functions" href="#">Functions</a>
-      <ul>
-          
-          
-          
-          <li><a title="GraphQL Home" href="api_landing_page.html">GraphQL Home</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Authentication" href="api_authentication.html">Authentication</a></li>
-          
-          
-          
-          
-          
-          
-          <li class="active"><a title="View product templates" href="api_view_product_templates.html">View product templates</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="View a product template" href="api_view_single_product_template.html">View a product template</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="View all items" href="api_view_items.html">View all items</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="View items for a product template" href="api_view_items_by_product_id.html">View items for a product template</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="View an item" href="api_view_item_by_id.html">View an item</a></li>
-          
-          
-          
-          
-      </ul>
-   </li>
-     
-      
-      
-      <!-- if you aren't using the accordion, uncomment this block:
-         <p class="external">
-             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
-         </p>
-         -->
-</ul>
-
-<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
-<script>$("li.active").parents('li').toggleClass("active");</script>
-
-            </div>
-            
-        
-
-        <!-- Content Column -->
-        <div class="col-md-9" id="tg-sb-content">
-            <div class="post-header">
-   <h1 class="post-title-main">View all product templates</h1>
-</div>
-
-
-
-<div class="post-content">
-
-   
-
-    
-    
-<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
-<script>
-$( document ).ready(function() {
-  // Handler for .ready() called.
-
-$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
-
-/* this offset helps account for the space taken up by the floating toolbar. */
-$('#toc').on('click', 'a', function() {
-  var target = $(this.getAttribute('href'))
-    , scroll_target = target.offset().top
-
-  $(window).scrollTop(scroll_target - 10);
-  return false
-})
-  
-});
-</script>
-
-<div id="toc"></div>
-
-    
-
-
-    
-
-   <h2 id="product-templates">Product Templates</h2>
-
-<p>A Product Template is a JSON document which is persisted on the backend database.  It is used to create items that are then stored on the blockchain.</p>
-
-<h2 id="view-all-product-templates">View all product templates</h2>
-
-<p>Here is the GraphQL query</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>query {
+~~~~
+query {
   allProducts {
     id
     blockchainId
@@ -354,19 +31,21 @@ $('#toc').on('click', 'a', function() {
     data
   }  
 }
-</code></pre></div></div>
+~~~~
 
-<p>Here is an example authentication curl request which will all products.</p>
+Here is an example authentication curl request which will all products.
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl --location --request POST 'https://staging.realitems.io/graphql' \
+~~~~
+curl --location --request POST 'https://staging.realitems.io/graphql' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3VudHJ5IjoiVVNBIiwidXNlcl9uYW1lIjoia2VuQHJlYWxpdGVtcy5vcmciLCJtb2JpbGUiOiIrNTEwOTMyNDkxMSIsImxhc3RfbmFtZSI6Indvb2RydWZmIiwid2FsbGV0cyI6WyIweGY0ZTVFRjdkZTE1NDQ1QmM1NEU2M0FCMmJGZEM0YkJEY2U0MmUxZkIiLCIweDlFRUNBQjRERjEzQjYzMzhBZDYwMzg4MzVlNjFEQTJENDZjMWRDQjAiXSwiYXV0aG9yaXRpZXMiOlsiU1RBTkRBUkRfVVNFUiIsIkFETUlOX1VTRVIiLCJTVVBFUl9VU0VSIl0sImNsaWVudF9pZCI6InJlYWxpdGVtc3N0YWdpbmdjbGllbnRpZCIsImF1ZCI6WyJyZWFsaXRlbXNzdGFnaW5nand0cmVzb3VyY2VpZCJdLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiaWQiOiIyIiwiZXhwIjoxNjE0OTc0Mjg3LCJmaXJzdF9uYW1lIjoia2VuIiwianRpIjoiYTc0MGIyY2YtYWRmOC00MjQ0LWJiMTMtZTdlOGVhODQyZjI1In0.xNuUbl87rN6lCGjuJV5MWpFZR6uG-SYEA4hZv3EFes8' \
 --header 'Content-Type: application/json' \
 --data-raw '{"query":"query {\n  allProducts {\n    id\n    blockchainId\n    maxItems\n    name\n    publicProduct\n    componentName\n    publicProduct\n    timeCreated\n    timeModified\n    data\n  }\n  \n}","variables":{}}'
-</code></pre></div></div>
+~~~~
 
-<p>If the request is successful the response will look something like this.</p>
+If the request is successful the response will look something like this.
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+~~~~
+{
     "data": {
         "allProducts": [
             {
@@ -411,7 +90,7 @@ $('#toc').on('click', 'a', function() {
                 "componentName": "DefaultProduct",
                 "timeCreated": "2020-04-28T20:51:12.508568Z",
                 "timeModified": "2020-05-15T19:17:53.152970Z",
-                "data": "{\"productId\":8,\"description\":\"Livecanna’s CBD Oil Tinctures are the #1 rated natural choice alternatives. We utilize a unique manufacturing process that uses hemp from nutrient-rich farms in Colorado. \",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmcTGiVf3D7Ru9pWLYZNB4Mxq85sQo47p8m1EdHTkjTN47\",\"name\":\"livecanna 100mg CBD Tincture\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"CBD\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/JhMv_FuPKLU\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://realitems.io\"},{\"trait_type\":\"MadeIn\",\"value\":\"\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"1000mg CBD Tincture - Citrus\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"1000mg of active Cannabidiol mixed with organic hemp oil\",\" 1 oz bottle contains 30 servings\",\" Gluten-free &amp; vegan\",\" Plant-based ingredients\",\" USDA certified\",\" Organically grown in Colorado (USA)\",\" 30 mL/ 1 oz Bottle\"]},{\"trait_type\":\"SecretMessage\",\"value\":\"We guarantee that all of our CBD oil is manufactured from USA hemp that is grown on non-GMO farms, and is both vegan and gluten-free. Our CBD Oil Tinctures are available in three flavors: natural, citrus, and peppermint!\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmYNHhywYCpXXJsoStK2xXkMpYHrxTSt5cwws39CNjKQ5g\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmUuk8aiVEadAsZJdvPYw4YsWenBTfrFre4u5XJBZ8Nvqc\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmfFoJhM6QNJhBFu8u4CL97ZK5EdSs4XK4rZqEdjQ4PmUW\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmNwgTuL1Bo3RUSTG549jB1pvumiynqLKyT1CwaSj7LwrR\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmPo8RHgNAHtvE6fMJVTtvtDD5Q2LCh4wpv8Ld56n9U1mN\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmbhPuakFgtMz7vesgyekz5JBXaQEiidJwF1brATQ4nBGC\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmeZg8Ltw4UbNhP3ZBDXPdCHbDrdD5e75bxkx9HcDrY5wc\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/Qmc2v315xA9KJdPy6EKU9FaZqZey4rCHM1oReMv4Pjokc6\"},{\"trait_type\":\"UnitsProduced\",\"value\":\"1\"}]}"
+                "data": "{\"productId\":8,\"description\":\"Livecanna’s CBD Oil Tinctures are the #1 rated natural choice alternatives. We utilize a unique manufacturing process that uses hemp from nutrient-rich farms in Colorado. \",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmcTGiVf3D7Ru9pWLYZNB4Mxq85sQo47p8m1EdHTkjTN47\",\"name\":\"livecanna 100mg CBD Tincture\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"CBD\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/JhMv_FuPKLU\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://realitems.io\"},{\"trait_type\":\"MadeIn\",\"value\":\"\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"1000mg CBD Tincture - Citrus\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"1000mg of active Cannabidiol mixed with organic hemp oil\",\" 1 oz bottle contains 30 servings\",\" Gluten-free & vegan\",\" Plant-based ingredients\",\" USDA certified\",\" Organically grown in Colorado (USA)\",\" 30 mL/ 1 oz Bottle\"]},{\"trait_type\":\"SecretMessage\",\"value\":\"We guarantee that all of our CBD oil is manufactured from USA hemp that is grown on non-GMO farms, and is both vegan and gluten-free. Our CBD Oil Tinctures are available in three flavors: natural, citrus, and peppermint!\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmYNHhywYCpXXJsoStK2xXkMpYHrxTSt5cwws39CNjKQ5g\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmUuk8aiVEadAsZJdvPYw4YsWenBTfrFre4u5XJBZ8Nvqc\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmfFoJhM6QNJhBFu8u4CL97ZK5EdSs4XK4rZqEdjQ4PmUW\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmNwgTuL1Bo3RUSTG549jB1pvumiynqLKyT1CwaSj7LwrR\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmPo8RHgNAHtvE6fMJVTtvtDD5Q2LCh4wpv8Ld56n9U1mN\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmbhPuakFgtMz7vesgyekz5JBXaQEiidJwF1brATQ4nBGC\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmeZg8Ltw4UbNhP3ZBDXPdCHbDrdD5e75bxkx9HcDrY5wc\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/Qmc2v315xA9KJdPy6EKU9FaZqZey4rCHM1oReMv4Pjokc6\"},{\"trait_type\":\"UnitsProduced\",\"value\":\"1\"}]}"
             },
             {
                 "id": 10,
@@ -565,7 +244,7 @@ $('#toc').on('click', 'a', function() {
                 "componentName": "DefaultProduct",
                 "timeCreated": "2020-12-15T12:37:07.953385Z",
                 "timeModified": "2021-02-05T00:08:52.409327Z",
-                "data": "{\"productId\":\"\",\"description\":\"Only one piece available in this design.\\n\\nThe table top is made of 100% recycled post-consumer plastic waste. This particular one of old fridges. Tubular legs are created by a Czech company Kovonax producing metal furniture since 1908. These two parts together represent both innovative &amp; traditional approach.\\n\\nYou can play around with the legs, attach them both in one direction or in different directions. Each table comes with screws, you can attach the legs easily using a screwdriver.\\n\\nApprox. dimensions: length: 60 cm, depth: 30 cm, thickness: 18 mm, height: 52 cm\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmUQQ6gM1gZQyzQMpQBvHMhRZ7P7Todj2YTJttxmjwab6i\",\"name\":\"PLASTLO Marbled Side Table\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"Side Table\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/LSf1MkjmOvw\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://plastlo.com\"},{\"trait_type\":\"MadeIn\",\"value\":\"Made in Czech Republic\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"Marbled Side Table\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://plastlo.com/collections/all/products/marbled-side-table\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[]},{\"trait_type\":\"SecretMessage\",\"value\":\"Follow @plastlo\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmNw6w5yNJWt2ngWhYwKcdwrb2m17hnYPbQmCy7pzAjatW\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmV63HGWC9Vcyci6y43Gdn1UXEZfS81f7hRvhKaaBNCG68\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmVeTz6GwbZ6j74hHkzZr3Y7J5fPwZfAGBA8iHfJYUmaUA\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmYjm8BQh5QyXLA7YEsZeWdHXTk3HgksLf3YRHDFqQHiaY\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmVDdDoGaMfLkx5mUjEXvAK9aoeAg83PQ6FfT7nqJoF2Mt\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmbeoUYYWu6cE8LjNuMfRobnYQ8opDnKyTqtZurk4X9WAP\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmVGEJ9eJVhscXAQW9FQPFyH4DRmD8LXawCcKjxrnnnmjT\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmX7o1YszPkGJ8hLgygZM82Tr75uptMHZCaPNqAbaa2Vqp\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+                "data": "{\"productId\":\"\",\"description\":\"Only one piece available in this design.\\n\\nThe table top is made of 100% recycled post-consumer plastic waste. This particular one of old fridges. Tubular legs are created by a Czech company Kovonax producing metal furniture since 1908. These two parts together represent both innovative & traditional approach.\\n\\nYou can play around with the legs, attach them both in one direction or in different directions. Each table comes with screws, you can attach the legs easily using a screwdriver.\\n\\nApprox. dimensions: length: 60 cm, depth: 30 cm, thickness: 18 mm, height: 52 cm\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmUQQ6gM1gZQyzQMpQBvHMhRZ7P7Todj2YTJttxmjwab6i\",\"name\":\"PLASTLO Marbled Side Table\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"Side Table\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/LSf1MkjmOvw\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://plastlo.com\"},{\"trait_type\":\"MadeIn\",\"value\":\"Made in Czech Republic\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"Marbled Side Table\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://plastlo.com/collections/all/products/marbled-side-table\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[]},{\"trait_type\":\"SecretMessage\",\"value\":\"Follow @plastlo\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmNw6w5yNJWt2ngWhYwKcdwrb2m17hnYPbQmCy7pzAjatW\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmV63HGWC9Vcyci6y43Gdn1UXEZfS81f7hRvhKaaBNCG68\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmVeTz6GwbZ6j74hHkzZr3Y7J5fPwZfAGBA8iHfJYUmaUA\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmYjm8BQh5QyXLA7YEsZeWdHXTk3HgksLf3YRHDFqQHiaY\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmVDdDoGaMfLkx5mUjEXvAK9aoeAg83PQ6FfT7nqJoF2Mt\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmbeoUYYWu6cE8LjNuMfRobnYQ8opDnKyTqtZurk4X9WAP\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmVGEJ9eJVhscXAQW9FQPFyH4DRmD8LXawCcKjxrnnnmjT\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmX7o1YszPkGJ8hLgygZM82Tr75uptMHZCaPNqAbaa2Vqp\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
             },
             {
                 "id": 24,
@@ -576,7 +255,7 @@ $('#toc').on('click', 'a', function() {
                 "componentName": "DefaultProduct",
                 "timeCreated": "2021-02-04T21:22:55.736172Z",
                 "timeModified": "2021-02-05T00:11:05.629799Z",
-                "data": "{\"productId\":\"\",\"description\":\"Who said freckles don't look cute.\\n\\nThis table top is made of 100% recycled post-consumer plastic waste. This particular one of old cosmetics containers. Tubular legs are created by a Czech company producing metal furniture since 1908. These two parts together represent both innovative &amp; traditional approach.\\n\\nYou can play around with the legs, attach them both in one direction or in different directions. Each table comes with screws, you can attach the legs easily using a screwdriver.\\n\\nPlease note that every piece is unique and can vary a bit. The table top can be a bit rough and have little bubbles on its surface.\\n\\nApprox. dimensions: length: 49 cm, depth: 30 cm, height: 52 cm\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmYmwTSVGojjjwpFzH2eyAWrnspxMg9ij4BQUoQP5DVq1M\",\"name\":\"PLASTLO Freckled Black Side Table\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"side table\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/LSf1MkjmOvw\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://plastlo.com\"},{\"trait_type\":\"MadeIn\",\"value\":\"Made in Czech Republic\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"PLASTLO Freckled Black Side Table\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://plastlo.com/collections/all/products/freckled-black-side-table\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[]},{\"trait_type\":\"SecretMessage\",\"value\":\"Follow @plastlo\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmVStGpdC3cQCincEc5uV5GdscYJaRKdPApV8ae2nF3dKq\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmV63HGWC9Vcyci6y43Gdn1UXEZfS81f7hRvhKaaBNCG68\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmeJASvuFFQQQPgfjtzSKcYaufgh1PLBJCz4NKgTYvemsg\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmcqkoscFgR4QgrjucfNSiE19rjbEi4QD3CXnrbesY31jH\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmYJnFkwBtSyka77AGqpkoTXaNKzFdt39aDF2Ye2DXCpUq\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmPjoNvjwv5uZHGc9AS9cGW7RxZ82fX9VubVFGyH4req5j\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmVqYx8Dq5VxBV7VBLrAvHPN1FaXTnZWyEiXDaa81SpTsh\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmUk9AyUsibAC844DZBSDjLykXZ9YgbPyVFjq7VBjnMZFk\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+                "data": "{\"productId\":\"\",\"description\":\"Who said freckles don't look cute.\\n\\nThis table top is made of 100% recycled post-consumer plastic waste. This particular one of old cosmetics containers. Tubular legs are created by a Czech company producing metal furniture since 1908. These two parts together represent both innovative & traditional approach.\\n\\nYou can play around with the legs, attach them both in one direction or in different directions. Each table comes with screws, you can attach the legs easily using a screwdriver.\\n\\nPlease note that every piece is unique and can vary a bit. The table top can be a bit rough and have little bubbles on its surface.\\n\\nApprox. dimensions: length: 49 cm, depth: 30 cm, height: 52 cm\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmYmwTSVGojjjwpFzH2eyAWrnspxMg9ij4BQUoQP5DVq1M\",\"name\":\"PLASTLO Freckled Black Side Table\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"side table\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/LSf1MkjmOvw\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://plastlo.com\"},{\"trait_type\":\"MadeIn\",\"value\":\"Made in Czech Republic\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"PLASTLO Freckled Black Side Table\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://plastlo.com/collections/all/products/freckled-black-side-table\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[]},{\"trait_type\":\"SecretMessage\",\"value\":\"Follow @plastlo\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmVStGpdC3cQCincEc5uV5GdscYJaRKdPApV8ae2nF3dKq\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmV63HGWC9Vcyci6y43Gdn1UXEZfS81f7hRvhKaaBNCG68\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmeJASvuFFQQQPgfjtzSKcYaufgh1PLBJCz4NKgTYvemsg\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmcqkoscFgR4QgrjucfNSiE19rjbEi4QD3CXnrbesY31jH\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmYJnFkwBtSyka77AGqpkoTXaNKzFdt39aDF2Ye2DXCpUq\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmPjoNvjwv5uZHGc9AS9cGW7RxZ82fX9VubVFGyH4req5j\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmVqYx8Dq5VxBV7VBLrAvHPN1FaXTnZWyEiXDaa81SpTsh\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmUk9AyUsibAC844DZBSDjLykXZ9YgbPyVFjq7VBjnMZFk\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
             },
             {
                 "id": 22,
@@ -609,7 +288,7 @@ $('#toc').on('click', 'a', function() {
                 "componentName": "DefaultProduct",
                 "timeCreated": "2020-12-13T19:47:37.856510Z",
                 "timeModified": "2021-02-05T00:11:24.077062Z",
-                "data": "{\"productId\":\"\",\"description\":\"\\nPearl shines bright in the sun and will look gorgeous in your sun lit apartment.\\n\\nThe table top is made of 100% recycled post-consumer plastic waste. This particular one of old spools. Tubular legs are created by a Czech company producing metal furniture since 1908. These two parts together represent both innovative &amp; traditional approach.\\n\\nYou can play around with the legs, attach them both in one direction or in different directions. Each table comes with screws, you can attach the legs easily using a screwdriver.\\n\\nApprox. dimensions: length: 60 cm, depth: 30 cm, thickness: 2 cm, height: 52 cm\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmUiUhEDqm6uFHyFqXbcqWZfn9tkAY92zVkjMvtJaw5H14\",\"name\":\" PLASTLO Pearl Side Table\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"Side Table\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/LSf1MkjmOvw\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://plastlo.com\"},{\"trait_type\":\"MadeIn\",\"value\":\"Made in Czech Republic\"},{\"trait_type\":\"Warning\",\"value\":\" Please note that each piece is unique and can vary a bit. The table top can be a bit rough and have\"},{\"trait_type\":\"ProductName\",\"value\":\"Pearl Side Table\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://plastlo.com/collections/all/products/pearl-side-table\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[]},{\"trait_type\":\"SecretMessage\",\"value\":\"Follow @plastlo\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmVStGpdC3cQCincEc5uV5GdscYJaRKdPApV8ae2nF3dKq\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmV63HGWC9Vcyci6y43Gdn1UXEZfS81f7hRvhKaaBNCG68\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmdsTjwTV3XV6uvfu5qTxh3GkzRsmFrbmQxsBsgNL3su1e\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmSrZKgpQ8WgaypbgAYtS8UwQA2EzbCZ2Ne1j69wKj1BPv\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmbYJEeRFt2BcjU9LwAxt41LsL26mp6SuxMBLSGH2ZF3DX\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmXQd1jwCXNWnbMs87MUUt9JitjNg2T1SpuD6h3Tk3gT4f\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmSJ5k7JX1gvmf91CCwmcay3cAtdys7s8Bb11eLboYoY5Y\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmYinDHpVu6vk2xpwMEpveXCFmstrLz2zp7NnHgveZdNF7\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+                "data": "{\"productId\":\"\",\"description\":\"\\nPearl shines bright in the sun and will look gorgeous in your sun lit apartment.\\n\\nThe table top is made of 100% recycled post-consumer plastic waste. This particular one of old spools. Tubular legs are created by a Czech company producing metal furniture since 1908. These two parts together represent both innovative & traditional approach.\\n\\nYou can play around with the legs, attach them both in one direction or in different directions. Each table comes with screws, you can attach the legs easily using a screwdriver.\\n\\nApprox. dimensions: length: 60 cm, depth: 30 cm, thickness: 2 cm, height: 52 cm\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmUiUhEDqm6uFHyFqXbcqWZfn9tkAY92zVkjMvtJaw5H14\",\"name\":\" PLASTLO Pearl Side Table\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"Side Table\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/LSf1MkjmOvw\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://plastlo.com\"},{\"trait_type\":\"MadeIn\",\"value\":\"Made in Czech Republic\"},{\"trait_type\":\"Warning\",\"value\":\" Please note that each piece is unique and can vary a bit. The table top can be a bit rough and have\"},{\"trait_type\":\"ProductName\",\"value\":\"Pearl Side Table\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://plastlo.com/collections/all/products/pearl-side-table\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[]},{\"trait_type\":\"SecretMessage\",\"value\":\"Follow @plastlo\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmVStGpdC3cQCincEc5uV5GdscYJaRKdPApV8ae2nF3dKq\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmV63HGWC9Vcyci6y43Gdn1UXEZfS81f7hRvhKaaBNCG68\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmdsTjwTV3XV6uvfu5qTxh3GkzRsmFrbmQxsBsgNL3su1e\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmSrZKgpQ8WgaypbgAYtS8UwQA2EzbCZ2Ne1j69wKj1BPv\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmbYJEeRFt2BcjU9LwAxt41LsL26mp6SuxMBLSGH2ZF3DX\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmXQd1jwCXNWnbMs87MUUt9JitjNg2T1SpuD6h3Tk3gT4f\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmSJ5k7JX1gvmf91CCwmcay3cAtdys7s8Bb11eLboYoY5Y\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmYinDHpVu6vk2xpwMEpveXCFmstrLz2zp7NnHgveZdNF7\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
             },
             {
                 "id": 26,
@@ -620,7 +299,7 @@ $('#toc').on('click', 'a', function() {
                 "componentName": "DefaultProduct",
                 "timeCreated": "2021-02-04T21:46:30.249703Z",
                 "timeModified": "2021-02-05T00:04:24.186736Z",
-                "data": "{\"productId\":\"\",\"description\":\"Charlie and the Chocolate Factory approved. Let the pastel shades brighten up your interior.\\n\\nThe table top is made of 100% recycled post-consumer plastic waste. This particular one of old chocolate moulds . Tubular legs are created by a Czech company producing metal furniture since 1908. These two parts together represent both innovative &amp; traditional approach.\\n\\nYou can play around with the legs, attach them both in one direction or in different directions. Each table comes with screws, you can attach the legs easily using a screwdriver.\\n\\nPlease note that every piece is unique and can vary a bit. The table top can be a bit rough and have little bubbles on its surface.\\n\\nApprox. dimensions: length: 40 cm, depth: 40 cm, thickness: 9 mm, height: 51 cm\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmWqZXtqGeLvWBvhWCdB4xvtY3UGgL5613ScAFg1oFH19J\",\"name\":\"PLASTLO Pastel Rainbow Side Table\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"side table\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/LSf1MkjmOvw\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://plastlo.com\"},{\"trait_type\":\"MadeIn\",\"value\":\"Made in Czech Republic\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"PLASTLO Pastel Rainbow Side Table\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://plastlo.com/collections/all/products/pastel-rainbow-side-table\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[]},{\"trait_type\":\"SecretMessage\",\"value\":\"Follow @plastlo\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmVStGpdC3cQCincEc5uV5GdscYJaRKdPApV8ae2nF3dKq\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmV63HGWC9Vcyci6y43Gdn1UXEZfS81f7hRvhKaaBNCG68\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmbxwNtAP5ZnU8jwTEUjC7pY9j2ebDvRMd2VVt9maCw2ZM\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmbnJUjgsUwMHyJVchFC3crYbrNfNwCfJh2ukNY2bJMSMe\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmXjPn8s4V7ot9zs3NiuD2SjRWJag6ipfjNWjpTRvXScZp\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmX19bFLxN9tUmvuWRtmYURcfDvNaMGFCZ4tFomHswK7FS\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmYvqSWUNqtxDMJU9mK6PDu6z7PzqSVeRMmz582nyNWdX8\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmW2vJFkuw87ZZ2D8fGUHSC1orF8AjBMSf9WdQR6Zjh9iM\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
+                "data": "{\"productId\":\"\",\"description\":\"Charlie and the Chocolate Factory approved. Let the pastel shades brighten up your interior.\\n\\nThe table top is made of 100% recycled post-consumer plastic waste. This particular one of old chocolate moulds . Tubular legs are created by a Czech company producing metal furniture since 1908. These two parts together represent both innovative & traditional approach.\\n\\nYou can play around with the legs, attach them both in one direction or in different directions. Each table comes with screws, you can attach the legs easily using a screwdriver.\\n\\nPlease note that every piece is unique and can vary a bit. The table top can be a bit rough and have little bubbles on its surface.\\n\\nApprox. dimensions: length: 40 cm, depth: 40 cm, thickness: 9 mm, height: 51 cm\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmWqZXtqGeLvWBvhWCdB4xvtY3UGgL5613ScAFg1oFH19J\",\"name\":\"PLASTLO Pastel Rainbow Side Table\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"side table\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/LSf1MkjmOvw\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://plastlo.com\"},{\"trait_type\":\"MadeIn\",\"value\":\"Made in Czech Republic\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"PLASTLO Pastel Rainbow Side Table\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://plastlo.com/collections/all/products/pastel-rainbow-side-table\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[]},{\"trait_type\":\"SecretMessage\",\"value\":\"Follow @plastlo\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmVStGpdC3cQCincEc5uV5GdscYJaRKdPApV8ae2nF3dKq\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmV63HGWC9Vcyci6y43Gdn1UXEZfS81f7hRvhKaaBNCG68\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmbxwNtAP5ZnU8jwTEUjC7pY9j2ebDvRMd2VVt9maCw2ZM\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmbnJUjgsUwMHyJVchFC3crYbrNfNwCfJh2ukNY2bJMSMe\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmXjPn8s4V7ot9zs3NiuD2SjRWJag6ipfjNWjpTRvXScZp\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmX19bFLxN9tUmvuWRtmYURcfDvNaMGFCZ4tFomHswK7FS\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmYvqSWUNqtxDMJU9mK6PDu6z7PzqSVeRMmz582nyNWdX8\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmW2vJFkuw87ZZ2D8fGUHSC1orF8AjBMSf9WdQR6Zjh9iM\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}"
             },
             {
                 "id": 25,
@@ -691,52 +370,7 @@ $('#toc').on('click', 'a', function() {
         ]
     }
 }
-</code></pre></div></div>
+~~~~
 
 
-
-    <div class="tags">
-        
-        <b>Tags: </b>
-        
-        
-        
-        <a href="tag_graphql.html" class="btn btn-default navbar-btn cursorNorm" role="button">graphql</a>
-        
-        
-        
-    </div>
-
-</div>
-
-<hr class="shaded"/>
-
-<footer>
-            <div class="row">
-                <div class="col-lg-12 footer">
-               &copy;2021 Real Items. All rights reserved. <br />
- Site last generated: Mar 4, 2021 <br />
-<p><img src="images/ri-logo-black.png" alt="Real Items Logo"/></p>
-                </div>
-            </div>
-</footer>
-
-
-        </div>
-    <!-- /.row -->
-</div>
-<!-- /.container -->
-</div>
-<!-- /#main -->
-    </div>
-
-</body>
-
-<!-- the google_analytics_id gets auto inserted from the config file -->
-
-
-
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-66296557-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
-
-
-</html>
+{% include links.html %}

@@ -30,22 +30,26 @@ entries:
         url: /api_authentication.html
         output: web, pdf
 
-      - title:  View product templates
-        url: /api_view_product_templates.html
+      - title:  List product templates
+        url: /api_list_product_templates.html
         output: web, pdf
 
       - title:  View a product template
-        url: /api_view_single_product_template.html
+        url: /api_view_product_template.html
         output: web, pdf
 
-      - title:  View all items 
-        url: /api_view_items.html
+      - title:  List all items 
+        url: /api_list_items.html
         output: web, pdf
 
-      - title:  View items for a product template
-        url: /api_view_items_by_product_id.html
+      - title:  List items by product ID 
+        url: /api_list_items_by_product_id.html
         output: web, pdf
 
       - title:  View an item
-        url: /api_view_item_by_id.html
+        url: /api_view_item.html
+        output: web, pdf
+        
+      - title:  Create items
+        url: /api_create_items.html
         output: web, pdf

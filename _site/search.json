@@ -15,6 +15,17 @@
 
 
 {
+"title": "Creating items",
+"tags": "graphqlNFT",
+"keywords": "NFT, graphql",
+"url": "api_create_items.html",
+"summary": ""
+}
+,
+
+
+
+{
 "title": "GraphQL API",
 "tags": "",
 "keywords": "ridoc",
@@ -26,10 +37,43 @@
 
 
 {
+"title": "List all items",
+"tags": "graphqlNFT",
+"keywords": "NFT, graphql",
+"url": "api_list_items.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "List items by product template ID",
+"tags": "graphqlNFT",
+"keywords": "NFT, graphql",
+"url": "api_list_items_by_product_id.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "List product templates",
+"tags": "graphql",
+"keywords": "NFT, graphql",
+"url": "api_list_product_templates.html",
+"summary": ""
+}
+,
+
+
+
+{
 "title": "View an item",
 "tags": "graphqlNFT",
 "keywords": "NFT, graphql",
-"url": "api_view_item_by_id.html",
+"url": "api_view_item.html",
 "summary": ""
 }
 ,
@@ -37,43 +81,10 @@
 
 
 {
-"title": "Authentication with the GraphQL API",
-"tags": "graphqlNFT",
-"keywords": "NFT, graphql",
-"url": "api_view_items.html",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "View items by product template ID",
-"tags": "graphqlNFT",
-"keywords": "NFT, graphql",
-"url": "api_view_items_by_product_id.html",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "View all product templates",
+"title": "View a product template",
 "tags": "graphql",
 "keywords": "NFT, graphql",
-"url": "api_view_product_templates.html",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "View a specific product template",
-"tags": "graphql",
-"keywords": "NFT, graphql",
-"url": "api_view_single_product_template.html",
+"url": "api_view_product_template.html",
 "summary": ""
 }
 ,

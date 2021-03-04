@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
-<meta name="keywords" content="graphql,  NFT, graphql">
-<title>View a specific product template | Real Items Documentation</title>
+<meta name="keywords" content="graphqlNFT,  NFT, graphql">
+<title>List all items | Real Items Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -188,7 +188,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="View a specific product template">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="List all items">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -240,35 +240,42 @@
           
           
           
-          <li><a title="View product templates" href="api_view_product_templates.html">View product templates</a></li>
+          <li><a title="List product templates" href="api_list_product_templates.html">List product templates</a></li>
           
           
           
           
           
           
-          <li class="active"><a title="View a product template" href="api_view_single_product_template.html">View a product template</a></li>
+          <li><a title="View a product template" href="api_view_product_template.html">View a product template</a></li>
           
           
           
           
           
           
-          <li><a title="View all items" href="api_view_items.html">View all items</a></li>
+          <li class="active"><a title="List all items" href="api_list_items.html">List all items</a></li>
           
           
           
           
           
           
-          <li><a title="View items for a product template" href="api_view_items_by_product_id.html">View items for a product template</a></li>
+          <li><a title="List items by product ID" href="api_list_items_by_product_id.html">List items by product ID</a></li>
           
           
           
           
           
           
-          <li><a title="View an item" href="api_view_item_by_id.html">View an item</a></li>
+          <li><a title="View an item" href="api_view_item.html">View an item</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Create items" href="api_create_items.html">Create items</a></li>
           
           
           
@@ -295,7 +302,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">View a specific product template</h1>
+   <h1 class="post-title-main">List all items</h1>
 </div>
 
 
@@ -332,56 +339,95 @@ $('#toc').on('click', 'a', function() {
 
     
 
-   <h2 id="product-templates">Product Templates</h2>
+   <h2 id="items-also-know-as-nfts-phygitals-digital-ids">Items (also know as NFTs, Phygitals, Digital IDs)</h2>
 
-<p>A Product Template is a JSON document which is persisted on the backend database.  It is used to create items that are then stored on the blockchain.</p>
+<p>An item is represented by an NFT on the blockchain and IPFS.</p>
 
-<h2 id="view-a-specific-product-template-using-the-id">View a specific product template using the ID</h2>
+<h2 id="view-all-items">View all items</h2>
 
-<p>Here is the GraphQl query</p>
+<p>Calling this query can potentially return a <strong>HUGE</strong> amount of data. It will be very rare to make this query.  Instead you will probably want to use <em>itemsByProductId</em> or <em>itemById</em>.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>query ($id: Int!) {
-  productById(id: $id) {
-    id
-    blockchainId
-    companyId
-    maxItems
-    name
-    componentName
-    publicProduct
+<p>Here is the GraphQl request.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>query {
+  allItems {
+    quantity
+    tokenUri
     timeCreated
     timeModified
-    data
+    id
+    obfuscatedId
+    approver
+    productId
+    externalUrl
+    stolen
+    notes
+    owned
+    owner
+    forSale
+    deleted
+    metadata
+    earmarks
   }
 }
 </code></pre></div></div>
 
-<p>Each product template has an ID. Here is an example authentication curl request that uses the ID to return a specific product template.</p>
+<p>Here is an example authentication curl request which will return all items</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl --location --request POST 'https://staging.realitems.io/graphql' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3VudHJ5IjoiVVNBIiwidXNlcl9uYW1lIjoia2VuQHJlYWxpdGVtcy5vcmciLCJtb2JpbGUiOiIrNTEwOTMyNDkxMSIsImxhc3RfbmFtZSI6Indvb2RydWZmIiwid2FsbGV0cyI6WyIweGY0ZTVFRjdkZTE1NDQ1QmM1NEU2M0FCMmJGZEM0YkJEY2U0MmUxZkIiLCIweDlFRUNBQjRERjEzQjYzMzhBZDYwMzg4MzVlNjFEQTJENDZjMWRDQjAiXSwiYXV0aG9yaXRpZXMiOlsiU1RBTkRBUkRfVVNFUiIsIkFETUlOX1VTRVIiLCJTVVBFUl9VU0VSIl0sImNsaWVudF9pZCI6InJlYWxpdGVtc3N0YWdpbmdjbGllbnRpZCIsImF1ZCI6WyJyZWFsaXRlbXNzdGFnaW5nand0cmVzb3VyY2VpZCJdLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiaWQiOiIyIiwiZXhwIjoxNjE0OTc0Mjg3LCJmaXJzdF9uYW1lIjoia2VuIiwianRpIjoiYTc0MGIyY2YtYWRmOC00MjQ0LWJiMTMtZTdlOGVhODQyZjI1In0.xNuUbl87rN6lCGjuJV5MWpFZR6uG-SYEA4hZv3EFes8' \
 --header 'Content-Type: application/json' \
---data-raw '{"query":"query ($id: Int!) {\n  productById(id: $id) {\n    id\n    blockchainId\n    companyId\n    maxItems\n    name\n    componentName\n    publicProduct\n    timeCreated\n    timeModified\n    data\n  }\n}","variables":{"id":1}}'
+--data-raw '{"query":"query {\n  allItems {\n    quantity\n    tokenUri\n    timeCreated\n    timeModified\n    id\n    obfuscatedId\n    approver\n    productId\n    externalUrl\n    stolen\n    notes\n    owned\n    owner\n    forSale\n    deleted\n    metadata\n    earmarks\n  }\n}","variables":{}}'
 </code></pre></div></div>
 
 <p>If the request is successful the response will look something like this.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
     "data": {
-        "productById": {
-            "id": 1,
-            "blockchainId": 1,
-            "companyId": 1,
-            "maxItems": 100,
-            "name": "Tricol KN95 Respirator 3 pack",
-            "componentName": "DefaultProduct",
-            "publicProduct": true,
-            "timeCreated": "2020-03-26T03:35:03.345933Z",
-            "timeModified": "2020-05-15T19:17:34.823618Z",
-            "data": "{\"productId\":1,\"description\":\"Established in 1992, Tricol began as a manufacturer of cotton towels and bedding linens for the global home textile industry. Tricol's presence as a major manufacturer of synthetic textiles began in 1996 with the opening of China's first, and largest, combination microfiber production facility.\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmZHPWQsKTtPQZqgXw41Z671c51W1thTMYZMdebZHDa6qz\",\"name\":\"Tricol KN95 Respirator 3 pack\",\"component\":\"DefaultProduct\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"ppe\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/wN7LJt6wWBg\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://www.fbi.gov/news/pressrel/press-releases/fbi-warns-health-care-professionals-of-increased-potential-for-fraudulent-sales-of-covid-19-related-medical-equipment\"},{\"trait_type\":\"MadeIn\",\"value\":\"Shandong China\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"Tricol KN95 Respirator 3 pack\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"Tricol Intelligent Microfiber\",\" silver ion technology\",\" white\",\" earloop\"]},{\"trait_type\":\"SecretMessage\",\"value\":\"This product was verified by Real Items Company securely on VeChain Blockchain. \"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmQxx52sGAW9gmikgwggsose2ab2NMN73XAsL69a2HtycG\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmcJgUjmkhTfKQ37iPURAM3oNaN9iFciEwTo2PukVws35f\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmaoRNrQe2C9KjEuNjjPy28EwS7KjYg9MPfKdLCB6oNgvF\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmQjdBdaL8eQhZfk5SVS4bAX4xkbYs1VB4Q1FiLUcUXTLL\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/Qmefu1ok8UU8mGrLtjvXYS9dVoRXp2XsMNMEkigVBtSsFy\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/Qmf6k7TqU69J58ujtEBF89rcnjiCv5MRMyuyWrk2SZzskN\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmafweGoc6QGzswcNUxLU4Sbev7QVaosbkwoXqQoGuQXuw\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmTLpMeUeyXMFgjfUAUVVNP4aEbfWyGKKETu3xJWLkE1jC\"},{\"trait_type\":\"UnitsProduced\",\"value\":\"100\"}]}"
+        "allItems": [
+            {
+                "quantity": 1,
+                "tokenUri": "QmeCECHkcxrX5fhLQEMg3NhzxnEZyfjZJgKBy8Q1qA7io2",
+                "timeCreated": "2020-03-26T05:12:55.471767Z",
+                "timeModified": "2020-03-26T05:12:55.471767Z",
+                "id": 1,
+                "obfuscatedId": "Q6Xr6X9Z",
+                "approver": "0x74643fa9137b36658378921f2a9917c410d0b118",
+                "productId": 1,
+                "externalUrl": "https://staging.realitems.io/items/Q6Xr6X9Z",
+                "stolen": false,
+                "notes": "",
+                "owned": false,
+                "owner": "0x2437d1acb5fe1ed4caea5b45aac26814b1ffd78b",
+                "forSale": false,
+                "deleted": false,
+                "metadata": "{\"image\":\"https://realitems.org/ipfs/QmSJ2V1yA7FrSCzSfMKw8FMNhwv8W2QzAZLxV5ScYKZDUv\",\"external_url\":\"https://staging.realitems.io/items/Q6Xr6X9Z\",\"component\":\"shopify\",\"productId\":1,\"name\":\"BISOU BOTANICALS\",\"description\":\"Afternoon Delight is a seductively spicy herbal chai with heart-healthy hibiscus, adaptogens  + 20 mg CBD per serving, formulated to promote a healthy libido and sensual relaxation.\",\"attributes\":[{\"value\":\"tea\",\"trait_type\":\"ProductType\"},{\"value\":\"https://www.youtube.com/embed/ab7yGLSJhWs\",\"trait_type\":\"Video\"},{\"value\":\"https://www.theteaspot.com/pages/b-corp-certified-tea\",\"trait_type\":\"RecyclingManual\"},{\"value\":\"\",\"trait_type\":\"MadeIn\"},{\"trait_type\":\"Warning \"},{\"value\":\"Afternoon Delight\",\"trait_type\":\"ProductName\"},{\"value\":\"\",\"trait_type\":\"Music\"},{\"value\":[\"Hibiscus\",\"Rooibos\",\"Peppercorn\",\"Cinnamon\",\"Lemongrass\",\"Ginger\",\"Cardamom Seeds\",\"CBD\"],\"trait_type\":\"FeaturesArray\"},{\"value\":\"Our fanciful, flavorful teas harness the synergy of pure CBD with organic adaptogens to bring you products that you will both trust and love!  This stellar collection represents our collective knowledge and passion from 32 years in the tea industry.\",\"trait_type\":\"SecretMessage\"},{\"value\":\"National Race to End Women's Cancer\",\"trait_type\":\"CharityDonationRecipient\"},{\"value\":\"\",\"trait_type\":\"CharityDonationAmount\"},{\"value\":\"We believe that tea every day is vital for wellness and self-care, and strive to enlighten and enliven those who consume it. In fact, we’re proponents of drinking 5 cups a day, to continually support our immune systems on a cellular level, as our founder advocates in her book Cancer Hates Tea.\",\"trait_type\":\"CharityMessage\"},{\"value\":\"\",\"trait_type\":\"NotifyThirdParty\"},{\"value\":\"https://realitems.org/ipfs/QmP14Egsho7BUXVCtPszP43GFJ7hx65TCvnrN78WtjPpCV\",\"trait_type\":\"IPFSBrandLogo\"},{\"value\":\"https://realitems.org/ipfs/QmfPGKLcTGgQC9LDBubVtfUM29i2tLJYhaAPmSiHpwHVvg\",\"trait_type\":\"IPFSCertification\"},{\"value\":\"https://realitems.org/ipfs/QmSJ2V1yA7FrSCzSfMKw8FMNhwv8W2QzAZLxV5ScYKZDUv\",\"trait_type\":\"IPFSproductPhoto1\"},{\"value\":\"https://realitems.org/ipfs/QmNU5H3u5LyqkCQzWLHUYqHeTNWqheHURFm6gHXoCGv4QV\",\"trait_type\":\"IPFSproductPhoto2\"},{\"value\":\"https://realitems.org/ipfs/QmfMwgpS5KcRBLZQbuHoTiKE9v4v2GePfPdsWBzQkKBsJP\",\"trait_type\":\"IPFSproductPhoto3\"},{\"value\":\"https://realitems.org/ipfs/QmbMTjpAzqedcqAobC6vDAVGyDLNLULDKbBgr722p4duFQ\",\"trait_type\":\"IPFSproductPhoto4\"},{\"value\":\"https://realitems.org/ipfs/QmUDRF6TuCtqbxTKDeJQoGQQuGArsSnxCX6oLkwekf4Kip\",\"trait_type\":\"IPFSproductPhoto5\"},{\"value\":\"https://realitems.org/ipfs/QmUDMjrYYCQcJJLs1Wkq2Fm71rhLssEtrA5qAFvuGEniLy\",\"trait_type\":\"IPFSproductPhoto6\"},{\"value\":5,\"trait_type\":\"UnitsProduced\"}]}",
+                "earmarks": []
+            },
+            {
+                "quantity": 1,
+                "tokenUri": "QmbCUHnwcjGejN4RPRTn8vgtrcNjxqP3cUL9Ag5PvEVGxG",
+                "timeCreated": "2020-03-26T21:23:21.791838Z",
+                "timeModified": "2020-03-26T21:23:21.791838Z",
+                "id": 2,
+                "obfuscatedId": "JGXA5X8Z",
+                "approver": "0xc717b4bc181fabadab58b393116b786238670fc4",
+                "productId": 1,
+                "externalUrl": "https://staging.realitems.io/items/JGXA5X8Z",
+                "stolen": false,
+                "notes": "",
+                "owned": false,
+                "owner": "0x2437d1acb5fe1ed4caea5b45aac26814b1ffd78b",
+                "forSale": false,
+                "deleted": false,
+                "metadata": "{\"image\":\"https://realitems.org/ipfs/QmSJ2V1yA7FrSCzSfMKw8FMNhwv8W2QzAZLxV5ScYKZDUv\",\"external_url\":\"https://staging.realitems.io/items/JGXA5X8Z\",\"component\":\"shopify\",\"productId\":1,\"name\":\"BISOU BOTANICALS\",\"description\":\"Afternoon Delight is a seductively spicy herbal chai with heart-healthy hibiscus, adaptogens  + 20 mg CBD per serving, formulated to promote a healthy libido and sensual relaxation.\",\"attributes\":[{\"value\":\"tea\",\"trait_type\":\"ProductType\"},{\"value\":\"https://www.youtube.com/embed/ab7yGLSJhWs\",\"trait_type\":\"Video\"},{\"value\":\"https://www.theteaspot.com/pages/b-corp-certified-tea\",\"trait_type\":\"RecyclingManual\"},{\"value\":\"\",\"trait_type\":\"MadeIn\"},{\"trait_type\":\"Warning \"},{\"value\":\"Afternoon Delight\",\"trait_type\":\"ProductName\"},{\"value\":\"\",\"trait_type\":\"Music\"},{\"value\":[\"Hibiscus\",\"Rooibos\",\"Peppercorn\",\"Cinnamon\",\"Lemongrass\",\"Ginger\",\"Cardamom Seeds\",\"CBD\"],\"trait_type\":\"FeaturesArray\"},{\"value\":\"Our fanciful, flavorful teas harness the synergy of pure CBD with organic adaptogens to bring you products that you will both trust and love!  This stellar collection represents our collective knowledge and passion from 32 years in the tea industry.\",\"trait_type\":\"SecretMessage\"},{\"value\":\"National Race to End Women's Cancer\",\"trait_type\":\"CharityDonationRecipient\"},{\"value\":\"\",\"trait_type\":\"CharityDonationAmount\"},{\"value\":\"We believe that tea every day is vital for wellness and self-care, and strive to enlighten and enliven those who consume it. In fact, we’re proponents of drinking 5 cups a day, to continually support our immune systems on a cellular level, as our founder advocates in her book Cancer Hates Tea.\",\"trait_type\":\"CharityMessage\"},{\"value\":\"\",\"trait_type\":\"NotifyThirdParty\"},{\"value\":\"https://realitems.org/ipfs/QmP14Egsho7BUXVCtPszP43GFJ7hx65TCvnrN78WtjPpCV\",\"trait_type\":\"IPFSBrandLogo\"},{\"value\":\"https://realitems.org/ipfs/QmfPGKLcTGgQC9LDBubVtfUM29i2tLJYhaAPmSiHpwHVvg\",\"trait_type\":\"IPFSCertification\"},{\"value\":\"https://realitems.org/ipfs/QmSJ2V1yA7FrSCzSfMKw8FMNhwv8W2QzAZLxV5ScYKZDUv\",\"trait_type\":\"IPFSproductPhoto1\"},{\"value\":\"https://realitems.org/ipfs/QmNU5H3u5LyqkCQzWLHUYqHeTNWqheHURFm6gHXoCGv4QV\",\"trait_type\":\"IPFSproductPhoto2\"},{\"value\":\"https://realitems.org/ipfs/QmfMwgpS5KcRBLZQbuHoTiKE9v4v2GePfPdsWBzQkKBsJP\",\"trait_type\":\"IPFSproductPhoto3\"},{\"value\":\"https://realitems.org/ipfs/QmbMTjpAzqedcqAobC6vDAVGyDLNLULDKbBgr722p4duFQ\",\"trait_type\":\"IPFSproductPhoto4\"},{\"value\":\"https://realitems.org/ipfs/QmUDRF6TuCtqbxTKDeJQoGQQuGArsSnxCX6oLkwekf4Kip\",\"trait_type\":\"IPFSproductPhoto5\"},{\"value\":\"https://realitems.org/ipfs/QmUDMjrYYCQcJJLs1Wkq2Fm71rhLssEtrA5qAFvuGEniLy\",\"trait_type\":\"IPFSproductPhoto6\"},{\"value\":5,\"trait_type\":\"UnitsProduced\"}]}",
+                "earmarks": [
+                    "ken@realitems.io"
+                ]
+            }
+            ....
         }
     }
-}
 </code></pre></div></div>
 
 
@@ -393,6 +439,8 @@ $('#toc').on('click', 'a', function() {
         
         
         <a href="tag_graphql.html" class="btn btn-default navbar-btn cursorNorm" role="button">graphql</a>
+        
+        
         
         
         

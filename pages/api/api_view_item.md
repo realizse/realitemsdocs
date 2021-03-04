@@ -2,7 +2,7 @@
 title: View an item
 keywords: NFT, graphql
 sidebar: api_sidebar
-permalink: api_view_item_by_id.html
+permalink: api_view_item.html
 tags: [graphql, NFT]
 folder: api_
 ---

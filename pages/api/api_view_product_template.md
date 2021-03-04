@@ -1,8 +1,8 @@
 ---
-title: View a specific product template
+title: View a product template
 keywords: NFT, graphql
 sidebar: api_sidebar
-permalink: api_view_single_product_template.html
+permalink: api_view_product_template.html
 tags: [graphql]
 folder: api_
 toc: true
