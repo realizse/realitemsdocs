@@ -33,7 +33,7 @@ query ($id: Int!) {
 }
 ~~~~
 
-Each product template has an ID. Here is an example authentication curl request that uses the ID to return a specific product template.
+Each product template has an ID. Here is an example curl request that uses the ID to return a specific product template.
 
 ~~~~
 curl --location --request POST 'https://staging.realitems.io/graphql' \

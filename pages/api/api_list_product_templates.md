@@ -33,7 +33,7 @@ query {
 }
 ~~~~
 
-Here is an example authentication curl request which will all products.
+Here is an example curl request which will return all products.
 
 ~~~~
 curl --location --request POST 'https://staging.realitems.io/graphql' \

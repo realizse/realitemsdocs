@@ -15,10 +15,21 @@
 
 
 {
-"title": "Creating items",
+"title": "Create items (NFTs, Phygitals)",
 "tags": "graphqlNFT",
 "keywords": "NFT, graphql",
 "url": "api_create_items.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Create product template",
+"tags": "graphql",
+"keywords": "NFT, graphql",
+"url": "api_create_product_template.html",
 "summary": ""
 }
 ,

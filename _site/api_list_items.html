@@ -254,6 +254,13 @@
           
           
           
+          <li><a title="Create a product template" href="api_create_product_template.html">Create a product template</a></li>
+          
+          
+          
+          
+          
+          
           <li class="active"><a title="List all items" href="api_list_items.html">List all items</a></li>
           
           
@@ -275,7 +282,7 @@
           
           
           
-          <li><a title="Create items" href="api_create_items.html">Create items</a></li>
+          <li><a title="Create items (NFTs, Phygitals)" href="api_create_items.html">Create items (NFTs, Phygitals)</a></li>
           
           
           
@@ -372,7 +379,7 @@ $('#toc').on('click', 'a', function() {
 }
 </code></pre></div></div>
 
-<p>Here is an example authentication curl request which will return all items</p>
+<p>Here is an example curl request which will return all items</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl --location --request POST 'https://staging.realitems.io/graphql' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3VudHJ5IjoiVVNBIiwidXNlcl9uYW1lIjoia2VuQHJlYWxpdGVtcy5vcmciLCJtb2JpbGUiOiIrNTEwOTMyNDkxMSIsImxhc3RfbmFtZSI6Indvb2RydWZmIiwid2FsbGV0cyI6WyIweGY0ZTVFRjdkZTE1NDQ1QmM1NEU2M0FCMmJGZEM0YkJEY2U0MmUxZkIiLCIweDlFRUNBQjRERjEzQjYzMzhBZDYwMzg4MzVlNjFEQTJENDZjMWRDQjAiXSwiYXV0aG9yaXRpZXMiOlsiU1RBTkRBUkRfVVNFUiIsIkFETUlOX1VTRVIiLCJTVVBFUl9VU0VSIl0sImNsaWVudF9pZCI6InJlYWxpdGVtc3N0YWdpbmdjbGllbnRpZCIsImF1ZCI6WyJyZWFsaXRlbXNzdGFnaW5nand0cmVzb3VyY2VpZCJdLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiaWQiOiIyIiwiZXhwIjoxNjE0OTc0Mjg3LCJmaXJzdF9uYW1lIjoia2VuIiwianRpIjoiYTc0MGIyY2YtYWRmOC00MjQ0LWJiMTMtZTdlOGVhODQyZjI1In0.xNuUbl87rN6lCGjuJV5MWpFZR6uG-SYEA4hZv3EFes8' \

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content="graphqlNFT,  NFT, graphql">
-<title>Creating items | Real Items Documentation</title>
+<title>Create items (NFTs, Phygitals) | Real Items Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -188,7 +188,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Creating items">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Create items (NFTs, Phygitals)">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -254,6 +254,13 @@
           
           
           
+          <li><a title="Create a product template" href="api_create_product_template.html">Create a product template</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="List all items" href="api_list_items.html">List all items</a></li>
           
           
@@ -275,7 +282,7 @@
           
           
           
-          <li class="active"><a title="Create items" href="api_create_items.html">Create items</a></li>
+          <li class="active"><a title="Create items (NFTs, Phygitals)" href="api_create_items.html">Create items (NFTs, Phygitals)</a></li>
           
           
           
@@ -302,7 +309,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Creating items</h1>
+   <h1 class="post-title-main">Create items (NFTs, Phygitals)</h1>
 </div>
 
 
@@ -360,7 +367,7 @@ $('#toc').on('click', 'a', function() {
 }
 </code></pre></div></div>
 
-<p>Here is an example authentication curl request which will return all items</p>
+<p>Here is an example curl request which will return all items</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl --location --request POST 'https://staging.realitems.io/graphql' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3VudHJ5IjoiVVNBIiwidXNlcl9uYW1lIjoia2VuQHJlYWxpdGVtcy5vcmciLCJtb2JpbGUiOiIrNTEwOTMyNDkxMSIsImxhc3RfbmFtZSI6Indvb2RydWZmIiwid2FsbGV0cyI6WyIweGY0ZTVFRjdkZTE1NDQ1QmM1NEU2M0FCMmJGZEM0YkJEY2U0MmUxZkIiLCIweDlFRUNBQjRERjEzQjYzMzhBZDYwMzg4MzVlNjFEQTJENDZjMWRDQjAiXSwiYXV0aG9yaXRpZXMiOlsiU1RBTkRBUkRfVVNFUiIsIkFETUlOX1VTRVIiLCJTVVBFUl9VU0VSIl0sImNsaWVudF9pZCI6InJlYWxpdGVtc3N0YWdpbmdjbGllbnRpZCIsImF1ZCI6WyJyZWFsaXRlbXNzdGFnaW5nand0cmVzb3VyY2VpZCJdLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiaWQiOiIyIiwiZXhwIjoxNjE0OTc0Mjg3LCJmaXJzdF9uYW1lIjoia2VuIiwianRpIjoiYTc0MGIyY2YtYWRmOC00MjQ0LWJiMTMtZTdlOGVhODQyZjI1In0.xNuUbl87rN6lCGjuJV5MWpFZR6uG-SYEA4hZv3EFes8' \

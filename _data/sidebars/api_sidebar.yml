@@ -38,6 +38,10 @@ entries:
         url: /api_view_product_template.html
         output: web, pdf
 
+      - title:  Create a product template
+        url: /api_create_product_template.html
+        output: web, pdf
+
       - title:  List all items 
         url: /api_list_items.html
         output: web, pdf
@@ -50,6 +54,6 @@ entries:
         url: /api_view_item.html
         output: web, pdf
         
-      - title:  Create items
+      - title:  Create items (NFTs, Phygitals)
         url: /api_create_items.html
         output: web, pdf

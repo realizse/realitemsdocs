@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
-<meta name="keywords" content=" ">
-<title>Content types pages | Real Items Documentation</title>
+<meta name="keywords" content="graphql,  NFT, graphql">
+<title>Create product template | Real Items Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -188,7 +188,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Content types pages">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Create product template">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -214,54 +214,75 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">RealItems Docs </li>
+  <li class="sidebarTitle">GraphQL API </li>
   
   
   
       
   
   <li>
-      <a title="Overview" href="#">Overview</a>
+      <a title="Functions" href="#">Functions</a>
       <ul>
           
           
           
-          <li><a title="Introduction" href="index.html">Introduction</a></li>
+          <li><a title="GraphQL Home" href="api_landing_page.html">GraphQL Home</a></li>
           
           
           
           
           
           
-          <li><a title="Consumer Protection 3.0" href="cp3_landing_page.html">Consumer Protection 3.0</a></li>
+          <li><a title="Authentication" href="api_authentication.html">Authentication</a></li>
           
           
           
           
           
           
-          <li><a title="Tokenized Asset Manager" href="tam_landing_page.html">Tokenized Asset Manager</a></li>
+          <li><a title="List product templates" href="api_list_product_templates.html">List product templates</a></li>
           
           
           
           
           
           
-          <li><a title="Tracker" href="tracker_landing_page.html">Tracker</a></li>
+          <li><a title="View a product template" href="api_view_product_template.html">View a product template</a></li>
           
           
           
           
           
           
-          <li><a title="GraphQL API" href="api_landing_page.html">GraphQL API</a></li>
+          <li class="active"><a title="Create a product template" href="api_create_product_template.html">Create a product template</a></li>
           
           
           
           
           
           
-          <li><a title="Glossary" href="ridoc_glossary.html">Glossary</a></li>
+          <li><a title="List all items" href="api_list_items.html">List all items</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="List items by product ID" href="api_list_items_by_product_id.html">List items by product ID</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="View an item" href="api_view_item.html">View an item</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Create items (NFTs, Phygitals)" href="api_create_items.html">Create items (NFTs, Phygitals)</a></li>
           
           
           
@@ -288,7 +309,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Content types pages</h1>
+   <h1 class="post-title-main">Create product template</h1>
 </div>
 
 
@@ -325,473 +346,71 @@ $('#toc').on('click', 'a', function() {
 
     
 
-   <p>The following pages and posts are tagged with <button type="button" style="cursor: default" class="btn btn-default navbar-btn">content_types</button></p>
-<table><thead><tr><th>Title</th><th>Type</th><th>Excerpt</th></tr></thead>
-    <tbody>
-    
-  
-    
-   
-    
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-   
-    
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
+   <h2 id="product-templates">Product Templates</h2>
 
-        <tr><td><a href="ridoc_collections.html">Collections</a></td>
-            <td><span class="label label-default">Page</span></td>
-          <td> Collections are useful if you want to loop through a special folder of pages that you make available in a content API. You could also use collections if you ... </td>
-        </tr>
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-        
-     
-        
+<p>A Product Template is a JSON document which is persisted on the backend database.  It is used to create items that are then stored on the blockchain.</p>
 
-        <tr><td><a href="ridoc_generating_pdfs.html">Generating PDFs</a></td>
-            <td><span class="label label-default">Page</span></td>
-          <td> You can generate a PDF from your Jekyll project. You do this by creating a web version of your project that is printer friendly. You then use utility called ... </td>
-        </tr>
-        
-     
-   
-    
-        
-     
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-        
+<h2 id="create-a-product-template">Create a product template</h2>
 
-        <tr><td><a href="ridoc_help_api.html">Help APIs and UI tooltips</a></td>
-            <td><span class="label label-default">Page</span></td>
-          <td> You can loop through files and generate a JSON file that developers can consume like a help API. Developers can pull in values from the JSON into interface e... </td>
-        </tr>
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-        
-     
-        
+<p>You must create product templates before you can create items (NFTs, Phygitals) on the blockchain.  The recommened way to create a product template is to log into the Tokenized Asset Manager and create a template using the UI.  Once you have gotten a hang of that, you may wish to automate the process by using the <em>createProduct</em> graphql mutation.  After creating a product template you will have its ID.  You will then use that ID to create item(s) on the blockchain.</p>
 
-        <tr><td><a href="ridoc_pages.html">Pages</a></td>
-            <td><span class="label label-default">Page</span></td>
-          <td> This theme primarily uses pages. You need to make sure your pages have the appropriate frontmatter. One frontmatter tag your users might find helpful is the ... </td>
-        </tr>
-        
-     
-   
-    
-        
-     
-        
-     
-        
+<p>Here is and example GraphQl mutation.</p>
 
-        <tr><td><a href="ridoc_posts.html">Posts</a></td>
-            <td><span class="label label-default">Page</span></td>
-          <td> You can use posts when you want to create blogs or news type of content. </td>
-        </tr>
-        
-     
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mutation addProduct ($blockchainId: Int!, $companyId: Int!, $componentName: String, $data: String, $maxItems: Int!, $name: String, $publicProduct: Boolean!) {
+      addProduct (blockchainId: $blockchainId, companyId: $companyId, componentName: $componentName, data: $data, maxItems: $maxItems, name: $name, publicProduct: $publicProduct) {
+        id
+      }
+    }
+</code></pre></div></div>
 
-        <tr><td><a href="ridoc_series.html">Series</a></td>
-            <td><span class="label label-default">Page</span></td>
-          <td> You can automatically link together topics belonging to the same series. This helps users know the context within a particular process. </td>
-        </tr>
-        
-     
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-        
-     
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-        
-     
-   
-    
-   
-    
-   
-    
-        
-     
-   
-    
-        
-     
-        
-     
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-        
-     
-        
-     
-   
-    
-   
+<p>Here is an example curl call which will create a product</p>
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl --location --request POST 'https://staging.realitems.io/graphql' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3VudHJ5IjoiVVNBIiwidXNlcl9uYW1lIjoia2VuQHJlYWxpdGVtcy5vcmciLCJtb2JpbGUiOiIrNTEwOTMyNDkxMSIsImxhc3RfbmFtZSI6Indvb2RydWZmIiwid2FsbGV0cyI6WyIweGY0ZTVFRjdkZTE1NDQ1QmM1NEU2M0FCMmJGZEM0YkJEY2U0MmUxZkIiLCIweDlFRUNBQjRERjEzQjYzMzhBZDYwMzg4MzVlNjFEQTJENDZjMWRDQjAiXSwiYXV0aG9yaXRpZXMiOlsiU1RBTkRBUkRfVVNFUiIsIkFETUlOX1VTRVIiLCJTVVBFUl9VU0VSIl0sImNsaWVudF9pZCI6InJlYWxpdGVtc3N0YWdpbmdjbGllbnRpZCIsImF1ZCI6WyJyZWFsaXRlbXNzdGFnaW5nand0cmVzb3VyY2VpZCJdLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiaWQiOiIyIiwiZXhwIjoxNjE0OTc0Mjg3LCJmaXJzdF9uYW1lIjoia2VuIiwianRpIjoiYTc0MGIyY2YtYWRmOC00MjQ0LWJiMTMtZTdlOGVhODQyZjI1In0.xNuUbl87rN6lCGjuJV5MWpFZR6uG-SYEA4hZv3EFes8' \
+--header 'Content-Type: application/json' \
+--data-raw '{"query":"mutation addProduct ($blockchainId: Int!, $companyId: Int!, $componentName: String, $data: String, $maxItems: Int!, $name: String, $publicProduct: Boolean!) {\n      addProduct (blockchainId: $blockchainId, companyId: $companyId, componentName: $componentName, data: $data, maxItems: $maxItems, name: $name, publicProduct: $publicProduct) {\n        id\n      }\n    }","variables":{"blockchainId":1,"companyId":"1","componentName":"DefaultProduct","data":"{\"productId\":\"\",\"description\":\"My Description\",\"external_url\":\"\",\"image\":\"https://realitems.org/ipfs/QmeMsz4f8jMQYeU6BYwtT3fMcQRFU2UyJ6pb63sgKdMTjs\",\"name\":\"My Product\",\"component\":\"\",\"attributes\":[{\"trait_type\":\"ProductType\",\"value\":\"merchandise\"},{\"trait_type\":\"Video\",\"value\":\"https://www.youtube.com/embed/x8sNlXIk4lM\"},{\"trait_type\":\"RecyclingManual\",\"value\":\"https://www.wikihow.com/Recycle-Old-Coffee-Mugs\"},{\"trait_type\":\"MadeIn\",\"value\":\"\"},{\"trait_type\":\"Warning\",\"value\":\"\"},{\"trait_type\":\"ProductName\",\"value\":\"My Product\"},{\"trait_type\":\"ProductUrl\",\"value\":\"https://realitems.shop/collections/100-authentic-marketplace\"},{\"trait_type\":\"Music\",\"value\":\"\"},{\"trait_type\":\"FeaturesArray\",\"value\":[\"Ceramic\",\" Dishwasher and microwave safe\",\" includes Real Items NFT\"]},{\"trait_type\":\"SecretMessage\",\"value\":\"Congratulations, you have completed the process and now have a digital copy send to your email.  Please explore the app and send us a picture on twitter @itemsdapp\"},{\"trait_type\":\"CharityDonationRecipient\",\"value\":\"\"},{\"trait_type\":\"CharityDonationAmount\",\"value\":\"\"},{\"trait_type\":\"CharityMessage\",\"value\":\"\"},{\"trait_type\":\"AuthenticMessage\",\"value\":\"\"},{\"trait_type\":\"Notify3rdParty\",\"value\":\"\"},{\"trait_type\":\"IPFSBrandLogo\",\"value\":\"https://realitems.org/ipfs/QmaRW6vYnKfUy6ic6poDqGu9Bz34WsxHTQGscmWx7FDiKQ\"},{\"trait_type\":\"IPFSCertification\",\"value\":\"https://realitems.org/ipfs/QmNeSY9DCQCrM8jHu3eVMMNyDniAEVN69UFwgkkrTdbj6T\"},{\"trait_type\":\"IPFSproductPhoto1\",\"value\":\"https://realitems.org/ipfs/QmeMsz4f8jMQYeU6BYwtT3fMcQRFU2UyJ6pb63sgKdMTjs\"},{\"trait_type\":\"IPFSproductPhoto2\",\"value\":\"https://realitems.org/ipfs/QmZC3pkPUUMdugbx53puNrzrF5er2WervJriAfpebPtCNo\"},{\"trait_type\":\"IPFSproductPhoto3\",\"value\":\"https://realitems.org/ipfs/QmSiXSGuVQeyCv3pqMWW2Q2xTVrMPHU1PUGqnQVaoQ6Aqh\"},{\"trait_type\":\"IPFSproductPhoto4\",\"value\":\"https://realitems.org/ipfs/QmdpftN5kHxnESK3DMzASW64iT9FpcXfvr6AmqUE7Tp8sg\"},{\"trait_type\":\"IPFSproductPhoto5\",\"value\":\"https://realitems.org/ipfs/QmUw2913K7n5L4JEjvFn2FQX1KjJ5nFe4Pqoy94pdfqsnZ\"},{\"trait_type\":\"IPFSproductPhoto6\",\"value\":\"https://realitems.org/ipfs/QmUFgkt3tJ9TToMfZteJyhSwsnVK3AVYSqaLHTPzSd8jX4\"},{\"trait_type\":\"UnitsProduced\",\"value\":1},{\"trait_type\":\"EmailOptional\",\"value\":false}]}","maxItems":1,"name":"My Product","publicProduct":true}}'
+</code></pre></div></div>
 
-   </tbody>
-</table>
+<p>If the mutation is successful the response will look something like this.</p>
+
+<p>Note: The nfrIds represent the ID of each new item created.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "data": {
+        "addProduct": {
+            "id": 12
+        }
+    }
+}
+</code></pre></div></div>
+
+<p>If the mutation fails you will see something like this.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "errors": [
+        {
+            "message": "Validation error of type UndefinedVariable: Undefined variable companyId @ 'addProduct'",
+            "locations": [
+                {
+                    "line": 3,
+                    "column": 59
+                }
+            ]
+        }
+    ]
+}
+</code></pre></div></div>
 
 
 
     <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        <a href="tag_graphql.html" class="btn btn-default navbar-btn cursorNorm" role="button">graphql</a>
+        
+        
         
     </div>
 

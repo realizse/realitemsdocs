@@ -41,7 +41,7 @@ query {
 }
 ~~~~
 
-Here is an example authentication curl request which will return all items
+Here is an example curl request which will return all items
 
 ~~~~
 curl --location --request POST 'https://staging.realitems.io/graphql' \
