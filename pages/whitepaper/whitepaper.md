@@ -167,7 +167,7 @@ At its lowest level, our technology must guarantee the immutability of each tran
 
 All data transmitted between our middleware, clients, and databases is secured by TLS.
 
-All mutable data-at-rest (sql and nosql) is encrypted.  Passwords and other credentials that are not stored in datbases are persisted in a Hashicorp Vault cluster located in a private VPC.
+All mutable data-at-rest (sql and nosql) is encrypted.  Passwords and other credentials that are not stored in databases are persisted in a Hashicorp Vault cluster located in a private VPC.
 
 ## Conclusion
 
