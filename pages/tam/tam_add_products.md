@@ -13,7 +13,14 @@ By creating **product templates**, you are telling the Real Items system which t
 
 ## Adding a new product template 
 
-Navigate to **Product->Create New Product** and fill out the form.with product images, a video, a Certificate of Authority, and URLs.
+1. Click on **Product** in the left navigation pane.
+![Add Product](images/tam/product-add-1.png)
+
+2. Click on **Create New Product**.
+![Add Product](images/tam/product-add-2.png)
+
+3. Fill out the form with product images, a video, a Certificate of Authority, and URLs. When finished click **Submit New Product**
+![Add Product](images/tam/product-add-3.png)
 
 ## After you have created a product template
 

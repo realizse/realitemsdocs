@@ -27,10 +27,16 @@ An administrator can perform the following actions on an NFT
 
 ## How To search for an NFT using Item Explorer
 
-* Click on *Item Explorer* in the left navigation bar
-* Type the ID or Obfuscated ID into the input box
-* Click **Get NFT** button 
-* If the NFT is found you will be presented a screen containing information and links to other views
+1. Click on *Item Explorer* in the left navigation bar
+![Item Explorer 1](images/tam/item-explorer-1.png)
+
+2. Type the ID or Obfuscated ID into the input box
+![Item Explorer 2](images/tam/item-explorer-2.png)
+
+3. Click **Get NFT** button 
+![Item Explorer 3](images/tam/item-explorer-3.png)
+
+4. If the NFT is found you will be presented a screen containing information and links to other views
 
 ## Navigating within the Item Explorer
 

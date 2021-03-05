@@ -105,7 +105,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            <!--
             <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Real Items Documentation</span></a>
+            -->
+            <a href="index.html"><img class="realItemsLogo" src="images/realitemslogo.png"></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -345,35 +348,74 @@ $('#toc').on('click', 'a', function() {
 
 <p>A <strong>digital identity</strong> (also referred to as an <strong>item</strong>) is an instance of a <strong>product</strong> that has been digitized on the blockchain.  A digital identity can be a single NFT on the blockchain (in the case of durable products), or a fraction of an NFT paired with a unique PIN.  Associated with each digital identity is a QR Code, a numeric ID, an obfuscated ID and a PIN.  Digital identities have a custodian (a program or human that holds the private key and/or the PIN) and are sometimes associated with an owner (a specific company or human being).  The custodian and the owner can be the same person or thing, or they can be different.</p>
 
+<h2 id="how-a-digital-identity-is-created">How a digital identity is created</h2>
+<p><img src="/realitemsdocs/pages/tam/create_digids.svg" alt="Create Digital IDs" class="img-responsive" /></p>
+
 <h2 id="creating-digital-identities">Creating digital identities</h2>
 
 <ol>
-  <li>In the sidebar, click the INVENTORY link.</li>
-  <li>Under the Actions column of the product, click the “+” sign.</li>
-  <li>In box under “Number of new Digital Identities” type the number.</li>
-  <li>In the Notes box write a unique description of the purpose and characteristics of the “Batch” you are about to create.  These can include who the digital IDs are being created for, why they are being created, what they will be used for etc.</li>
-  <li>Click the “Create New Digital Identities” button and wait for the process to complete.  Please note that this action will be writing to the blockchain therefore will take a minimum of 10 seconds to complete.  If you create more than 40 digital identities, the minimum time for the action to complete will be (number specified)/40 * 10.</li>
+  <li>
+    <p>In the sidebar, click the <strong>Inventory</strong> option.
+<img src="images/tam/inventory-add-1.png" alt="Add Digid 1" /></p>
+  </li>
+  <li>
+    <p>Under the Actions column of the product, click the “+” sign.
+<img src="images/tam/inventory-add-2.png" alt="Add Digid 2" /></p>
+  </li>
+  <li>
+    <p>In box under “Number of new Digital Identities” type the number.
+<img src="images/tam/inventory-add-3.png" alt="Add Digid 3" /></p>
+  </li>
+  <li>
+    <p>In the Notes box write a unique description of the purpose and characteristics of the “Batch” you are about to create.  These can include who the digital IDs are being created for, why they are being created, what they will be used for etc.
+<img src="images/tam/inventory-add-4.png" alt="Add Digid 4" /></p>
+  </li>
+  <li>
+    <p>Click the “Create New Digital Identities” button and wait for the process to complete.  Please note that this action will be writing to the blockchain therefore will take a minimum of 10 seconds to complete.  If you create more than 40 digital identities, the minimum time for the action to complete will be (number specified)/40 * 10.
+<img src="images/tam/inventory-add-5.png" alt="Add Digid 5" /></p>
+  </li>
 </ol>
-
-<h2 id="high-level-sequence-diagram">High-level sequence diagram</h2>
-<p><img src="/realitemsdocs/pages/tam/create_digids.svg" alt="Create Digital IDs" class="img-responsive" /></p>
 
 <h2 id="after-creating-a-digital-identity">After creating a digital identity</h2>
 
 <p>After you have created a digital identity you can now view it 2 ways in the TAM.</p>
 <ol>
-  <li>Go to Inventory page</li>
-  <li>Click on magnifying glass icon next to the Product.</li>
-  <li>Click on the “Batch” that you just created.</li>
-  <li>Click on the Details tab.</li>
-  <li>Click on the hyperlink of the number of the digital identity you wish to view.</li>
+  <li>
+    <p>Go to Inventory page
+<img src="images/tam/inventory-view-1.png" alt="View Digid 1" /></p>
+  </li>
+  <li>
+    <p>Click on magnifying glass icon next to the Product.
+<img src="images/tam/inventory-view-2.png" alt="View Digid 2" /></p>
+  </li>
+  <li>
+    <p>Click on the “Batch” that you just created.
+<img src="images/tam/inventory-view-3.png" alt="View Digid 3" /></p>
+  </li>
+  <li>
+    <p>Click on the Details tab.
+<img src="images/tam/inventory-view-4.png" alt="View Digid 4" /></p>
+  </li>
+  <li>
+    <p>Click on the hyperlink of the number of the digital identity you wish to view.
+<img src="images/tam/inventory-view-5.png" alt="View Digid 5" /></p>
+  </li>
 </ol>
 
-<p>Or, if you already know the digital identity’s ID, you can</p>
+<p><strong>Or</strong>, if you already know the digital identity’s ID, you can</p>
 <ol>
-  <li>Click on Item Explorer</li>
-  <li>Enter the digitial identity’s ID in the box.</li>
-  <li>Click the “Get NFT” button</li>
+  <li>
+    <p>Click on Item Explorer
+<img src="images/tam/item-explorer-1.png" alt="Item Explorer 1" /></p>
+  </li>
+  <li>
+    <p>Enter the digitial identity’s ID in the box.
+<img src="images/tam/item-explorer-2.png" alt="Item Explorer 2" /></p>
+  </li>
+  <li>
+    <p>Click the “Get NFT” button
+<img src="images/tam/item-explorer-3.png" alt="Item Explorer 3" /></p>
+  </li>
 </ol>
 
 <h2 id="pairing-you-digital-identity-with-a-physical-item">Pairing you digital identity with a physical item.</h2>
@@ -412,7 +454,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 Real Items. All rights reserved. <br />
- Site last generated: Mar 4, 2021 <br />
+ Site last generated: Mar 5, 2021 <br />
 <p><img src="images/ri-logo-black.png" alt="Real Items Logo"/></p>
                 </div>
             </div>

@@ -426,6 +426,13 @@ span.projectTitle {
     font-weight: bold;
 }
 
+.realItemsLogo {
+/*    margin-top: 50px;
+    margin-bottom: 50px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .footer {
     text-align: right;
 }
