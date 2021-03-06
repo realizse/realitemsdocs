@@ -65,11 +65,19 @@ After you have created a digital identity you can now view it 2 ways in the TAM.
 To pair a digital identity with a physical item we will need to physically associate a unique QR code/PIN combination to that item.  Using the TAM, you can print out the QR code/PIN combination and apply it to the item or the box containing the item.
 
 1. Go to Inventory page
-2. Click on magnifying glass icon next to the Product.
-3. Click on the "Batch" that you just created.
-4. Click on the Print tab.
-5. Click on the Download icon and save the resulting csv file to your file system.
-6. Use that csv file to print the QR code/PIN combinations on your printer.
-7. Apply each QR code/PIN sticker to the physical item.
+![View Inventory](images/tam/inventory-view-1.png)
+
+2. Under the Actions column, click on magnifying glass icon next to the Product you which to pair.
+![Magnifying Glass](images/tam/inventory-mag.png)
+
+3. Click on the Download icon of the **batch** you want pair with physical items. 
+![Select Batch](images/tam/select-batch.png)
+
+4. Save the resulting csv file to your system.
+![Save CVS file](images/tam/save-cvs.png)
+
+5. Print the QR code/PIN combinations on your printer.
+
+7. Apply each **smart label** to the physical item.
 
 {% include links.html %}

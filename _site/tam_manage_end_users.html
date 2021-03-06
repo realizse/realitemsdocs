@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Manage the end users of the your Real Items system...">
+<meta name="description" content="View the end users of the your node">
 <meta name="keywords" content="tam,  sample">
-<title>Manage End Users (TAM) | Real Items Documentation</title>
+<title>View End Users (TAM) | Real Items Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -191,7 +191,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Manage End Users (TAM)">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="View End Users (TAM)">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -305,7 +305,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Manage End Users (TAM)</h1>
+   <h1 class="post-title-main">View End Users (TAM)</h1>
 </div>
 
 
@@ -313,7 +313,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Manage the end users of the your Real Items system...</div>
+    <div class="summary">View the end users of the your node</div>
    
 
     
@@ -348,7 +348,20 @@ $('#toc').on('click', 'a', function() {
 
 <p>The end users are the consumers who are the final destination of the items you create.  After an end user receives an item they may scan the QR code and validate it with the PIN.  Then they may opt to “take ownership” of the item, meaning their user ID and email address will be associated with that item and the end user will become “known” to your organization for customer support and possible marketing opportunities.</p>
 
-<h2 id="managing-end-users">Managing End Users</h2>
+<h2 id="view-end-users">View End Users</h2>
+
+<ol>
+  <li>
+    <p>Log into the Tokenized Asset Manager</p>
+  </li>
+  <li>
+    <p>Click on Users in the left navigation panel.
+<img src="images/tam/users-view.png" alt="View end users" /></p>
+  </li>
+  <li>
+    <p>Scroll to view users.</p>
+  </li>
+</ol>
 
 <p>At this time TAM only allows administrators to read the users information and view the items for which they have taken ownership.  More end user features will be added as the product develops.</p>
 

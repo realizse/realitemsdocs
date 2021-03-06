@@ -12,6 +12,8 @@ item: "A physical or digital entity which has an identity on the blockchain"
 
 IPFS: "The InterPlanetary File System (IPFS) is a protocol and peer-to-peer network for storing and sharing data in a distributed file system. IPFS uses content-addressing to uniquely identify each file in a global namespace connecting all computing devices."
 
+node: "A cloud infrastructure unit provided by Real Items which is dedicated to a single organization for minting NFTs.  Contains a webserver, a relational database and a set of smart contracts."
+
 phygital: "A physical item which has an identity on the blockchain.  A phygital is either an NFT or a fractionalized NFT"
 
 tam: "Tokenized Asset Manager - used by enterprises to create and manage product templates and create and manage digital items on the blockchain"

@@ -24,11 +24,17 @@ ethereum
 event
 : {{site.data.glossary.event}}
 
+node
+: {{site.data.glossary.node}}
+
 IPFS
 : {{site.data.glossary.IPFS}}
 
 phygital
 : {{site.data.glossary.phygital}}
+
+TAM
+: {{site.data.glossary.tam}}
 
 tracker
 : {{site.data.glossary.tracker}}
