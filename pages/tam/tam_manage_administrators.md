@@ -1,7 +1,7 @@
 ---
 title: Manage Administrators (TAM)
 keywords: administrators 
-summary: "Manage Administrative Users..."
+summary: "Manage Administors"
 sidebar: tam_sidebar
 permalink: tam_manage_administrators.html
 tags: [tam]
@@ -31,9 +31,20 @@ folder: tam_
 * All powers of Regular Administrators
 * Can add/update/delete Regular Administrators
 
+## Add Administrators
+1. Click on *Administrators* in the left navigation bar.
+![admin home](images/tam/admin-nav.png)
 
-## Managing Administrators 
 
-To manage Administrators click on *Administrators* in the left navigation bar.
+## Edit Administrators 
+
+1. Click on *Administrators* in the left navigation bar.
+![admin home](images/tam/admin-nav.png)
+
+2. Click on the tools icon for the administrator.
+![admin home](images/tam/admin-edit.png)
+
+3. Edit the fields you wish to change and click **Save**
+![admin home](images/tam/admin-save.png)
 
 {% include links.html %}
