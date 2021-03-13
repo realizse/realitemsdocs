@@ -35,6 +35,11 @@ folder: tam_
 1. Click on *Administrators* in the left navigation bar.
 ![admin home](images/tam/admin-nav.png)
 
+2. Click on Add New button.
+![admin add new](images/tam/admin-add-new.png)
+
+3. Fill out form and click Create Administrator button.
+![admin add new](images/tam/admin-create-admin.png)
 
 ## Edit Administrators 
 

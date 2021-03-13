@@ -24,18 +24,38 @@ The QR Code for an item can be found:
 
 There are two ways to scan the QR Code:
 
-### Stock Camera
+### First method: Stock Camera
 
 * Open the stock camera program on your Android or IOS phone
-* Point it at the QR Code
-* Click on the link when prompted
-* The item will load
+* Point the camera at the QR Code and click the link when prompted
 
-### CP3 Camera
+![scan qr code](images/cp3/scan-qr.jpeg)
+
+* After that, the item should load. 
+
+![loaded item](images/cp3/loaded-item.jpeg)
+
+### Second method: CP3 Camera
 
 * Log in to CP3 with your username and password
-* Point it at the QR Code
-* The item will load
+
+![cp3 log in](images/cp3/log-in.jpeg)
+
+* Select the QR Code scanner
+
+![cp3 log in](images/cp3/select-scanner.jpeg)
+
+* Select "allow" to access your camera.
+
+![cp3 log in](images/cp3/select-allow.jpeg)
+
+* Point the camera at the QR Code and click the link when prompted
+
+![scan qr code](images/cp3/scan-qr.jpeg)
+
+* After that, the item should load. 
+
+![loaded item](images/cp3/loaded-item.jpeg)
 
 ## Finding the PIN
 
@@ -49,14 +69,30 @@ The PIN of an item can be found:
 
 ## Entering the PIN
 
-After you scan the QR Code, click the link:
+After scanning the QR Code:
 
 * Click on the **Enter PIN To Verify** button
+
+![enter pin](images/cp3/cp3-enterpin-1.png)
+
 * Enter the PIN into the text box
+
+![enter pin2](images/cp3/cp3-enterpin-2.png)
+
 * Click the **All Set To Go** button
 
-If the PIN is not valid you will see a message that says **Pin Is Invalid**
+![all set](images/cp3/cp3-enterpin-3.png)
 
-If the PIN is valid you will see a message that says either **This Item Is Authentic** or **This Item is already taken**.  
+* If the PIN is correct, you will see a message that says **This Item Is Authentic** 
+
+![authentic item](images/cp3/authentic-item.jpeg)
+
+* If the PIN is not correct you will see a message that says **Pin Is Invalid**
+
+![invalid pin](images/cp3/invalid-pin.jpeg)
+
+* If the item is already owned by someone else you will see a message that says **This Item is already taken**.  
+
+![already taken](images/cp3/already-taken.jpeg)
 
 {% include links.html %}
